@@ -1,0 +1,5 @@
+# Duplicates some DDRGLIST entries of DeusDoom: Augmentations in case they aren't loaded
+
+# Radar transparency (for EMP/scramble grenades)
+	Arachnotron isFooledByRadarTransparency;
+	Arachnotron !isFooledByCloak;

@@ -1,0 +1,449 @@
+Model DDProjectile_Dart
+{
+	Path "models/"
+	Model 0 "Dart_d.3d"
+	Scale 0.05 0.05 0.025
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "DartTex1.tga"
+	FrameIndex DXDT A 0 0
+}
+Model DDProjectile_TranquilizerDart
+{
+	Path "models/"
+	Model 0 "Dart_d.3d"
+	Scale 0.05 0.05 0.025
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "DartTex1.tga"
+	FrameIndex DXDT A 0 0
+}
+Model DDProjectile_FlareDart
+{
+	Path "models/"
+	Model 0 "Dart_d.3d"
+	Scale 0.05 0.05 0.025
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "DartTex1.tga"
+	FrameIndex DXDT A 0 0
+}
+
+Model DDProjectile_PlasmaBolt
+{
+	Path "models/"
+	Model 0 "PlasmaBolt_d.3d"
+	Scale 0.025 0.07 0.1
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "FlameGreen.png"
+	FrameIndex DXPB B 0 0
+}
+
+Model DDProjectile_HE20mm
+{
+	Path "models/"
+	Model 0 "RocketHE_d.3d"
+	Scale 0.025 0.02 0.02
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "RocketHETex1.tga"
+	FrameIndex DXHE A 0 0
+}
+
+Model DDProjectile_ThrowingKnife
+{
+	Path "models/"
+	Model 0 "ShurikenPickup_d.3d"
+	SurfaceSkin 0 0 "ShurikenTex1.tga"
+	SurfaceSkin 0 1 "ShurikenTex1.tga"
+	Scale 0.06 0.06 0.03
+
+	Offset 2 0 0
+	USEACTORPITCH
+
+	FrameIndex DXTP A 0 0
+	Offset 0 0 0
+	FrameIndex DXTP B 0 0
+}
+
+Model DDProjectile_LAM
+{
+	Path "models/"
+	Model 0 "LAMPickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	// Light off
+	SurfaceSkin 0 0 ""
+	SurfaceSkin 0 1 "LAM3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXLP A 0 0
+	Offset 0 0 -6
+	FrameIndex DXLP B 0 0
+
+	// Light on
+	SurfaceSkin 0 0 "LAM3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXLP C 0 0
+	Offset 0 0 -6
+	FrameIndex DXLP D 0 0
+}
+Model DDProjectile_PlacedLAM
+{
+	Path "models/"
+	Model 0 "LAMPickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	// Light off
+	SurfaceSkin 0 0 ""
+	SurfaceSkin 0 1 "LAM3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXLP A 0 0
+	// Light on
+	SurfaceSkin 0 0 "LAM3rdTex1.tga"
+	FrameIndex DXLP C 0 0
+}
+
+Model DDProjectile_GasGrenade
+{
+	Path "models/"
+	Model 0 "GasGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "GasGrenade3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXGP A 0 0
+	Offset 0 0 -6
+	FrameIndex DXGP B 0 0
+}
+Model DDProjectile_PlacedGasGrenade
+{
+	Path "models/"
+	Model 0 "GasGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "GasGrenade3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXGP A 0 0
+}
+
+Model DDProjectile_EMPGrenade
+{
+	Path "models/"
+	Model 0 "EMPGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "prodtip0.png"
+	SurfaceSkin 0 1 "EMPGrenade3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXEP A 0 1
+	SurfaceSkin 0 0 "prodtip1.png"
+	FrameIndex DXEP B 0 1
+	SurfaceSkin 0 0 "prodtip2.png"
+	FrameIndex DXEP C 0 1
+	SurfaceSkin 0 0 "prodtip3.png"
+	FrameIndex DXEP D 0 1
+	SurfaceSkin 0 0 "prodtip4.png"
+	FrameIndex DXEP E 0 1
+	SurfaceSkin 0 0 "prodtip5.png"
+	FrameIndex DXEP F 0 1
+	SurfaceSkin 0 0 "prodtip6.png"
+	FrameIndex DXEP G 0 1
+	SurfaceSkin 0 0 "prodtip7.png"
+	FrameIndex DXEP H 0 1
+	SurfaceSkin 0 0 "prodtip8.png"
+	FrameIndex DXEP I 0 1
+	SurfaceSkin 0 0 "prodtip9.png"
+	FrameIndex DXEP J 0 1
+	SurfaceSkin 0 0 "prodtip10.png"
+	FrameIndex DXEP K 0 1
+	SurfaceSkin 0 0 "prodtip11.png"
+	FrameIndex DXEP L 0 1
+	SurfaceSkin 0 0 "prodtip12.png"
+	FrameIndex DXEP M 0 1
+	SurfaceSkin 0 0 "prodtip13.png"
+	FrameIndex DXEP N 0 1
+	SurfaceSkin 0 0 "prodtip14.png"
+	FrameIndex DXEP O 0 1
+	SurfaceSkin 0 0 "prodtip15.png"
+	FrameIndex DXEP P 0 1
+	SurfaceSkin 0 0 "prodtip16.png"
+	FrameIndex DXEP Q 0 1
+	SurfaceSkin 0 0 "prodtip17.png"
+	FrameIndex DXEP R 0 1
+	SurfaceSkin 0 0 "prodtip18.png"
+	FrameIndex DXEP S 0 1
+	SurfaceSkin 0 0 "prodtip19.png"
+	FrameIndex DXEP T 0 1
+	SurfaceSkin 0 0 "prodtip20.png"
+	FrameIndex DXEP U 0 1
+
+	Offset 0 0 -6
+	FrameIndex DXEQ A 0 1
+	SurfaceSkin 0 0 "prodtip1.png"
+	FrameIndex DXEQ B 0 1
+	SurfaceSkin 0 0 "prodtip2.png"
+	FrameIndex DXEQ C 0 1
+	SurfaceSkin 0 0 "prodtip3.png"
+	FrameIndex DXEQ D 0 1
+	SurfaceSkin 0 0 "prodtip4.png"
+	FrameIndex DXEQ E 0 1
+	SurfaceSkin 0 0 "prodtip5.png"
+	FrameIndex DXEQ F 0 1
+	SurfaceSkin 0 0 "prodtip6.png"
+	FrameIndex DXEQ G 0 1
+	SurfaceSkin 0 0 "prodtip7.png"
+	FrameIndex DXEQ H 0 1
+	SurfaceSkin 0 0 "prodtip8.png"
+	FrameIndex DXEQ I 0 1
+	SurfaceSkin 0 0 "prodtip9.png"
+	FrameIndex DXEQ J 0 1
+	SurfaceSkin 0 0 "prodtip10.png"
+	FrameIndex DXEQ K 0 1
+	SurfaceSkin 0 0 "prodtip11.png"
+	FrameIndex DXEQ L 0 1
+	SurfaceSkin 0 0 "prodtip12.png"
+	FrameIndex DXEQ M 0 1
+	SurfaceSkin 0 0 "prodtip13.png"
+	FrameIndex DXEQ N 0 1
+	SurfaceSkin 0 0 "prodtip14.png"
+	FrameIndex DXEQ O 0 1
+	SurfaceSkin 0 0 "prodtip15.png"
+	FrameIndex DXEQ P 0 1
+	SurfaceSkin 0 0 "prodtip16.png"
+	FrameIndex DXEQ Q 0 1
+	SurfaceSkin 0 0 "prodtip17.png"
+	FrameIndex DXEQ R 0 1
+	SurfaceSkin 0 0 "prodtip18.png"
+	FrameIndex DXEQ S 0 1
+	SurfaceSkin 0 0 "prodtip19.png"
+	FrameIndex DXEQ T 0 1
+	SurfaceSkin 0 0 "prodtip20.png"
+	FrameIndex DXEQ U 0 1
+}
+Model DDProjectile_PlacedEMPGrenade
+{
+	Path "models/"
+	Model 0 "EMPGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "prodtip0.png"
+	SurfaceSkin 0 1 "EMPGrenade3rdTex1.tga"
+	Offset 0 0 2
+	FrameIndex DXEP A 0 1
+	SurfaceSkin 0 0 "prodtip1.png"
+	FrameIndex DXEP B 0 1
+	SurfaceSkin 0 0 "prodtip2.png"
+	FrameIndex DXEP C 0 1
+	SurfaceSkin 0 0 "prodtip3.png"
+	FrameIndex DXEP D 0 1
+	SurfaceSkin 0 0 "prodtip4.png"
+	FrameIndex DXEP E 0 1
+	SurfaceSkin 0 0 "prodtip5.png"
+	FrameIndex DXEP F 0 1
+	SurfaceSkin 0 0 "prodtip6.png"
+	FrameIndex DXEP G 0 1
+	SurfaceSkin 0 0 "prodtip7.png"
+	FrameIndex DXEP H 0 1
+	SurfaceSkin 0 0 "prodtip8.png"
+	FrameIndex DXEP I 0 1
+	SurfaceSkin 0 0 "prodtip9.png"
+	FrameIndex DXEP J 0 1
+	SurfaceSkin 0 0 "prodtip10.png"
+	FrameIndex DXEP K 0 1
+	SurfaceSkin 0 0 "prodtip11.png"
+	FrameIndex DXEP L 0 1
+	SurfaceSkin 0 0 "prodtip12.png"
+	FrameIndex DXEP M 0 1
+	SurfaceSkin 0 0 "prodtip13.png"
+	FrameIndex DXEP N 0 1
+	SurfaceSkin 0 0 "prodtip14.png"
+	FrameIndex DXEP O 0 1
+	SurfaceSkin 0 0 "prodtip15.png"
+	FrameIndex DXEP P 0 1
+	SurfaceSkin 0 0 "prodtip16.png"
+	FrameIndex DXEP Q 0 1
+	SurfaceSkin 0 0 "prodtip17.png"
+	FrameIndex DXEP R 0 1
+	SurfaceSkin 0 0 "prodtip18.png"
+	FrameIndex DXEP S 0 1
+	SurfaceSkin 0 0 "prodtip19.png"
+	FrameIndex DXEP T 0 1
+	SurfaceSkin 0 0 "prodtip20.png"
+	FrameIndex DXEP U 0 1
+}
+
+Model DDProjectile_ScrambleGrenade
+{
+	Path "models/"
+	Model 0 "NanoVirusGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "scrambl0.png"
+	Offset 0 0 2
+	FrameIndex DXSP A 0 1
+	SurfaceSkin 0 0 "scrambl1.png"
+	FrameIndex DXSP B 0 1
+	SurfaceSkin 0 0 "scrambl2.png"
+	FrameIndex DXSP C 0 1
+	SurfaceSkin 0 0 "scrambl3.png"
+	FrameIndex DXSP D 0 1
+	SurfaceSkin 0 0 "scrambl4.png"
+	FrameIndex DXSP E 0 1
+	SurfaceSkin 0 0 "scrambl5.png"
+	FrameIndex DXSP F 0 1
+	SurfaceSkin 0 0 "scrambl6.png"
+	FrameIndex DXSP G 0 1
+	SurfaceSkin 0 0 "scrambl7.png"
+	FrameIndex DXSP H 0 1
+	SurfaceSkin 0 0 "scrambl8.png"
+	FrameIndex DXSP I 0 1
+	SurfaceSkin 0 0 "scrambl9.png"
+	FrameIndex DXSP J 0 1
+	SurfaceSkin 0 0 "scrambl10.png"
+	FrameIndex DXSP K 0 1
+	SurfaceSkin 0 0 "scrambl11.png"
+	FrameIndex DXSP L 0 1
+	SurfaceSkin 0 0 "scrambl12.png"
+	FrameIndex DXSP M 0 1
+	SurfaceSkin 0 0 "scrambl13.png"
+	FrameIndex DXSP N 0 1
+	SurfaceSkin 0 0 "scrambl14.png"
+	FrameIndex DXSP O 0 1
+
+	Offset 0 0 -6
+	FrameIndex DXSQ A 0 1
+	SurfaceSkin 0 0 "scrambl1.png"
+	FrameIndex DXSQ B 0 1
+	SurfaceSkin 0 0 "scrambl2.png"
+	FrameIndex DXSQ C 0 1
+	SurfaceSkin 0 0 "scrambl3.png"
+	FrameIndex DXSQ D 0 1
+	SurfaceSkin 0 0 "scrambl4.png"
+	FrameIndex DXSQ E 0 1
+	SurfaceSkin 0 0 "scrambl5.png"
+	FrameIndex DXSQ F 0 1
+	SurfaceSkin 0 0 "scrambl6.png"
+	FrameIndex DXSQ G 0 1
+	SurfaceSkin 0 0 "scrambl7.png"
+	FrameIndex DXSQ H 0 1
+	SurfaceSkin 0 0 "scrambl8.png"
+	FrameIndex DXSQ I 0 1
+	SurfaceSkin 0 0 "scrambl9.png"
+	FrameIndex DXSQ J 0 1
+	SurfaceSkin 0 0 "scrambl10.png"
+	FrameIndex DXSQ K 0 1
+	SurfaceSkin 0 0 "scrambl11.png"
+	FrameIndex DXSQ L 0 1
+	SurfaceSkin 0 0 "scrambl12.png"
+	FrameIndex DXSQ M 0 1
+	SurfaceSkin 0 0 "scrambl13.png"
+	FrameIndex DXSQ N 0 1
+	SurfaceSkin 0 0 "scrambl14.png"
+	FrameIndex DXSQ O 0 1
+}
+Model DDProjectile_PlacedScrambleGrenade
+{
+	Path "models/"
+	Model 0 "NanoVirusGrenadePickup_d.3d"
+	Scale 0.01625 0.025 0.0125
+
+	AngleOffset 90
+	USEACTORPITCH
+
+	SurfaceSkin 0 0 "scrambl0.png"
+	Offset 0 0 2
+	FrameIndex DXSP A 0 1
+	SurfaceSkin 0 0 "scrambl1.png"
+	FrameIndex DXSP B 0 1
+	SurfaceSkin 0 0 "scrambl2.png"
+	FrameIndex DXSP C 0 1
+	SurfaceSkin 0 0 "scrambl3.png"
+	FrameIndex DXSP D 0 1
+	SurfaceSkin 0 0 "scrambl4.png"
+	FrameIndex DXSP E 0 1
+	SurfaceSkin 0 0 "scrambl5.png"
+	FrameIndex DXSP F 0 1
+	SurfaceSkin 0 0 "scrambl6.png"
+	FrameIndex DXSP G 0 1
+	SurfaceSkin 0 0 "scrambl7.png"
+	FrameIndex DXSP H 0 1
+	SurfaceSkin 0 0 "scrambl8.png"
+	FrameIndex DXSP I 0 1
+	SurfaceSkin 0 0 "scrambl9.png"
+	FrameIndex DXSP J 0 1
+	SurfaceSkin 0 0 "scrambl10.png"
+	FrameIndex DXSP K 0 1
+	SurfaceSkin 0 0 "scrambl11.png"
+	FrameIndex DXSP L 0 1
+	SurfaceSkin 0 0 "scrambl12.png"
+	FrameIndex DXSP M 0 1
+	SurfaceSkin 0 0 "scrambl13.png"
+	FrameIndex DXSP N 0 1
+	SurfaceSkin 0 0 "scrambl14.png"
+	FrameIndex DXSP O 0 1
+}
+
+Model DDProjectile_RocketLAW
+{
+	Path "models/"
+	Model 0 "RocketLAW_d.3d"
+	Scale 0.1875 0.15 0.15
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "RocketLAWTex1.tga"
+	FrameIndex DXRL A 0 0
+}
+
+Model DDProjectile_RocketGEPGun
+{
+	Path "models/"
+	Model 0 "Rocket_d.3d"
+	Scale 0.05 0.04 0.05
+
+	AngleOffset -90
+	PitchOffset 90
+	PITCHFROMMOMENTUM
+
+	SurfaceSkin 0 0 "RocketTex1.tga"
+	FrameIndex DXGR A 0 0
+}

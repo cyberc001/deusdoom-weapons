@@ -1,0 +1,26 @@
+Model DDAnimatedEffect_EnergySphere
+{
+	Path "models/"
+	Model 0 "energy_sphere.obj"
+
+	Skin 0 "FlatFXTex41.png"
+	FrameIndex DXES A 0 0
+}
+Model DDAnimatedEffect_EnergySphereLarge
+{
+	Path "models/"
+	Model 0 "energy_sphere.obj"
+
+	Skin 0 "FlatFXTex41.png"
+	FrameIndex DXES A 0 0
+}
+
+Model DDAnimatedEffect_EMPSphere
+{
+	Path "models/"
+	Model 0 "SphereEffect_d.3d"
+	Scale 1 1 0.5
+
+	Skin 0 "prodtip0.png"
+	FrameIndex DXES A 0 0
+}

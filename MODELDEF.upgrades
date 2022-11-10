@@ -1,0 +1,66 @@
+Model DDWeaponUpgrade_Accuracy
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex2.tga"
+	FrameIndex DXUP A 0 0
+}
+Model DDWeaponUpgrade_Clip
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex3.tga"
+	FrameIndex DXUP B 0 0
+}
+Model DDWeaponUpgrade_Recoil
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex5.tga"
+	FrameIndex DXUP C 0 0
+}
+Model DDWeaponUpgrade_Reload
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex6.tga"
+	FrameIndex DXUP D 0 0
+}
+Model DDWeaponUpgrade_Silencer
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex7.tga"
+	FrameIndex DXUP E 0 0
+}
+Model DDWeaponUpgrade_Laser
+{
+	Path "models/"
+	Model 0 "WeaponMod_d.3d"
+	AngleOffset -90
+	Scale 0.025 0.025 0.0125
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "WeaponModTex4.tga"
+	FrameIndex DXUP F 0 0
+}

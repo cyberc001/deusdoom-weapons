@@ -1,0 +1,137 @@
+DDWeapon/dry_fire Sounds/DryFire.wav
+DDWeapon/weapon_pickup Sounds/WeaponPickup.wav
+DDWeapon/weapon_drop_small Sounds/DropSmallWeapon.wav
+DDWeapon/weapon_drop_medium Sounds/DropMediumWeapon.wav
+DDWeapon/weapon_drop_large Sounds/DropLargeWeapon.wav
+
+DDThrowableProjectile/bounce Sounds/MetalBounce1.wav
+DDThrowableProjectile/beep Sounds/Beep4.wav
+
+DDExplosion/medium2 Sounds/MediumExplosion2.wav
+DDExplosion/large1 Sounds/LargeExplosion1.wav
+$attenuation DDExplosion/medium2 0.5
+$attenuation DDExplosion/large1 0.35
+
+DDWeaponUpgrade/apply Sounds/PistolReload.wav
+
+DDWeapon_Pistol/fire Sounds/PistolFire.wav
+DDWeapon_Pistol/reload Sounds/PistolReload.wav
+DDWeapon_Pistol/select Sounds/PistolSelect.wav
+
+DDWeapon_StealthPistol/fire Sounds/StealthPistolFire.wav
+DDWeapon_StealthPistol/reload Sounds/StealthPistolReload.wav
+DDWeapon_StealthPistol/reload_end Sounds/StealthPistolReloadEnd.wav
+DDWeapon_StealthPistol/select Sounds/StealthPistolSelect.wav
+
+DDWeapon_MiniCrossbow/fire Sounds/MiniCrossbowFire.wav
+DDWeapon_MiniCrossbow/reload Sounds/MiniCrossbowReload.wav
+DDWeapon_MiniCrossbow/reload_end Sounds/MiniCrossbowReloadEnd.wav
+DDWeapon_MiniCrossbow/select Sounds/MiniCrossbowSelect.wav
+
+DDWeapon_PS20/fire Sounds/HideAGunFire.wav
+DDWeapon_PS20/select Sounds/HideAGunSelect.wav
+
+DDWeapon_AssaultRifle/fire Sounds/AssaultGunFire.wav
+DDWeapon_AssaultRifle/fire_grenade Sounds/AssaultGunFire20mm.wav
+DDWeapon_AssaultRifle/reload Sounds/AssaultGunReload.wav
+DDWeapon_AssaultRifle/reload_end Sounds/AssaultGunReloadEnd.wav
+DDWeapon_AssaultRifle/select Sounds/AssaultGunSelect.wav
+
+DDWeapon_AssaultShotgun/fire Sounds/AssaultShotgunFire.wav
+DDWeapon_AssaultShotgun/reload Sounds/AssaultShotgunReload.wav
+DDWeapon_AssaultShotgun/reload_end Sounds/AssaultShotgunReloadEnd.wav
+DDWeapon_AssaultShotgun/select Sounds/AssaultShotgunSelect.wav
+
+DDWeapon_SawedOffShotgun/fire Sounds/SawedOffShotgunFire.wav
+DDWeapon_SawedOffShotgun/reload Sounds/SawedOffShotgunReload.wav
+DDWeapon_SawedOffShotgun/reload_end Sounds/SawedOffShotgunReloadEnd.wav
+DDWeapon_SawedOffShotgun/select Sounds/SawedOffShotgunSelect.wav
+
+DDWeapon_SniperRifle/fire Sounds/RifleFire.wav
+DDWeapon_SniperRifle/reload Sounds/RifleReload.wav
+DDWeapon_SniperRifle/reload_end Sounds/RifleReloadEnd.wav
+DDWeapon_SniperRifle/select Sounds/RifleSelect.wav
+
+DDWeapon_RiotProd/fire Sounds/ProdFire.wav
+DDWeapon_RiotProd/reload Sounds/ProdReload.wav
+DDWeapon_RiotProd/reload_end Sounds/ProdReloadEnd.wav
+DDWeapon_RiotProd/select Sounds/ProdSelect.wav
+
+DDWeapon_DragonsToothSword/fire Sounds/NanoSwordFire.wav
+DDWeapon_DragonsToothSword/select Sounds/NanoSwordSelect.wav
+DDWeapon_DragonsToothSword/hit_flesh Sounds/NanoSwordHitFlesh.wav
+DDWeapon_DragonsToothSword/hit_metal Sounds/NanoSwordHitHard.wav
+DDWeapon_DragonsToothSword/hit_wall Sounds/NanoSwordHitSoft.wav
+
+DDWeapon_Baton/fire Sounds/BatonFire.wav
+DDWeapon_Baton/select Sounds/BatonSelect.wav
+DDWeapon_Baton/hit_flesh Sounds/BatonHitFlesh.wav
+DDWeapon_Baton/hit_metal Sounds/BatonHitHard.wav
+DDWeapon_Baton/hit_wall Sounds/BatonHitSoft.wav
+
+DDWeapon_CombatKnife/fire Sounds/CombatKnifeFire.wav
+DDWeapon_CombatKnife/select Sounds/CombatKnifeSelect.wav
+DDWeapon_CombatKnife/hit_flesh Sounds/CombatKnifeHitFlesh.wav
+DDWeapon_CombatKnife/hit_metal Sounds/CombatKnifeHitHard.wav
+DDWeapon_CombatKnife/hit_wall Sounds/CombatKnifeHitSoft.wav
+
+DDWeapon_Crowbar/fire Sounds/CrowbarFire.wav
+DDWeapon_Crowbar/select Sounds/CrowbarSelect.wav
+DDWeapon_Crowbar/hit_flesh Sounds/CrowbarHitFlesh.wav
+DDWeapon_Crowbar/hit_metal Sounds/CrowbarHitHard.wav
+DDWeapon_Crowbar/hit_wall Sounds/CrowbarHitSoft.wav
+
+DDWeapon_Sword/fire Sounds/SwordFire.wav
+DDWeapon_Sword/select Sounds/SwordSelect.wav
+DDWeapon_Sword/hit_flesh Sounds/SwordHitFlesh.wav
+DDWeapon_Sword/hit_metal Sounds/SwordHitHard.wav
+DDWeapon_Sword/hit_wall Sounds/SwordHitSoft.wav
+
+DDWeapon_PepperGun/fire Sounds/PepperGunFire.wav
+DDWeapon_PepperGun/reload Sounds/PepperGunReload.wav
+DDWeapon_PepperGun/reload_end Sounds/PepperGunReloadEnd.wav
+DDWeapon_PepperGun/select Sounds/PepperGunSelect.wav
+
+DDWeapon_ThrowingKnives/hit Sounds/BulletHitFlesh.wav
+
+DDWeapon_LAM/explode Sounds/LAMExplode.wav
+DDWeapon_LAM/select Sounds/LAMSelect.wav
+
+DDWeapon_GasGrenade/explode Sounds/GasGrenadeExplode.wav
+DDWeapon_GasGrenade/select Sounds/LAMSelect.wav
+
+DDWeapon_EMPGrenade/explode Sounds/EMPGrenadeExplode.wav
+DDWeapon_EMPGrenade/select Sounds/LAMSelect.wav
+
+DDWeapon_ScrambleGrenade/explode Sounds/NanoVirusGrenadeExplode.wav
+DDWeapon_ScrambleGrenade/select Sounds/NanoVirusGrenadeSelect.wav
+
+DDWeapon_PlasmaRifle/fire Sounds/PlasmaRifleFire.wav
+DDWeapon_PlasmaRifle/reload Sounds/PlasmaRifleReload.wav
+DDWeapon_PlasmaRifle/reload_end Sounds/PlasmaRifleReloadEnd.wav
+DDWeapon_PlasmaRifle/select Sounds/PlasmaRifleSelect.wav
+
+DDWeapon_LAW/fire Sounds/LAWFire.wav
+DDWeapon_LAW/select Sounds/LAWSelect.wav
+
+DDWeapon_Flamethrower/fire Sounds/FlamethrowerFire.wav
+DDWeapon_Flamethrower/reload Sounds/FlamethrowerReload.wav
+DDWeapon_Flamethrower/reload_end Sounds/FlamethrowerReloadEnd.wav
+DDWeapon_Flamethrower/select Sounds/FlamethrowerSelect.wav
+
+DDWeapon_GEPGun/fire Sounds/GEPGunFire.wav
+DDWeapon_GEPGun/fire_wp Sounds/GEPGunFireWP.wav
+DDWeapon_GEPGun/reload Sounds/GEPGunReload.wav
+DDWeapon_GEPGun/select Sounds/GEPGunSelect.wav
+DDWeapon_GEPGun/track Sounds/GEPGunTrack.wav
+DDWeapon_GEPGun/lockon Sounds/GEPGunLock.wav
+
+DDProjectile_PlasmaBolt/hit Sounds/PlasmaRifleHit.wav
+
+DDProjectile_RocketLAW/idle Sounds/LAWApproach.wav
+
+DDFire/small1 Sounds/FireSmall1.wav
+DDFire/small2 Sounds/FireSmall2.wav
+DDFire/medium1 Sounds/FireMedium1.wav
+DDFire/medium2 Sounds/FireMedium2.wav
+DDFire/large Sounds/FireLarge.wav

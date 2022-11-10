@@ -1,0 +1,181 @@
+Model DDAmmo_10mm
+{
+	Path "models/"
+	Model 0 "Ammo10mm_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "Ammo10mmTex.tga"
+	SurfaceSkin 0 1 "Ammo10mmTex.tga"
+	FrameIndex DDAM A 0 0
+}
+Model DDAmmo_Darts
+{
+	Path "models/"
+	Model 0 "AmmoDart_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "AmmoDartTex1.tga"
+	FrameIndex DDAM B 0 0
+}
+Model DDAmmo_TranquilizerDarts
+{
+	Path "models/"
+	Model 0 "AmmoDart_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "AmmoDartTex3.tga"
+	FrameIndex DDAM C 0 0
+}
+Model DDAmmo_FlareDarts
+{
+	Path "models/"
+	Model 0 "AmmoDart_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "AmmoDartTex2.tga"
+	FrameIndex DDAM D 0 0
+}
+Model DDAmmo_7_62mm
+{
+	Path "models/"
+	Model 0 "Ammo762mm_d.3d"
+	AngleOffset -90
+	Scale 0.03 0.03 0.015
+	Offset 0 0 1
+
+	SurfaceSkin 0 0 "Ammo762mmTex.tga"
+	FrameIndex DDAM E 0 0
+}
+Model DDAmmo_HE20mm
+{
+	Path "models/"
+	Model 0 "Ammo20mm_d.3d"
+	AngleOffset -90
+	Scale 0.08 0.08 0.04
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "Ammo20mmTex.tga"
+	SurfaceSkin 0 1 "Ammo20mmTex.tga"
+	FrameIndex DDAM F 0 0
+}
+Model DDAmmo_12gaBuckshot
+{
+	Path "models/"
+	Model 0 "AmmoShell_d.3d"
+	AngleOffset -90
+	Scale 0.06 0.06 0.03
+	Offset 0 0 7
+
+	SurfaceSkin 0 0 "AmmoShellTex1.tga"
+	SurfaceSkin 0 1 "AmmoShellTex1.tga"
+	FrameIndex DDAM G 0 0
+}
+Model DDAmmo_12gaSabot
+{
+	Path "models/"
+	Model 0 "AmmoShell_d.3d"
+	AngleOffset -90
+	Scale 0.06 0.06 0.03
+	Offset 0 0 7
+
+	SurfaceSkin 0 0 "AmmoShellTex2.tga"
+	SurfaceSkin 0 1 "AmmoShellTex2.tga"
+	FrameIndex DDAM H 0 0
+}
+Model DDAmmo_30_06
+{
+	Path "models/"
+	Model 0 "Ammo3006_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "Ammo3006Tex.tga"
+	FrameIndex DDAM I 0 0
+}
+Model DDAmmo_ProdCharger
+{
+	Path "models/"
+	Model 0 "AmmoProd_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "AmmoProdTex.tga"
+	FrameIndex DDAM J 0 0
+}
+Model DDAmmo_PepperCartridge
+{
+	Path "models/"
+	Model 0 "AmmoPepper_d.3d"
+	AngleOffset -90
+	Scale 0.02 0.02 0.01
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "PepperGun3rdTex1.png"
+	FrameIndex DDAM K 0 0
+}
+Model DDAmmo_PlasmaClip
+{
+	Path "models/"
+	Model 0 "AmmoPlasma_d.3d"
+	AngleOffset -90
+	Scale 0.04 0.04 0.02
+	Offset 0 0 3
+
+	SurfaceSkin 0 0 "AmmoPlasmaTex.tga"
+	FrameIndex DDAM L 0 0
+}
+Model DDAmmo_Napalm
+{
+	Path "models/"
+	Model 0 "AmmoNapalm_d.3d"
+	AngleOffset -90
+	Scale 0.12 0.12 0.06
+	Offset 0 0 13
+
+	SurfaceSkin 0 0 "AmmoNapalmTex.tga"
+	FrameIndex DDAM M 0 0
+}
+Model DDAmmo_Rockets
+{
+	Path "models/"
+	Model 0 "GEPAmmo_d.3d"
+	AngleOffset -90
+	Scale 0.12 0.12 0.06
+	Offset 0 0 6
+
+	SurfaceSkin 0 0 "GEPAmmoTex1.png"
+	FrameIndex DDAM N 0 0
+}
+Model DDAmmo_WPRockets
+{
+	Path "models/"
+	Model 0 "GEPAmmo_d.3d"
+	AngleOffset -90
+	Scale 0.12 0.12 0.06
+	Offset 0 0 6
+
+	SurfaceSkin 0 0 "GEPAmmoTex2.png"
+	FrameIndex DDAM O 0 0
+}
+
+Model DDAmmoBox
+{
+	Path "models/"
+	Model 0 "DXMPAmmobox_d.3d"
+	AngleOffset -90
+	Scale 0.06 0.06 0.03
+	Offset 0 0 6
+
+	SurfaceSkin 0 0 "DXMPAmmoBoxTex.tga"
+	FrameIndex DDBX A 0 0
+}

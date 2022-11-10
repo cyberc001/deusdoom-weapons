@@ -1,0 +1,3306 @@
+Model DDWeapon_Pistol
+{
+	Path "models/"
+	Model 0 "Glock_d.3d"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "GlockTex1.tga"
+	AngleOffset 95
+	Offset 5 -4.5 -3.7
+	Scale -0.1 0.1 0.05
+
+	FrameIndex DXGK A 0 51
+
+	FrameIndex DXGK B 0 1
+	FrameIndex DXGK C 0 2
+	FrameIndex DXGK D 0 3
+	FrameIndex DXGK E 0 4
+	FrameIndex DXGK F 0 5
+	FrameIndex DXGK G 0 6
+	FrameIndex DXGK H 0 7
+	FrameIndex DXGK I 0 8
+	FrameIndex DXGK J 0 9
+	FrameIndex DXGK K 0 10
+	FrameIndex DXGK L 0 11
+	FrameIndex DXGK M 0 12
+	FrameIndex DXGK N 0 13
+	FrameIndex DXGK O 0 14
+	FrameIndex DXGK P 0 15
+
+	FrameIndex DXGK T 0 16
+	SurfaceSkin 0 3 "FlatFXTex37.tga"
+	FrameIndex DXGK U 0 17
+	FrameIndex DXGK V 0 18
+	SurfaceSkin 0 3 ""
+	FrameIndex DXGK W 0 19
+	FrameIndex DXGK X 0 20
+	FrameIndex DXGK Y 0 21
+	FrameIndex DXGK Z 0 22
+	FrameIndex DXGL A 0 23
+
+	FrameIndex DXGL B 0 24
+	FrameIndex DXGL C 0 25
+	FrameIndex DXGL D 0 26
+	FrameIndex DXGL E 0 27
+	FrameIndex DXGL F 0 28
+	FrameIndex DXGL G 0 29
+	FrameIndex DXGL H 0 30
+	FrameIndex DXGL I 0 31
+	FrameIndex DXGL J 0 32
+	FrameIndex DXGL K 0 33
+	FrameIndex DXGL L 0 34
+	FrameIndex DXGL M 0 35
+	FrameIndex DXGL N 0 36
+	FrameIndex DXGL O 0 37
+	FrameIndex DXGL P 0 38
+	FrameIndex DXGL Q 0 39
+
+	FrameIndex DXGL R 0 40
+	FrameIndex DXGL S 0 41
+	FrameIndex DXGL T 0 42
+	FrameIndex DXGL U 0 43
+	FrameIndex DXGL V 0 44
+
+	FrameIndex DXGL W 0 45
+	FrameIndex DXGL X 0 46
+	FrameIndex DXGL Y 0 47
+
+	FrameIndex DXGK Q 0 48
+	FrameIndex DXGK R 0 49
+	FrameIndex DXGK S 0 50
+
+	FrameIndex DXGL Z 0 59
+	FrameIndex DXGM A 0 60
+	FrameIndex DXGM B 0 61
+	FrameIndex DXGM C 0 62
+	FrameIndex DXGM D 0 63
+	FrameIndex DXGM E 0 64
+	FrameIndex DXGM F 0 65
+	FrameIndex DXGM G 0 66
+	FrameIndex DXGM H 0 67
+	FrameIndex DXGM I 0 68
+	FrameIndex DXGM J 0 69
+	FrameIndex DXGM K 0 70
+
+	FrameIndex DXGM K 0 71
+	FrameIndex DXGM L 0 72
+	FrameIndex DXGM M 0 73
+	FrameIndex DXGM N 0 74
+	FrameIndex DXGM O 0 75
+	FrameIndex DXGM P 0 76
+	FrameIndex DXGM Q 0 77
+	FrameIndex DXGM R 0 78
+	FrameIndex DXGM S 0 79
+	FrameIndex DXGM T 0 80
+	FrameIndex DXGM U 0 81
+	FrameIndex DXGM V 0 82
+
+	Model 0 "GlockPickup_d.3d"
+	SurfaceSkin 0 0 "Glock3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	SurfaceSkin 0 2 ""
+	Scale 0.13 0.2 0.2
+	RollOffset -90
+	Offset 0 0 3
+
+	FrameIndex DXGM W 0 0
+}
+
+Model DDWeapon_StealthPistol
+{
+	Path "models/"
+	Model 0 "StealthPistol_d.3d"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "StealthPistolTex1.tga"
+	AngleOffset 90
+	Offset 4 -4.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXSK A 0 51
+
+	//Ready
+	FrameIndex DXSK B 0 1
+	FrameIndex DXSK C 0 2
+	FrameIndex DXSK D 0 3
+	FrameIndex DXSK E 0 4
+	FrameIndex DXSK F 0 5
+	FrameIndex DXSK G 0 6
+
+	//Fire
+	FrameIndex DXSK H 0 7
+	FrameIndex DXSK I 0 8
+	FrameIndex DXSK J 0 9
+	FrameIndex DXSK K 0 10
+	FrameIndex DXSK L 0 11
+
+	//Reload
+	FrameIndex DXSK M 0 12
+	FrameIndex DXSK N 0 13
+	FrameIndex DXSK O 0 14
+	FrameIndex DXSK P 0 15
+	FrameIndex DXSK Q 0 16
+	FrameIndex DXSK R 0 17
+	FrameIndex DXSK S 0 18
+	FrameIndex DXSK T 0 19
+
+	//ReloadLoop
+	FrameIndex DXSK V 0 19
+	FrameIndex DXSK W 0 20
+	FrameIndex DXSK X 0 21
+	FrameIndex DXSK Y 0 22
+	FrameIndex DXSK Z 0 23
+
+	//ReloadEnd
+	FrameIndex DXSL A 0 24
+	FrameIndex DXSL B 0 25
+
+	//Deselect
+	FrameIndex DXSL C 0 26
+	FrameIndex DXSL D 0 27
+	FrameIndex DXSL E 0 28
+	FrameIndex DXSL F 0 29
+	FrameIndex DXSL G 0 30
+
+	//Idle1
+	FrameIndex DXSL H 0 39
+	FrameIndex DXSL I 0 40
+	FrameIndex DXSL J 0 41
+	FrameIndex DXSL K 0 42
+	FrameIndex DXSL L 0 43
+	FrameIndex DXSL M 0 44
+	FrameIndex DXSL N 0 45
+	FrameIndex DXSL O 0 46
+
+	//Idle2
+	FrameIndex DXSL P 0 47
+	FrameIndex DXSL Q 0 48
+	FrameIndex DXSL R 0 49
+	FrameIndex DXSL S 0 50
+	FrameIndex DXSL T 0 51
+	FrameIndex DXSL V 0 52
+	FrameIndex DXSL W 0 53
+	FrameIndex DXSL Y 0 54
+
+	Model 0 "StealthPistolPickup_d.3d"
+	SurfaceSkin 0 0 "StealthPistol3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 3
+
+	FrameIndex DXSM W 0 0
+}
+
+Model DDWeapon_MiniCrossbow
+{
+	Path "models/"
+	Model 0 "MiniCrossbow_d.3d"
+	SurfaceSkin 0 0 "MiniCrossbowTex1.tga"
+	SurfaceSkin 0 1 "MiniCrossbowTex2.png"
+	SurfaceSkin 0 2 "MiniCrossbowTex2.png"
+	SurfaceSkin 0 3 "MiniCrossbowTex2.png"
+	AngleOffset 90
+	Offset 6 -6.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset -5
+
+	//ReadyIdle
+	FrameIndex DXCR A 0 51
+
+	//Ready
+	FrameIndex DXCR B 0 1
+	FrameIndex DXCR C 0 2
+	FrameIndex DXCR D 0 3
+	FrameIndex DXCR E 0 4
+	FrameIndex DXCR F 0 5
+	FrameIndex DXCR G 0 6
+	FrameIndex DXCR H 0 7
+	FrameIndex DXCR I 0 8
+	FrameIndex DXCR J 0 9
+	FrameIndex DXCR K 0 10
+	FrameIndex DXCR L 0 11
+	FrameIndex DXCR M 0 12
+
+	//Fire
+	FrameIndex DXCR N 0 13
+	FrameIndex DXCR O 0 14
+	FrameIndex DXCR P 0 15
+	FrameIndex DXCR Q 0 16
+	FrameIndex DXCR R 0 17
+	FrameIndex DXCR S 0 18
+	FrameIndex DXCR T 0 19
+	FrameIndex DXCR U 0 20
+	FrameIndex DXCR V 0 21
+	FrameIndex DXCR W 0 22
+	FrameIndex DXCR X 0 23
+	FrameIndex DXCR Y 0 24
+	FrameIndex DXCR Z 0 25
+	FrameIndex DXCS A 0 26
+	FrameIndex DXCS B 0 27
+	FrameIndex DXCS C 0 28
+
+	//Reload
+	FrameIndex DXCS D 0 29
+	FrameIndex DXCS E 0 30
+	FrameIndex DXCS F 0 31
+	FrameIndex DXCS G 0 32
+
+	//ReloadLoop
+	FrameIndex DXCS H 0 33
+	FrameIndex DXCS I 0 34
+	FrameIndex DXCS J 0 35
+	FrameIndex DXCS K 0 36
+	FrameIndex DXCS L 0 37
+	FrameIndex DXCS M 0 38
+	FrameIndex DXCS N 0 39
+
+	//ReloadEnd
+	FrameIndex DXCS O 0 40
+	FrameIndex DXCS P 0 41
+	FrameIndex DXCS Q 0 42
+	FrameIndex DXCS R 0 43
+
+	//Deselect
+	FrameIndex DXCS S 0 44
+	FrameIndex DXCS T 0 45
+	FrameIndex DXCS U 0 46
+	FrameIndex DXCS V 0 47
+	FrameIndex DXCS W 0 48
+	FrameIndex DXCS X 0 49
+
+	//Idle1
+	FrameIndex DXCS Y 0 58
+	FrameIndex DXCS Z 0 59
+	FrameIndex DXCT A 0 60
+	FrameIndex DXCT B 0 61
+	FrameIndex DXCT C 0 62
+	FrameIndex DXCT D 0 63
+	FrameIndex DXCT E 0 64
+	FrameIndex DXCT F 0 65
+
+	//Idle2
+	FrameIndex DXCT G 0 66
+	FrameIndex DXCT H 0 67
+	FrameIndex DXCT I 0 68
+	FrameIndex DXCT J 0 69
+	FrameIndex DXCT K 0 70
+	FrameIndex DXCT L 0 71
+	FrameIndex DXCT M 0 72
+	FrameIndex DXCT N 0 73
+	FrameIndex DXCT O 0 74
+	FrameIndex DXCT P 0 75
+	FrameIndex DXCT Q 0 76
+	FrameIndex DXCT R 0 77
+
+	// Without dart
+	SurfaceSkin 0 1 "MiniCrossbowTex3.png"
+	SurfaceSkin 0 2 "MiniCrossbowTex3.png"
+	SurfaceSkin 0 3 "MiniCrossbowTex3.png"
+
+	//ReadyIdle
+	FrameIndex DXCU A 0 51
+
+	//Ready
+	FrameIndex DXCU B 0 1
+	FrameIndex DXCU C 0 2
+	FrameIndex DXCU D 0 3
+	FrameIndex DXCU E 0 4
+	FrameIndex DXCU F 0 5
+	FrameIndex DXCU G 0 6
+	FrameIndex DXCU H 0 7
+	FrameIndex DXCU I 0 8
+	FrameIndex DXCU J 0 9
+	FrameIndex DXCU K 0 10
+	FrameIndex DXCU L 0 11
+	FrameIndex DXCU M 0 12
+
+	//Fire
+	FrameIndex DXCU N 0 13
+	FrameIndex DXCU O 0 14
+	FrameIndex DXCU P 0 15
+	FrameIndex DXCU Q 0 16
+	FrameIndex DXCU R 0 17
+	FrameIndex DXCU S 0 18
+	FrameIndex DXCU T 0 19
+	FrameIndex DXCU U 0 20
+	FrameIndex DXCU V 0 21
+	FrameIndex DXCU W 0 22
+	FrameIndex DXCU X 0 23
+	FrameIndex DXCU Y 0 24
+	FrameIndex DXCU Z 0 25
+	FrameIndex DXCV A 0 26
+	FrameIndex DXCV B 0 27
+	FrameIndex DXCV C 0 28
+
+	//Reload
+	FrameIndex DXCV D 0 29
+	FrameIndex DXCV E 0 30
+	FrameIndex DXCV F 0 31
+	FrameIndex DXCV G 0 32
+
+	//ReloadLoop
+	FrameIndex DXCV H 0 33
+	FrameIndex DXCV I 0 34
+	FrameIndex DXCV J 0 35
+	FrameIndex DXCV K 0 36
+	FrameIndex DXCV L 0 37
+	FrameIndex DXCV M 0 38
+	FrameIndex DXCV N 0 39
+
+	//ReloadEnd
+	FrameIndex DXCV O 0 40
+	FrameIndex DXCV P 0 41
+	FrameIndex DXCV Q 0 42
+	FrameIndex DXCV R 0 43
+
+	//Deselect
+	FrameIndex DXCV S 0 44
+	FrameIndex DXCV T 0 45
+	FrameIndex DXCV U 0 46
+	FrameIndex DXCV V 0 47
+	FrameIndex DXCV W 0 48
+	FrameIndex DXCV X 0 49
+
+	//Idle1
+	FrameIndex DXCV Y 0 58
+	FrameIndex DXCV Z 0 59
+	FrameIndex DXCW A 0 60
+	FrameIndex DXCW B 0 61
+	FrameIndex DXCW C 0 62
+	FrameIndex DXCW D 0 63
+	FrameIndex DXCW E 0 64
+	FrameIndex DXCW F 0 65
+
+	//Idle2
+	FrameIndex DXCW G 0 66
+	FrameIndex DXCW H 0 67
+	FrameIndex DXCW I 0 68
+	FrameIndex DXCW J 0 69
+	FrameIndex DXCW K 0 70
+	FrameIndex DXCW L 0 71
+	FrameIndex DXCW M 0 72
+	FrameIndex DXCW N 0 73
+	FrameIndex DXCW O 0 74
+	FrameIndex DXCW P 0 75
+	FrameIndex DXCW Q 0 76
+	FrameIndex DXCW R 0 77
+
+	Model 0 "MiniCrossbowPickup_d.3d"
+	SurfaceSkin 0 0 "MiniCrossbow3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	Scale 0.1 0.1 0.1
+	Offset 0 0 0
+
+	FrameIndex DXCT S 0 0
+}
+
+Model DDWeapon_PS20
+{
+	Path "models/"
+	Model 0 "HideAGun_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "HideAGunTex1.tga"
+	AngleOffset 95
+	Offset 5 -4.1 -3.7
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXPS A 0 45
+
+	//Ready
+	FrameIndex DXPS B 0 1
+	FrameIndex DXPS C 0 2
+	FrameIndex DXPS D 0 3
+	FrameIndex DXPS E 0 4
+	FrameIndex DXPS F 0 5
+	FrameIndex DXPS G 0 6
+
+	//Fire
+	FrameIndex DXPS H 0 7
+	FrameIndex DXPS I 0 8
+	FrameIndex DXPS J 0 9
+	FrameIndex DXPS K 0 10
+	FrameIndex DXPS L 0 11
+	FrameIndex DXPS M 0 12
+	FrameIndex DXPS N 0 13
+	FrameIndex DXPS O 0 14
+	FrameIndex DXPS P 0 15
+	FrameIndex DXPS Q 0 16
+	FrameIndex DXPS R 0 17
+	FrameIndex DXPS S 0 18
+	FrameIndex DXPS T 0 19
+	FrameIndex DXPS U 0 20
+	FrameIndex DXPS V 0 21
+	FrameIndex DXPS W 0 22
+	FrameIndex DXPS X 0 23
+	FrameIndex DXPS Y 0 24
+	FrameIndex DXPS Z 0 25
+	FrameIndex DXPT A 0 26
+	FrameIndex DXPT B 0 27
+	FrameIndex DXPT C 0 28
+	FrameIndex DXPT D 0 29
+
+	//Deselect
+	FrameIndex DXPT E 0 40
+	FrameIndex DXPT F 0 41
+	FrameIndex DXPT G 0 42
+	FrameIndex DXPT H 0 43
+	FrameIndex DXPT I 0 44
+
+	//Idle1
+	FrameIndex DXPT J 0 45
+	FrameIndex DXPT K 0 46
+	FrameIndex DXPT L 0 47
+	FrameIndex DXPT M 0 48
+	FrameIndex DXPT N 0 49
+	FrameIndex DXPT O 0 50
+
+	//Idle2
+	FrameIndex DXPT P 0 51
+	FrameIndex DXPT Q 0 52
+	FrameIndex DXPT R 0 53
+	FrameIndex DXPT S 0 54
+	FrameIndex DXPT T 0 55
+	FrameIndex DXPT V 0 56
+
+	Model 0 "HideAGunPickup_d.3d"
+	SurfaceSkin 0 0 "HideAGun3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	SurfaceSkin 0 2 ""
+	Scale 0.05 0.05 0.05
+	RollOffset -90
+	Offset 0 0 3
+
+	FrameIndex DXPT W 0 0
+}
+
+Model DDWeapon_AssaultRifle
+{
+	Path "models/"
+	Model 0 "AssaultGun_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "AssaultGunTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+	AngleOffset 90
+	Offset 4 -4.7 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXAG A 0 37
+
+	//Ready
+	FrameIndex DXAG B 0 1
+	FrameIndex DXAG C 0 2
+	FrameIndex DXAG D 0 3
+	FrameIndex DXAG E 0 4
+	FrameIndex DXAG F 0 5
+	FrameIndex DXAG G 0 6
+	FrameIndex DXAG H 0 7
+	FrameIndex DXAG I 0 8
+
+	//Fire
+	SurfaceSkin 0 3 "FlatFXTex37.tga"
+	FrameIndex DXAG J 0 9
+	FrameIndex DXAG K 0 10
+	FrameIndex DXAG L 0 11
+	FrameIndex DXAG M 0 12
+	FrameIndex DXAG N 0 13
+	FrameIndex DXAG O 0 14
+	FrameIndex DXAG P 0 15
+	FrameIndex DXAG Q 0 16
+	SurfaceSkin 0 3 ""
+
+	//Reload
+	FrameIndex DXAG R 0 17
+	FrameIndex DXAG S 0 18
+	FrameIndex DXAG T 0 19
+	FrameIndex DXAG U 0 20
+	FrameIndex DXAG V 0 21
+
+	//ReloadLoop
+	FrameIndex DXAG W 0 22
+	FrameIndex DXAG X 0 23
+	FrameIndex DXAG Y 0 24
+	FrameIndex DXAG Z 0 25
+	FrameIndex DXAH A 0 26
+	FrameIndex DXAH B 0 27
+	FrameIndex DXAH C 0 28
+
+	//ReloadEnd
+	FrameIndex DXAH D 0 29
+	FrameIndex DXAH E 0 30
+	FrameIndex DXAH F 0 31
+
+	//Deselect
+	FrameIndex DXAH G 0 32
+	FrameIndex DXAH H 0 33
+	FrameIndex DXAH I 0 34
+	FrameIndex DXAH J 0 35
+	FrameIndex DXAH K 0 36
+
+	//Idle1
+	FrameIndex DXAH L 0 37
+	FrameIndex DXAH M 0 38
+	FrameIndex DXAH N 0 39
+	FrameIndex DXAH O 0 40
+	FrameIndex DXAH P 0 41
+	FrameIndex DXAH Q 0 42
+	FrameIndex DXAH R 0 43
+	FrameIndex DXAH S 0 44
+
+	//Idle2
+	FrameIndex DXAH T 0 45
+	FrameIndex DXAH U 0 46
+	FrameIndex DXAH V 0 47
+	FrameIndex DXAH W 0 48
+	FrameIndex DXAH X 0 49
+	FrameIndex DXAH Y 0 50
+	FrameIndex DXAH Z 0 51
+	FrameIndex DXAI A 0 52
+
+	//DryFire
+	FrameIndex DXAI B 0 11
+
+	Model 0 "AssaultGunPickup_d.3d"
+	SurfaceSkin 0 0 "AssaultGun3rdTex1.png"
+	SurfaceSkin 0 1 "AssaultGun3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	Scale 0.065 0.1 0.15
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXAI C 0 0
+}
+
+Model DDWeapon_AssaultShotgun
+{
+	Path "models/"
+	Model 0 "AssaultShotgun_d.3d"
+	SurfaceSkin 0 0 "AssaultShotgunTex1.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	AngleOffset 90
+	Offset 4 -5.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXAS A 0 34
+
+	//Ready
+	FrameIndex DXAS B 0 1
+	FrameIndex DXAS C 0 2
+	FrameIndex DXAS D 0 3
+	FrameIndex DXAS E 0 4
+	FrameIndex DXAS F 0 5
+	FrameIndex DXAS G 0 6
+	FrameIndex DXAS H 0 7
+	FrameIndex DXAS I 0 8
+	//Fire
+	FrameIndex DXAS J 0 9
+	SurfaceSkin 0 3 "FlatFXTex37.tga"
+	FrameIndex DXAS K 0 10
+	FrameIndex DXAS L 0 11
+	SurfaceSkin 0 3 ""
+	FrameIndex DXAS M 0 12
+
+	//Reload
+	FrameIndex DXAS N 0 19
+	FrameIndex DXAS O 0 20
+	FrameIndex DXAS P 0 21
+	FrameIndex DXAS Q 0 22
+	FrameIndex DXAS R 0 23
+	FrameIndex DXAS S 0 24
+	FrameIndex DXAS T 0 25
+
+	//ReloadLoop
+	FrameIndex DXAS U 0 26
+	FrameIndex DXAS V 0 27
+	FrameIndex DXAS W 0 28
+	FrameIndex DXAS X 0 29
+	FrameIndex DXAS Y 0 30
+
+	//ReloadEnd
+	FrameIndex DXAS Z 0 31
+	FrameIndex DXAT A 0 32
+	FrameIndex DXAT B 0 33
+
+	//Deselect
+	FrameIndex DXAT C 0 13
+	FrameIndex DXAT D 0 14
+	FrameIndex DXAT E 0 15
+	FrameIndex DXAT F 0 16
+	FrameIndex DXAT G 0 17
+	FrameIndex DXAT H 0 18
+
+	//Idle1
+	FrameIndex DXAT I 0 34
+	FrameIndex DXAT J 0 35
+	FrameIndex DXAT K 0 36
+	FrameIndex DXAT L 0 37
+	FrameIndex DXAT M 0 38
+	FrameIndex DXAT N 0 39
+	FrameIndex DXAT O 0 40
+	FrameIndex DXAT P 0 41
+
+	//Idle2
+	FrameIndex DXAT Q 0 42
+	FrameIndex DXAT R 0 43
+	FrameIndex DXAT S 0 44
+	FrameIndex DXAT T 0 45
+	FrameIndex DXAT U 0 46
+	FrameIndex DXAT V 0 47
+	FrameIndex DXAT W 0 48
+	FrameIndex DXAT X 0 49
+
+	Model 0 "AssaultShotgunPickup_d.3d"
+	SurfaceSkin 0 0 "AssaultShotgun3rdTex1.png"
+	SurfaceSkin 0 1 "AssaultShotgun3rdTex1.png"
+	SurfaceSkin 0 3 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 4
+
+	FrameIndex DXAT Y 0 0
+}
+
+Model DDWeapon_SawedOffShotgun
+{
+	Path "models/"
+	Model 0 "Shotgun_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "ShotgunTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+	AngleOffset 95
+	Offset 4 -2.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXSS A 0 50
+
+	//Ready
+	FrameIndex DXSS B 0 1
+	FrameIndex DXSS C 0 2
+	FrameIndex DXSS D 0 3
+	FrameIndex DXSS E 0 4
+	FrameIndex DXSS F 0 5
+	FrameIndex DXSS G 0 6
+	FrameIndex DXSS H 0 7
+	FrameIndex DXSS I 0 8
+	FrameIndex DXSS J 0 9
+	FrameIndex DXSS K 0 10
+	FrameIndex DXSS L 0 11
+	FrameIndex DXSS M 0 12
+	//Fire
+	FrameIndex DXSS N 0 13
+	FrameIndex DXSS O 0 14
+	SurfaceSkin 0 3 "FlatFXTex37.tga"
+	FrameIndex DXSS P 0 15
+	FrameIndex DXSS Q 0 16
+	SurfaceSkin 0 3 ""
+	FrameIndex DXSS R 0 17
+	FrameIndex DXSS S 0 18
+	FrameIndex DXSS T 0 19
+	FrameIndex DXSS U 0 20
+	FrameIndex DXSS V 0 21
+	FrameIndex DXSS W 0 22
+	FrameIndex DXSS X 0 23
+	FrameIndex DXSS Y 0 24
+	FrameIndex DXSS Z 0 25
+	FrameIndex DXST A 0 26
+	FrameIndex DXST B 0 27
+
+	//Reload
+	FrameIndex DXST C 0 28
+	FrameIndex DXST D 0 29
+	FrameIndex DXST E 0 30
+	FrameIndex DXST F 0 31
+	FrameIndex DXST G 0 32
+
+	//ReloadLoop
+	FrameIndex DXST H 0 33
+	FrameIndex DXST I 0 34
+	FrameIndex DXST J 0 35
+	FrameIndex DXST K 0 36
+	FrameIndex DXST L 0 37
+	FrameIndex DXST M 0 38
+	FrameIndex DXST N 0 39
+
+	//ReloadEnd
+	FrameIndex DXST O 0 40
+	FrameIndex DXST P 0 41
+	FrameIndex DXST Q 0 42
+	FrameIndex DXST R 0 43
+
+	//Deselect
+	FrameIndex DXST S 0 44
+	FrameIndex DXST T 0 45
+	FrameIndex DXST U 0 46
+	FrameIndex DXST V 0 47
+	FrameIndex DXST W 0 48
+	FrameIndex DXST X 0 49
+
+	//Idle1
+	FrameIndex DXST Y 0 50
+	FrameIndex DXST Z 0 51
+	FrameIndex DXSU A 0 52
+	FrameIndex DXSU B 0 53
+	FrameIndex DXSU C 0 54
+	FrameIndex DXSU D 0 55
+	FrameIndex DXSU E 0 56
+	FrameIndex DXSU F 0 57
+
+	//Idle2
+	FrameIndex DXSU G 0 58
+	FrameIndex DXSU H 0 59
+	FrameIndex DXSU I 0 60
+	FrameIndex DXSU J 0 61
+	FrameIndex DXSU K 0 62
+	FrameIndex DXSU L 0 63
+	FrameIndex DXSU M 0 64
+	FrameIndex DXSU N 0 65
+
+	Model 0 "ShotgunPickup_d.3d"
+	SurfaceSkin 0 0 "Shotgun3rdTex1.png"
+	SurfaceSkin 0 1 "Shotgun3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXSU O 0 0
+}
+
+Model DDWeapon_SniperRifle
+{
+	Path "models/"
+	Model 0 "SniperRifle_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "SniperRifleTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+	AngleOffset 95
+	Offset 0.7 -6 -9
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXSR A 0 36
+
+	//Ready
+	FrameIndex DXSR B 0 1
+	FrameIndex DXSR C 0 2
+	FrameIndex DXSR D 0 3
+	FrameIndex DXSR E 0 4
+	FrameIndex DXSR F 0 5
+	FrameIndex DXSR G 0 6
+	FrameIndex DXSR H 0 7
+	FrameIndex DXSR I 0 8
+	FrameIndex DXSR J 0 9
+	FrameIndex DXSR K 0 10
+	//Fire
+	FrameIndex DXSR L 0 11
+	FrameIndex DXSR M 0 12
+	FrameIndex DXSR N 0 13
+	FrameIndex DXSR O 0 14
+	FrameIndex DXSR P 0 15
+	FrameIndex DXSR Q 0 16
+
+	//Reload
+	FrameIndex DXSR R 0 19
+	FrameIndex DXSR S 0 20
+	FrameIndex DXSR T 0 21
+	FrameIndex DXSR U 0 22
+	FrameIndex DXSR V 0 23
+	FrameIndex DXSR W 0 24
+	FrameIndex DXSR X 0 25
+	FrameIndex DXSR Y 0 26
+
+	//ReloadLoop
+	FrameIndex DXSR Z 0 27
+	FrameIndex DXSS A 0 28
+	FrameIndex DXSS B 0 29
+	FrameIndex DXSS C 0 30
+	FrameIndex DXSS D 0 31
+
+	//ReloadEnd
+	FrameIndex DXSS E 0 32
+	FrameIndex DXSS F 0 33
+	FrameIndex DXSS G 0 34
+	FrameIndex DXSS H 0 35
+
+	//Deselect
+	FrameIndex DXSS I 0 17
+	FrameIndex DXSS J 0 18
+
+	//Idle1
+	FrameIndex DXSS K 0 36
+	FrameIndex DXSS L 0 37
+	FrameIndex DXSS M 0 38
+	FrameIndex DXSS N 0 39
+	FrameIndex DXSS O 0 40
+	FrameIndex DXSS P 0 41
+	FrameIndex DXSS Q 0 42
+	FrameIndex DXSS R 0 43
+	FrameIndex DXSS S 0 44
+	FrameIndex DXSS T 0 45
+
+	//Idle2
+	FrameIndex DXSS U 0 46
+	FrameIndex DXSS V 0 47
+	FrameIndex DXSS W 0 48
+	FrameIndex DXSS X 0 49
+	FrameIndex DXSS Y 0 50
+	FrameIndex DXSS Z 0 51
+	FrameIndex DXST A 0 52
+	FrameIndex DXST B 0 53
+	FrameIndex DXST C 0 54
+	FrameIndex DXST D 0 55
+
+	//Zoom
+	FrameIndex DXST F 0 66
+	FrameIndex DXST G 0 67
+	FrameIndex DXST H 0 68
+
+	Model 0 "SniperRiflePickup_d.3d"
+	SurfaceSkin 0 0 "SniperRifle3rdTex1.png"
+	SurfaceSkin 0 1 "SniperRifle3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	Scale 0.13 0.2 0.2
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXST E 0 0
+}
+
+Model DDWeapon_RiotProd
+{
+	Path "models/"
+	Model 0 "Prod_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "ProdTex1.tga"
+	SurfaceSkin 0 3 "prodtip0.png"
+	SurfaceSkin 0 4 "prodbody0.png"
+	
+	AngleOffset 95
+	Offset 4 -7.5 -6.5
+	Scale -0.1 0.1 0.05
+	RollOffset 5
+
+	//ReadyIdle
+	FrameIndex DXRP A 0 50
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRP B 0 50
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRP C 0 50
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRP D 0 50
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRP E 0 50
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRP F 0 50
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRP G 0 50
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRP H 0 50
+	SurfaceSkin 0 3 "prodtip8.png"
+	SurfaceSkin 0 4 "prodbody8.png"
+	FrameIndex DXRP I 0 50
+	SurfaceSkin 0 3 "prodtip9.png"
+	SurfaceSkin 0 4 "prodbody9.png"
+	FrameIndex DXRP J 0 50
+	SurfaceSkin 0 3 "prodtip10.png"
+	SurfaceSkin 0 4 "prodbody10.png"
+	FrameIndex DXRP K 0 50
+	SurfaceSkin 0 3 "prodtip11.png"
+	SurfaceSkin 0 4 "prodbody11.png"
+	FrameIndex DXRP L 0 50
+	SurfaceSkin 0 3 "prodtip12.png"
+	SurfaceSkin 0 4 "prodbody12.png"
+	FrameIndex DXRP M 0 50
+	SurfaceSkin 0 3 "prodtip13.png"
+	SurfaceSkin 0 4 "prodbody13.png"
+	FrameIndex DXRP N 0 50
+	SurfaceSkin 0 3 "prodtip14.png"
+	SurfaceSkin 0 4 "prodbody14.png"
+	FrameIndex DXRP O 0 50
+	SurfaceSkin 0 3 "prodtip15.png"
+	SurfaceSkin 0 4 "prodbody15.png"
+	FrameIndex DXRP P 0 50
+	SurfaceSkin 0 3 "prodtip16.png"
+	SurfaceSkin 0 4 "prodbody16.png"
+	FrameIndex DXRP Q 0 50
+	SurfaceSkin 0 3 "prodtip17.png"
+	SurfaceSkin 0 4 "prodbody17.png"
+	FrameIndex DXRP R 0 50
+	SurfaceSkin 0 3 "prodtip18.png"
+	SurfaceSkin 0 4 "prodbody18.png"
+	FrameIndex DXRP S 0 50
+	SurfaceSkin 0 3 "prodtip19.png"
+	SurfaceSkin 0 4 "prodbody19.png"
+	FrameIndex DXRP T 0 50
+	SurfaceSkin 0 3 "prodtip20.png"
+	SurfaceSkin 0 4 "prodbody20.png"
+	FrameIndex DXRP U 0 50
+	SurfaceSkin 0 3 "prodtip0.png"
+	SurfaceSkin 0 4 "prodbody0.png"
+
+	//Ready
+	FrameIndex DXRP V 0 1
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRP W 0 2
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRP X 0 3
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRP Y 0 4
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRP Z 0 5
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRR A 0 6
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRR B 0 7
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRR C 0 8
+	SurfaceSkin 0 3 "prodtip8.png"
+	SurfaceSkin 0 4 "prodbody8.png"
+	FrameIndex DXRR D 0 9
+	SurfaceSkin 0 3 "prodtip9.png"
+	SurfaceSkin 0 4 "prodbody9.png"
+	FrameIndex DXRR E 0 10
+	SurfaceSkin 0 3 "prodtip10.png"
+	SurfaceSkin 0 4 "prodbody10.png"
+	FrameIndex DXRR F 0 11
+	SurfaceSkin 0 3 "prodtip11.png"
+	SurfaceSkin 0 4 "prodbody11.png"
+	FrameIndex DXRR G 0 12
+	SurfaceSkin 0 3 "prodtip12.png"
+	SurfaceSkin 0 4 "prodbody12.png"
+	FrameIndex DXRR H 0 13
+	SurfaceSkin 0 3 "prodtip13.png"
+	SurfaceSkin 0 4 "prodbody13.png"
+	FrameIndex DXRR I 0 14
+	SurfaceSkin 0 3 "prodtip14.png"
+	SurfaceSkin 0 4 "prodbody14.png"
+	FrameIndex DXRR J 0 15
+
+	//Fire
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRR K 0 16
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRR L 0 17
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRR M 0 18
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRR N 0 19
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRR O 0 20
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRR P 0 21
+
+	//Deselect
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRR Q 0 22
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRR R 0 23
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRR S 0 24
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRR T 0 25
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRR U 0 26
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRR V 0 27
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRR W 0 28
+	SurfaceSkin 0 3 "prodtip8.png"
+	SurfaceSkin 0 4 "prodbody8.png"
+	FrameIndex DXRR X 0 29
+
+	//Reload
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRR Y 0 30
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRR Z 0 31
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRS A 0 32
+
+	//ReloadLoop
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRS B 0 33
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRS C 0 33
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRS D 0 34
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRS E 0 34
+	SurfaceSkin 0 3 "prodtip8.png"
+	SurfaceSkin 0 4 "prodbody8.png"
+	FrameIndex DXRS F 0 35
+	SurfaceSkin 0 3 "prodtip9.png"
+	SurfaceSkin 0 4 "prodbody9.png"
+	FrameIndex DXRS G 0 35
+	SurfaceSkin 0 3 "prodtip10.png"
+	SurfaceSkin 0 4 "prodbody10.png"
+	FrameIndex DXRS H 0 36
+	SurfaceSkin 0 3 "prodtip11.png"
+	SurfaceSkin 0 4 "prodbody11.png"
+	FrameIndex DXRS I 0 36
+	SurfaceSkin 0 3 "prodtip12.png"
+	SurfaceSkin 0 4 "prodbody12.png"
+	FrameIndex DXRS J 0 37
+	SurfaceSkin 0 3 "prodtip13.png"
+	SurfaceSkin 0 4 "prodbody13.png"
+	FrameIndex DXRS K 0 37
+	SurfaceSkin 0 3 "prodtip14.png"
+	SurfaceSkin 0 4 "prodbody14.png"
+	FrameIndex DXRS L 0 38
+	SurfaceSkin 0 3 "prodtip15.png"
+	SurfaceSkin 0 4 "prodbody15.png"
+	FrameIndex DXRS M 0 38
+
+	//ReloadEnd
+	SurfaceSkin 0 3 "prodtip16.png"
+	SurfaceSkin 0 4 "prodbody16.png"
+	FrameIndex DXRS N 0 39
+	SurfaceSkin 0 3 "prodtip17.png"
+	SurfaceSkin 0 4 "prodbody17.png"
+	FrameIndex DXRS O 0 40
+	SurfaceSkin 0 3 "prodtip18.png"
+	SurfaceSkin 0 4 "prodbody18.png"
+	FrameIndex DXRS P 0 41
+
+	//Idle1
+	SurfaceSkin 0 3 "prodtip0.png"
+	SurfaceSkin 0 4 "prodbody0.png"
+	FrameIndex DXRS Q 0 42
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRS R 0 43
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRS S 0 44
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRS T 0 45
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRS U 0 46
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRS V 0 47
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRS W 0 48
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRS X 0 49
+	//Idle2
+	SurfaceSkin 0 3 "prodtip0.png"
+	SurfaceSkin 0 4 "prodbody0.png"
+	FrameIndex DXRS Y 0 50
+	SurfaceSkin 0 3 "prodtip1.png"
+	SurfaceSkin 0 4 "prodbody1.png"
+	FrameIndex DXRS Z 0 51
+	SurfaceSkin 0 3 "prodtip2.png"
+	SurfaceSkin 0 4 "prodbody2.png"
+	FrameIndex DXRT A 0 52
+	SurfaceSkin 0 3 "prodtip3.png"
+	SurfaceSkin 0 4 "prodbody3.png"
+	FrameIndex DXRT B 0 53
+	SurfaceSkin 0 3 "prodtip4.png"
+	SurfaceSkin 0 4 "prodbody4.png"
+	FrameIndex DXRT C 0 54
+	SurfaceSkin 0 3 "prodtip5.png"
+	SurfaceSkin 0 4 "prodbody5.png"
+	FrameIndex DXRT D 0 55
+	SurfaceSkin 0 3 "prodtip6.png"
+	SurfaceSkin 0 4 "prodbody6.png"
+	FrameIndex DXRT E 0 56
+	SurfaceSkin 0 3 "prodtip7.png"
+	SurfaceSkin 0 4 "prodbody7.png"
+	FrameIndex DXRT F 0 57
+
+	//Spawn
+	Model 0 "ProdPickup_d.3d"
+	SurfaceSkin 0 0 "Prod3rdTex1.png"
+	SurfaceSkin 0 1 "Prod3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	SurfaceSkin 0 4 ""
+	Scale 0.0325 0.05 0.05
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXRT G 0 0
+}
+
+Model DDWeapon_DragonsToothSword
+{
+	Path "models/"
+	Model 0 "NanoSword_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 ""
+	SurfaceSkin 0 2 "NanoSwordTex1.png"
+	SurfaceSkin 0 3 ""
+
+	AngleOffset 90
+	Offset 4.5 -4.5 -6.5
+	Scale -0.15 0.15 0.075
+	RollOffset 10
+
+	//ReadyIdle
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDT A 0 50
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDT B 0 50
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDT C 0 50
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDT D 0 50
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDT E 0 50
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDT F 0 50
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDT G 0 50
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDT H 0 50
+	SurfaceSkin 0 5 "dtsbody8.png"
+	SurfaceSkin 0 6 "dtsblade8.png"
+	FrameIndex DXDT I 0 50
+	SurfaceSkin 0 5 "dtsbody9.png"
+	SurfaceSkin 0 6 "dtsblade9.png"
+	FrameIndex DXDT J 0 50
+	SurfaceSkin 0 5 "dtsbody10.png"
+	SurfaceSkin 0 6 "dtsblade10.png"
+	FrameIndex DXDT K 0 50
+	SurfaceSkin 0 5 "dtsbody11.png"
+	SurfaceSkin 0 6 "dtsblade11.png"
+	FrameIndex DXDT L 0 50
+	SurfaceSkin 0 5 "dtsbody12.png"
+	SurfaceSkin 0 6 "dtsblade12.png"
+	FrameIndex DXDT M 0 50
+	SurfaceSkin 0 5 "dtsbody13.png"
+	SurfaceSkin 0 6 "dtsblade13.png"
+	FrameIndex DXDT N 0 50
+	SurfaceSkin 0 5 "dtsbody14.png"
+	SurfaceSkin 0 6 "dtsblade14.png"
+	FrameIndex DXDT O 0 50
+	SurfaceSkin 0 5 "dtsbody15.png"
+	SurfaceSkin 0 6 "dtsblade15.png"
+	FrameIndex DXDT P 0 50
+	SurfaceSkin 0 5 "dtsbody16.png"
+	SurfaceSkin 0 6 "dtsblade16.png"
+	FrameIndex DXDT Q 0 50
+	SurfaceSkin 0 5 "dtsbody17.png"
+	SurfaceSkin 0 6 "dtsblade17.png"
+	FrameIndex DXDT R 0 50
+	SurfaceSkin 0 5 "dtsbody18.png"
+	SurfaceSkin 0 6 "dtsblade18.png"
+	FrameIndex DXDT S 0 50
+	SurfaceSkin 0 5 "dtsbody19.png"
+	SurfaceSkin 0 6 "dtsblade19.png"
+	FrameIndex DXDT T 0 50
+	SurfaceSkin 0 5 "dtsbody20.png"
+	SurfaceSkin 0 6 "dtsblade20.png"
+	FrameIndex DXDT U 0 50
+	SurfaceSkin 0 5 "dtsbody21.png"
+	SurfaceSkin 0 6 "dtsblade21.png"
+	FrameIndex DXDT V 0 50
+	SurfaceSkin 0 5 "dtsbody22.png"
+	SurfaceSkin 0 6 "dtsblade22.png"
+	FrameIndex DXDT W 0 50
+	SurfaceSkin 0 5 "dtsbody23.png"
+	SurfaceSkin 0 6 "dtsblade23.png"
+	FrameIndex DXDT X 0 50
+	SurfaceSkin 0 5 "dtsbody24.png"
+	SurfaceSkin 0 6 "dtsblade24.png"
+	FrameIndex DXDT Y 0 50
+	SurfaceSkin 0 5 "dtsbody25.png"
+	SurfaceSkin 0 6 "dtsblade25.png"
+	FrameIndex DXDT Z 0 50
+	SurfaceSkin 0 5 "dtsbody26.png"
+	SurfaceSkin 0 6 "dtsblade26.png"
+	FrameIndex DXDU A 0 50
+	SurfaceSkin 0 5 "dtsbody27.png"
+	SurfaceSkin 0 6 "dtsblade27.png"
+	FrameIndex DXDU B 0 50
+	SurfaceSkin 0 5 "dtsbody28.png"
+	SurfaceSkin 0 6 "dtsblade28.png"
+	FrameIndex DXDU C 0 50
+	SurfaceSkin 0 5 "dtsbody29.png"
+	SurfaceSkin 0 6 "dtsblade29.png"
+	FrameIndex DXDU D 0 50
+	SurfaceSkin 0 5 "dtsbody30.png"
+	SurfaceSkin 0 6 "dtsblade30.png"
+	FrameIndex DXDU E 0 50
+	SurfaceSkin 0 5 "dtsbody31.png"
+	SurfaceSkin 0 6 "dtsblade31.png"
+	FrameIndex DXDU F 0 50
+	SurfaceSkin 0 5 "dtsbody32.png"
+	SurfaceSkin 0 6 "dtsblade32.png"
+	FrameIndex DXDU G 0 50
+	SurfaceSkin 0 5 "dtsbody33.png"
+	SurfaceSkin 0 6 "dtsblade33.png"
+	FrameIndex DXDU H 0 50
+
+	//Ready
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDU I 0 1
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDU J 0 2
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDU K 0 3
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDU L 0 4
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDU M 0 5
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDU N 0 6
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDU O 0 7
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDU P 0 8
+	SurfaceSkin 0 5 "dtsbody8.png"
+	SurfaceSkin 0 6 "dtsblade8.png"
+	FrameIndex DXDU Q 0 9
+	SurfaceSkin 0 5 "dtsbody9.png"
+	SurfaceSkin 0 6 "dtsblade9.png"
+	FrameIndex DXDU R 0 10
+	SurfaceSkin 0 5 "dtsbody10.png"
+	SurfaceSkin 0 6 "dtsblade10.png"
+	FrameIndex DXDU S 0 11
+	SurfaceSkin 0 5 "dtsbody11.png"
+	SurfaceSkin 0 6 "dtsblade11.png"
+	FrameIndex DXDU T 0 12
+	//Fire1
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDU U 0 13
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDU V 0 14
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDU W 0 15
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDU X 0 16
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDU Y 0 17
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDU Z 0 18
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDV A 0 19
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDV B 0 20
+	SurfaceSkin 0 5 "dtsbody8.png"
+	SurfaceSkin 0 6 "dtsblade8.png"
+	FrameIndex DXDV C 0 21
+	SurfaceSkin 0 5 "dtsbody9.png"
+	SurfaceSkin 0 6 "dtsblade9.png"
+	FrameIndex DXDV D 0 22
+	SurfaceSkin 0 5 "dtsbody10.png"
+	SurfaceSkin 0 6 "dtsblade10.png"
+	FrameIndex DXDV E 0 23
+	SurfaceSkin 0 5 "dtsbody11.png"
+	SurfaceSkin 0 6 "dtsblade11.png"
+	FrameIndex DXDV F 0 24
+	SurfaceSkin 0 5 "dtsbody12.png"
+	SurfaceSkin 0 6 "dtsblade12.png"
+	FrameIndex DXDV G 0 25
+	SurfaceSkin 0 5 "dtsbody13.png"
+	SurfaceSkin 0 6 "dtsblade13.png"
+	FrameIndex DXDV H 0 26
+	SurfaceSkin 0 5 "dtsbody14.png"
+	SurfaceSkin 0 6 "dtsblade14.png"
+	FrameIndex DXDV I 0 27
+	//Fire2
+	Scale 0.15 0.15 0.075
+	Offset 1 -5.5 -8
+
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDV J 0 13
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDV K 0 14
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDV L 0 15
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDV M 0 16
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDV N 0 17
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDV O 0 18
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDV P 0 19
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDV Q 0 20
+	SurfaceSkin 0 5 "dtsbody8.png"
+	SurfaceSkin 0 6 "dtsblade8.png"
+	FrameIndex DXDV R 0 21
+	SurfaceSkin 0 5 "dtsbody9.png"
+	SurfaceSkin 0 6 "dtsblade9.png"
+	FrameIndex DXDV S 0 22
+	SurfaceSkin 0 5 "dtsbody10.png"
+	SurfaceSkin 0 6 "dtsblade10.png"
+	FrameIndex DXDV T 0 23
+	SurfaceSkin 0 5 "dtsbody11.png"
+	SurfaceSkin 0 6 "dtsblade11.png"
+	FrameIndex DXDV U 0 24
+	SurfaceSkin 0 5 "dtsbody12.png"
+	SurfaceSkin 0 6 "dtsblade12.png"
+	FrameIndex DXDV V 0 25
+	SurfaceSkin 0 5 "dtsbody13.png"
+	SurfaceSkin 0 6 "dtsblade13.png"
+	FrameIndex DXDV W 0 26
+	SurfaceSkin 0 5 "dtsbody14.png"
+	SurfaceSkin 0 6 "dtsblade14.png"
+	FrameIndex DXDV X 0 27
+
+	Offset 4.5 -4.5 -6.5
+	Scale -0.15 0.15 0.075
+
+	//Deselect
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDV Y 0 43
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDV Z 0 44
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDW A 0 45
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDW B 0 46
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDW C 0 47
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDW D 0 48
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDW E 0 49
+
+	//Idle1
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDW F 0 50
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDW G 0 51
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDW H 0 52
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDW I 0 53
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDW J 0 54
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDW K 0 55
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDW L 0 56
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDW M 0 57
+
+	//Idle2
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 6 "dtsblade0.png"
+	FrameIndex DXDW N 0 58
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 6 "dtsblade1.png"
+	FrameIndex DXDW O 0 59
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 6 "dtsblade2.png"
+	FrameIndex DXDW P 0 60
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 6 "dtsblade3.png"
+	FrameIndex DXDW Q 0 61
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 6 "dtsblade4.png"
+	FrameIndex DXDW R 0 62
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 6 "dtsblade5.png"
+	FrameIndex DXDW S 0 63
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 6 "dtsblade6.png"
+	FrameIndex DXDW T 0 64
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 6 "dtsblade7.png"
+	FrameIndex DXDW U 0 65
+
+	Model 0 "NanoSwordPickup_d.3d"
+	SurfaceSkin 0 0 "NanoSword3rdTex1.tga"
+	SurfaceSkin 0 1 "NanoSword3rdTex1.tga"
+	SurfaceSkin 0 2 "dtsblade0.png"
+	SurfaceSkin 0 3 "NanoSword3rdTex1.tga"
+	SurfaceSkin 0 4 "dtsbody0.png"
+	SurfaceSkin 0 5 "dtsbody0.png"
+	Scale 0.195 0.3 0.3
+	RollOffset -90
+	Offset 0 0 1
+
+	//Spawn
+	SurfaceSkin 0 5 "dtsbody0.png"
+	SurfaceSkin 0 2 "dtsblade0.png"
+	FrameIndex DXDX A 0 0
+	SurfaceSkin 0 5 "dtsbody1.png"
+	SurfaceSkin 0 2 "dtsblade1.png"
+	FrameIndex DXDX B 0 0
+	SurfaceSkin 0 5 "dtsbody2.png"
+	SurfaceSkin 0 2 "dtsblade2.png"
+	FrameIndex DXDX C 0 0
+	SurfaceSkin 0 5 "dtsbody3.png"
+	SurfaceSkin 0 2 "dtsblade3.png"
+	FrameIndex DXDX D 0 0
+	SurfaceSkin 0 5 "dtsbody4.png"
+	SurfaceSkin 0 2 "dtsblade4.png"
+	FrameIndex DXDX E 0 0
+	SurfaceSkin 0 5 "dtsbody5.png"
+	SurfaceSkin 0 2 "dtsblade5.png"
+	FrameIndex DXDX F 0 0
+	SurfaceSkin 0 5 "dtsbody6.png"
+	SurfaceSkin 0 2 "dtsblade6.png"
+	FrameIndex DXDX G 0 0
+	SurfaceSkin 0 5 "dtsbody7.png"
+	SurfaceSkin 0 2 "dtsblade7.png"
+	FrameIndex DXDX H 0 0
+	SurfaceSkin 0 5 "dtsbody8.png"
+	SurfaceSkin 0 2 "dtsblade8.png"
+	FrameIndex DXDX I 0 0
+	SurfaceSkin 0 5 "dtsbody9.png"
+	SurfaceSkin 0 2 "dtsblade9.png"
+	FrameIndex DXDX J 0 0
+	SurfaceSkin 0 5 "dtsbody10.png"
+	SurfaceSkin 0 2 "dtsblade10.png"
+	FrameIndex DXDX K 0 0
+	SurfaceSkin 0 5 "dtsbody11.png"
+	SurfaceSkin 0 2 "dtsblade11.png"
+	FrameIndex DXDX L 0 0
+	SurfaceSkin 0 5 "dtsbody12.png"
+	SurfaceSkin 0 2 "dtsblade12.png"
+	FrameIndex DXDX M 0 0
+	SurfaceSkin 0 5 "dtsbody13.png"
+	SurfaceSkin 0 2 "dtsblade13.png"
+	FrameIndex DXDX N 0 0
+	SurfaceSkin 0 5 "dtsbody14.png"
+	SurfaceSkin 0 2 "dtsblade14.png"
+	FrameIndex DXDX O 0 0
+	SurfaceSkin 0 5 "dtsbody15.png"
+	SurfaceSkin 0 2 "dtsblade15.png"
+	FrameIndex DXDX P 0 0
+	SurfaceSkin 0 5 "dtsbody16.png"
+	SurfaceSkin 0 2 "dtsblade16.png"
+	FrameIndex DXDX Q 0 0
+	SurfaceSkin 0 5 "dtsbody17.png"
+	SurfaceSkin 0 2 "dtsblade17.png"
+	FrameIndex DXDX R 0 0
+	SurfaceSkin 0 5 "dtsbody18.png"
+	SurfaceSkin 0 2 "dtsblade18.png"
+	FrameIndex DXDX S 0 0
+	SurfaceSkin 0 5 "dtsbody19.png"
+	SurfaceSkin 0 2 "dtsblade19.png"
+	FrameIndex DXDX T 0 0
+	SurfaceSkin 0 5 "dtsbody20.png"
+	SurfaceSkin 0 2 "dtsblade20.png"
+	FrameIndex DXDX U 0 0
+	SurfaceSkin 0 5 "dtsbody21.png"
+	SurfaceSkin 0 2 "dtsblade21.png"
+	FrameIndex DXDX V 0 0
+	SurfaceSkin 0 5 "dtsbody22.png"
+	SurfaceSkin 0 2 "dtsblade22.png"
+	FrameIndex DXDX W 0 0
+	SurfaceSkin 0 5 "dtsbody23.png"
+	SurfaceSkin 0 2 "dtsblade23.png"
+	FrameIndex DXDX X 0 0
+	SurfaceSkin 0 5 "dtsbody24.png"
+	SurfaceSkin 0 2 "dtsblade24.png"
+	FrameIndex DXDX Y 0 0
+	SurfaceSkin 0 5 "dtsbody25.png"
+	SurfaceSkin 0 2 "dtsblade25.png"
+	FrameIndex DXDX Z 0 0
+	SurfaceSkin 0 5 "dtsbody26.png"
+	SurfaceSkin 0 2 "dtsblade26.png"
+	FrameIndex DXDY A 0 0
+	SurfaceSkin 0 5 "dtsbody27.png"
+	SurfaceSkin 0 2 "dtsblade27.png"
+	FrameIndex DXDY B 0 0
+	SurfaceSkin 0 5 "dtsbody28.png"
+	SurfaceSkin 0 2 "dtsblade28.png"
+	FrameIndex DXDY C 0 0
+	SurfaceSkin 0 5 "dtsbody29.png"
+	SurfaceSkin 0 2 "dtsblade29.png"
+	FrameIndex DXDY D 0 0
+	SurfaceSkin 0 5 "dtsbody30.png"
+	SurfaceSkin 0 2 "dtsblade30.png"
+	FrameIndex DXDY E 0 0
+	SurfaceSkin 0 5 "dtsbody31.png"
+	SurfaceSkin 0 2 "dtsblade31.png"
+	FrameIndex DXDY F 0 0
+	SurfaceSkin 0 5 "dtsbody32.png"
+	SurfaceSkin 0 2 "dtsblade32.png"
+	FrameIndex DXDY G 0 0
+	SurfaceSkin 0 5 "dtsbody33.png"
+	SurfaceSkin 0 2 "dtsblade33.png"
+	FrameIndex DXDY H 0 0
+}
+
+Model DDWeapon_Baton
+{
+	Path "models/"
+	Model 0 "Baton_d.3d"
+	SurfaceSkin 0 0 "BatonTex1.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 4 -6.5 -5.5
+	Scale -0.1 0.1 0.05
+	RollOffset 10
+
+	//ReadyIdle
+	FrameIndex DXBT A 0 51
+
+	//Ready
+	FrameIndex DXBT B 0 1
+	FrameIndex DXBT C 0 2
+	FrameIndex DXBT D 0 3
+	FrameIndex DXBT E 0 4
+	FrameIndex DXBT F 0 5
+	FrameIndex DXBT G 0 6
+	FrameIndex DXBT H 0 7
+	FrameIndex DXBT I 0 8
+	FrameIndex DXBT J 0 9
+	FrameIndex DXBT K 0 10
+	FrameIndex DXBT L 0 11
+	FrameIndex DXBT M 0 12
+	FrameIndex DXBT N 0 13
+	FrameIndex DXBT O 0 14
+
+	//Fire1
+	FrameIndex DXBT P 0 15
+	FrameIndex DXBT Q 0 16
+	FrameIndex DXBT R 0 17
+	FrameIndex DXBT S 0 18
+	FrameIndex DXBT T 0 19
+	FrameIndex DXBT U 0 20
+	FrameIndex DXBT V 0 21
+	FrameIndex DXBT W 0 22
+	FrameIndex DXBT X 0 23
+	FrameIndex DXBT Y 0 24
+	FrameIndex DXBT Z 0 25
+	FrameIndex DXBU A 0 26
+
+	//Fire2
+	FrameIndex DXBU B 0 27
+	FrameIndex DXBU C 0 28
+	FrameIndex DXBU D 0 29
+	FrameIndex DXBU E 0 30
+	FrameIndex DXBU F 0 31
+	FrameIndex DXBU G 0 32
+	FrameIndex DXBU H 0 33
+	FrameIndex DXBU I 0 34
+	FrameIndex DXBU J 0 35
+	FrameIndex DXBU K 0 36
+	FrameIndex DXBU L 0 37
+	FrameIndex DXBU M 0 38
+
+	//Deselect
+	FrameIndex DXBU N 0 39
+	FrameIndex DXBU O 0 40
+	FrameIndex DXBU P 0 41
+	FrameIndex DXBU Q 0 42
+	FrameIndex DXBU R 0 43
+	FrameIndex DXBU S 0 44
+	FrameIndex DXBU T 0 45
+	FrameIndex DXBU U 0 46
+	FrameIndex DXBU V 0 47
+	FrameIndex DXBU W 0 48
+	FrameIndex DXBU X 0 49
+	FrameIndex DXBU Y 0 50
+
+	//Idle1
+	FrameIndex DXBU Z 0 51
+	FrameIndex DXBV A 0 52
+	FrameIndex DXBV B 0 53
+	FrameIndex DXBV C 0 54
+	FrameIndex DXBV D 0 55
+	FrameIndex DXBV E 0 56
+	FrameIndex DXBV F 0 57
+	FrameIndex DXBV G 0 58
+	//Idle2
+	FrameIndex DXBV H 0 59
+	FrameIndex DXBV I 0 60
+	FrameIndex DXBV J 0 61
+	FrameIndex DXBV K 0 62
+	FrameIndex DXBV L 0 63
+	FrameIndex DXBV M 0 64
+	FrameIndex DXBV N 0 65
+	FrameIndex DXBV O 0 66
+
+	Model 0 "BatonPickup_d.3d"
+	SurfaceSkin 0 0 "Baton3rdTex1.tga"
+	SurfaceSkin 0 1 "Baton3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 1
+
+	//Spawn
+	FrameIndex DXBV P 0 0
+}
+
+Model DDWeapon_CombatKnife
+{
+	Path "models/"
+	Model 0 "CombatKnife_d.3d"
+	SurfaceSkin 0 0 "CombatKnifeTex1.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 4 -4 -5.5
+	Scale -0.1 0.1 0.05
+	RollOffset 10
+
+	//ReadyIdle
+	FrameIndex DXCK A 0 37
+
+	//Ready
+	FrameIndex DXCK B 0 1
+	FrameIndex DXCK C 0 2
+	FrameIndex DXCK D 0 3
+
+	//Fire1
+	FrameIndex DXCK E 0 4
+	FrameIndex DXCK F 0 5
+	FrameIndex DXCK G 0 6
+	FrameIndex DXCK H 0 7
+	FrameIndex DXCK I 0 8
+	FrameIndex DXCK J 0 9
+	FrameIndex DXCK K 0 10
+	FrameIndex DXCK L 0 11
+
+	//Fire2
+	FrameIndex DXCK M 0 12
+	FrameIndex DXCK N 0 13
+	FrameIndex DXCK O 0 14
+	FrameIndex DXCK P 0 15
+	FrameIndex DXCK Q 0 16
+	FrameIndex DXCK R 0 17
+	FrameIndex DXCK S 0 18
+	FrameIndex DXCK T 0 19
+	FrameIndex DXCK U 0 20
+	FrameIndex DXCK V 0 21
+	FrameIndex DXCK W 0 22
+	FrameIndex DXCK X 0 23
+
+	//Fire3
+	FrameIndex DXCK Y 0 24
+	FrameIndex DXCK Z 0 25
+	FrameIndex DXCL A 0 26
+	FrameIndex DXCL B 0 27
+	FrameIndex DXCL C 0 28
+	FrameIndex DXCL D 0 29
+	FrameIndex DXCL E 0 30
+	FrameIndex DXCL F 0 31
+
+	//Deselect
+	FrameIndex DXCL G 0 32
+	FrameIndex DXCL H 0 33
+	FrameIndex DXCL I 0 34
+	FrameIndex DXCL J 0 35
+	FrameIndex DXCL K 0 36
+
+	//Idle1
+	FrameIndex DXCL L 0 37
+	FrameIndex DXCL M 0 38
+	FrameIndex DXCL N 0 39
+	FrameIndex DXCL O 0 40
+	//Idle2
+	FrameIndex DXCL P 0 41
+	FrameIndex DXCL Q 0 42
+	FrameIndex DXCL R 0 43
+	FrameIndex DXCL S 0 44
+	FrameIndex DXCL T 0 45
+	FrameIndex DXCL U 0 46
+	FrameIndex DXCL V 0 47
+	FrameIndex DXCL W 0 48
+
+	Model 0 "CombatKnifePickup_d.3d"
+	SurfaceSkin 0 0 "CombatKnife3rdTex1.png"
+	SurfaceSkin 0 1 "CombatKnife3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 2
+
+	//Spawn
+	FrameIndex DXCL X 0 0
+}
+
+Model DDWeapon_Crowbar
+{
+	Path "models/"
+	Model 0 "Crowbar_d.3d"
+	SurfaceSkin 0 0 "CrowbarTex1.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 4 -8 -3.5
+	Scale -0.1 0.1 0.05
+	RollOffset 10
+
+	//ReadyIdle
+	FrameIndex DXCB A 0 38
+
+	//Ready
+	FrameIndex DXCB B 0 1
+	FrameIndex DXCB C 0 2
+	FrameIndex DXCB D 0 3
+	FrameIndex DXCB E 0 4
+	FrameIndex DXCB F 0 5
+
+	//Fire1
+	FrameIndex DXCB G 0 6
+	FrameIndex DXCB H 0 7
+	FrameIndex DXCB I 0 8
+	FrameIndex DXCB J 0 9
+	FrameIndex DXCB K 0 10
+	FrameIndex DXCB L 0 11
+	FrameIndex DXCB M 0 12
+	FrameIndex DXCB N 0 13
+	FrameIndex DXCB O 0 14
+	FrameIndex DXCB P 0 15
+	FrameIndex DXCB Q 0 16
+	FrameIndex DXCB R 0 17
+
+	//Fire2
+	FrameIndex DXCB S 0 18
+	FrameIndex DXCB T 0 19
+	FrameIndex DXCB U 0 20
+	FrameIndex DXCB V 0 21
+	FrameIndex DXCB W 0 22
+	FrameIndex DXCB X 0 23
+	FrameIndex DXCB Y 0 24
+	FrameIndex DXCB Z 0 25
+	FrameIndex DXCC A 0 26
+	FrameIndex DXCC B 0 27
+	FrameIndex DXCC C 0 28
+	FrameIndex DXCC D 0 29
+	FrameIndex DXCC E 0 30
+	FrameIndex DXCC F 0 31
+
+	//Deselect
+	FrameIndex DXCC G 0 32
+	FrameIndex DXCC H 0 33
+	FrameIndex DXCC I 0 34
+	FrameIndex DXCC J 0 35
+	FrameIndex DXCC K 0 36
+	FrameIndex DXCC L 0 37
+
+	//Idle1
+	FrameIndex DXCC M 0 38
+	FrameIndex DXCC N 0 39
+	FrameIndex DXCC O 0 40
+	FrameIndex DXCC P 0 41
+	FrameIndex DXCC Q 0 42
+	FrameIndex DXCC R 0 43
+	FrameIndex DXCC S 0 44
+	FrameIndex DXCC T 0 45
+	FrameIndex DXCC U 0 46
+	FrameIndex DXCC V 0 47
+	//Idle2
+	FrameIndex DXCC W 0 48
+	FrameIndex DXCC X 0 49
+	FrameIndex DXCC Y 0 50
+	FrameIndex DXCC Z 0 51
+	FrameIndex DXCD A 0 52
+	FrameIndex DXCD B 0 53
+	FrameIndex DXCD C 0 54
+	FrameIndex DXCD D 0 55
+	FrameIndex DXCD E 0 56
+	FrameIndex DXCD F 0 57
+
+	Model 0 "CrowbarPickup_d.3d"
+	SurfaceSkin 0 0 "Crowbar3rdTex1.tga"
+	SurfaceSkin 0 1 "Crowbar3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	Scale 0.065 0.1 0.1
+	RollOffset -90
+	Offset 0 0 2
+
+	//Spawn
+	FrameIndex DXCD G 0 0
+}
+
+Model DDWeapon_Sword
+{
+	Path "models/"
+	Model 0 "Sword_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "SwordTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 4 -6 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 10
+
+	//ReadyIdle
+	FrameIndex DXSW A 0 41
+
+	//Ready
+	FrameIndex DXSW B 0 1
+	FrameIndex DXSW C 0 2
+	FrameIndex DXSW D 0 3
+	FrameIndex DXSW E 0 4
+	FrameIndex DXSW F 0 5
+	FrameIndex DXSW G 0 6
+	FrameIndex DXSW H 0 7
+
+	//Fire1
+	FrameIndex DXSW I 0 9
+	FrameIndex DXSW J 0 10
+	FrameIndex DXSW K 0 11
+	FrameIndex DXSW L 0 12
+	FrameIndex DXSW M 0 13
+	FrameIndex DXSW N 0 14
+	FrameIndex DXSW O 0 15
+	FrameIndex DXSW P 0 16
+	FrameIndex DXSW Q 0 17
+	FrameIndex DXSW R 0 18
+	FrameIndex DXSW S 0 19
+	FrameIndex DXSW T 0 20
+
+	//Fire2
+	FrameIndex DXSW U 0 21
+	FrameIndex DXSW V 0 22
+	FrameIndex DXSW W 0 23
+	FrameIndex DXSW X 0 24
+	FrameIndex DXSW Y 0 25
+	FrameIndex DXSW Z 0 26
+	FrameIndex DXSX A 0 27
+	FrameIndex DXSX B 0 28
+	FrameIndex DXSX C 0 29
+	FrameIndex DXSX D 0 30
+	FrameIndex DXSX E 0 31
+	FrameIndex DXSX F 0 32
+
+	//Deselect
+	FrameIndex DXSX G 0 33
+	FrameIndex DXSX H 0 34
+	FrameIndex DXSX I 0 35
+	FrameIndex DXSX J 0 36
+	FrameIndex DXSX K 0 37
+	FrameIndex DXSX L 0 38
+	FrameIndex DXSX M 0 39
+	FrameIndex DXSX N 0 40
+
+	//Idle1
+	FrameIndex DXSX O 0 41
+	FrameIndex DXSX P 0 42
+	FrameIndex DXSX Q 0 43
+	FrameIndex DXSX R 0 44
+	FrameIndex DXSX S 0 45
+	FrameIndex DXSX T 0 46
+	FrameIndex DXSX U 0 47
+	FrameIndex DXSX V 0 48
+	FrameIndex DXSX W 0 49
+	//Idle2
+	FrameIndex DXSX X 0 50
+	FrameIndex DXSX Y 0 51
+	FrameIndex DXSX Z 0 52
+	FrameIndex DXSY A 0 53
+	FrameIndex DXSY B 0 54
+	FrameIndex DXSY C 0 55
+	FrameIndex DXSY D 0 56
+	FrameIndex DXSY E 0 57
+	FrameIndex DXSY F 0 58
+
+	Model 0 "SwordPickup_d.3d"
+	SurfaceSkin 0 0 "Sword3rdTex1.tga"
+	SurfaceSkin 0 1 "Sword3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	Scale 0.13 0.2 0.2
+	RollOffset -90
+	Offset 0 0 2
+
+	//Spawn
+	FrameIndex DXSY G 0 0
+}
+Model DDWeapon_ThrowingKnives
+{
+	Path "models/"
+	Model 0 "Shuriken_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "ShurikenTex1.tga"
+
+	AngleOffset 90
+	Offset 5 -10.5 -9.5
+	Scale -0.1 0.1 0.05
+	RollOffset 0
+
+	//ReadyIdle
+	FrameIndex DXTK A 0 24
+
+	//Ready
+	FrameIndex DXTK B 0 1
+	FrameIndex DXTK C 0 2
+	FrameIndex DXTK D 0 3
+	FrameIndex DXTK E 0 4
+	FrameIndex DXTK F 0 5
+	FrameIndex DXTK G 0 6
+	FrameIndex DXTK H 0 7
+	FrameIndex DXTK I 0 8
+	FrameIndex DXTK J 0 9
+
+	//Fire
+	FrameIndex DXTK K 0 10
+	FrameIndex DXTK L 0 11
+	FrameIndex DXTK M 0 12
+	FrameIndex DXTK N 0 13
+	FrameIndex DXTK O 0 14
+	FrameIndex DXTK P 0 15
+	FrameIndex DXTK Q 0 16
+
+	//Deselect
+	FrameIndex DXTK R 0 17
+	FrameIndex DXTK S 0 18
+	FrameIndex DXTK T 0 19
+	FrameIndex DXTK U 0 20
+	FrameIndex DXTK V 0 21
+	FrameIndex DXTK W 0 22
+	FrameIndex DXTK X 0 23
+
+	//Idle1
+	FrameIndex DXTK Y 0 24
+	FrameIndex DXTK Z 0 25
+	FrameIndex DXTL A 0 26
+	FrameIndex DXTL B 0 27
+	FrameIndex DXTL C 0 28
+	FrameIndex DXTL D 0 29
+	FrameIndex DXTL E 0 30
+	FrameIndex DXTL F 0 31
+	//Idle2
+	FrameIndex DXTL G 0 32
+	FrameIndex DXTL H 0 33
+	FrameIndex DXTL I 0 34
+	FrameIndex DXTL J 0 35
+	FrameIndex DXTL K 0 36
+	FrameIndex DXTL L 0 37
+	FrameIndex DXTL M 0 38
+	FrameIndex DXTL N 0 39
+
+	Model 0 "ShurikenPickup_d.3d"
+	SurfaceSkin 0 0 "ShurikenTex1.tga"
+	SurfaceSkin 0 1 "ShurikenTex1.tga"
+	SurfaceSkin 0 2 ""
+	Scale 0.04875 0.075 0.075
+	RollOffset -90
+	Offset 0 0 2
+
+	//Spawn
+	FrameIndex DXTL O 0 0
+}
+
+Model DDWeapon_PepperGun
+{
+	Path "models/"
+	Model 0 "PepperGun_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "PepperGunTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 4 -6 -5.5
+	Scale -0.1 0.1 0.05
+	RollOffset 10
+
+	//ReadyIdle
+	FrameIndex DXPG A 0 34
+
+	//Ready
+	FrameIndex DXPG B 0 1
+	FrameIndex DXPG C 0 2
+	FrameIndex DXPG D 0 3
+	FrameIndex DXPG E 0 4
+	FrameIndex DXPG F 0 5
+	FrameIndex DXPG G 0 6
+
+	//Fire
+	FrameIndex DXPG H 0 7
+	FrameIndex DXPG I 0 8
+	FrameIndex DXPG J 0 9
+	FrameIndex DXPG K 0 10
+	FrameIndex DXPG L 0 11
+	FrameIndex DXPG M 0 12
+	FrameIndex DXPG N 0 13
+	FrameIndex DXPG O 0 14
+
+	//Reload
+	FrameIndex DXPG P 0 21
+	FrameIndex DXPG Q 0 22
+	FrameIndex DXPG R 0 23
+	FrameIndex DXPG S 0 24
+	//ReloadLoop
+	FrameIndex DXPG T 0 25
+	FrameIndex DXPG U 0 26
+	FrameIndex DXPG V 0 27
+	FrameIndex DXPG W 0 28
+	FrameIndex DXPG X 0 29
+	FrameIndex DXPG Y 0 30
+	//ReloadEnd
+	FrameIndex DXPG Z 0 31
+	FrameIndex DXPH A 0 32
+	FrameIndex DXPH B 0 33
+
+	//Deselect
+	FrameIndex DXPH C 0 15
+	FrameIndex DXPH D 0 16
+	FrameIndex DXPH E 0 17
+	FrameIndex DXPH F 0 18
+	FrameIndex DXPH G 0 19
+	FrameIndex DXPH H 0 20
+
+	//Idle1
+	FrameIndex DXPH I 0 34
+	FrameIndex DXPH J 0 35
+	FrameIndex DXPH K 0 36
+	FrameIndex DXPH L 0 37
+	FrameIndex DXPH M 0 38
+	FrameIndex DXPH N 0 39
+	FrameIndex DXPH O 0 40
+	FrameIndex DXPH P 0 41
+	//Idle2
+	FrameIndex DXPH Q 0 42
+	FrameIndex DXPH R 0 43
+	FrameIndex DXPH S 0 44
+	FrameIndex DXPH T 0 45
+	FrameIndex DXPH U 0 46
+	FrameIndex DXPH V 0 47
+	FrameIndex DXPH W 0 48
+	FrameIndex DXPH X 0 49
+
+	Model 0 "PepperGunPickup_d.3d"
+	SurfaceSkin 0 0 "PepperGun3rdTex1.png"
+	SurfaceSkin 0 1 "PepperGun3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	Scale 0.01625 0.025 0.025
+	RollOffset -90
+	Offset 0 0 1
+
+	//Spawn
+	FrameIndex DXPH Y 0 0
+}
+
+Model DDWeapon_LAM
+{
+	Path "models/"
+	Model 0 "LAM_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "LAMTex1.tga"
+	SurfaceSkin 0 2 "WeaponHandsTex.tga"
+
+	AngleOffset 95
+	Offset 5 -10.5 -8.5
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXLM A 0 43
+
+	//Ready
+	FrameIndex DXLM B 0 1
+	FrameIndex DXLM C 0 2
+	FrameIndex DXLM D 0 3
+	FrameIndex DXLM E 0 4
+	FrameIndex DXLM F 0 5
+	FrameIndex DXLM G 0 6
+	FrameIndex DXLM H 0 7
+	FrameIndex DXLM I 0 8
+	FrameIndex DXLM J 0 9
+	FrameIndex DXLM K 0 10
+	FrameIndex DXLM L 0 11
+	FrameIndex DXLM M 0 12
+
+	//Fire
+	FrameIndex DXLM N 0 13
+	FrameIndex DXLM O 0 14
+	FrameIndex DXLM P 0 15
+	FrameIndex DXLM Q 0 16
+	FrameIndex DXLM R 0 17
+	FrameIndex DXLM S 0 18
+	FrameIndex DXLM T 0 19
+	FrameIndex DXLM U 0 20
+	FrameIndex DXLM V 0 21
+
+	//Deselect
+	FrameIndex DXLM W 0 22
+	FrameIndex DXLM X 0 23
+	FrameIndex DXLM Y 0 24
+	FrameIndex DXLM Z 0 25
+	FrameIndex DXLN A 0 26
+
+	//Place
+	FrameIndex DXLN B 0 27
+	FrameIndex DXLN C 0 28
+	FrameIndex DXLN D 0 29
+	FrameIndex DXLN E 0 30
+	FrameIndex DXLN F 0 31
+	//PlaceEnd
+	FrameIndex DXLN G 0 32
+	FrameIndex DXLN H 0 33
+	FrameIndex DXLN I 0 34
+	FrameIndex DXLN J 0 35
+	FrameIndex DXLN K 0 36
+	//PlaceFire
+	FrameIndex DXLN L 0 37
+	FrameIndex DXLN M 0 38
+	FrameIndex DXLN N 0 39
+	FrameIndex DXLN O 0 40
+	FrameIndex DXLN P 0 41
+	FrameIndex DXLN Q 0 42
+
+	//Idle1
+	FrameIndex DXLN R 0 43
+	FrameIndex DXLN S 0 44
+	FrameIndex DXLN T 0 45
+	FrameIndex DXLN U 0 46
+	FrameIndex DXLN V 0 47
+	FrameIndex DXLN W 0 48
+	FrameIndex DXLN X 0 49
+	FrameIndex DXLN Y 0 50
+	//Idle2
+	FrameIndex DXLN Z 0 51
+	FrameIndex DXLO A 0 52
+	FrameIndex DXLO B 0 53
+	FrameIndex DXLO C 0 54
+	FrameIndex DXLO D 0 55
+	FrameIndex DXLO E 0 56
+	FrameIndex DXLO F 0 57
+	FrameIndex DXLO G 0 58
+
+	Model 0 "LAMPickup_d.3d"
+	SurfaceSkin 0 0 "LAM3rdTex1.tga"
+	SurfaceSkin 0 1 "LAM3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	Scale 0.01625 0.025 0.025
+	RollOffset 90
+	Offset 0 0 3
+
+	FrameIndex DXLO H 0 0
+}
+
+Model DDWeapon_GasGrenade
+{
+	Path "models/"
+	Model 0 "GasGrenade_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "WeaponHandsTex.tga"
+	SurfaceSkin 0 2 "GasGrenadeTex1.tga"
+
+	AngleOffset 90
+	Offset 5 -10.5 -8.5
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXGG A 0 50
+
+	//Ready
+	FrameIndex DXGG B 0 1
+	FrameIndex DXGG C 0 2
+	FrameIndex DXGG D 0 3
+	FrameIndex DXGG E 0 4
+	FrameIndex DXGG F 0 5
+	FrameIndex DXGG G 0 6
+	FrameIndex DXGG H 0 7
+	FrameIndex DXGG I 0 8
+	FrameIndex DXGG J 0 9
+	FrameIndex DXGG K 0 10
+	FrameIndex DXGG L 0 11
+	FrameIndex DXGG M 0 12
+
+	//Fire
+	FrameIndex DXGG N 0 13
+	FrameIndex DXGG O 0 14
+	FrameIndex DXGG P 0 15
+	FrameIndex DXGG Q 0 16
+	FrameIndex DXGG R 0 17
+	FrameIndex DXGG S 0 18
+	FrameIndex DXGG T 0 19
+	FrameIndex DXGG U 0 20
+	FrameIndex DXGG V 0 21
+	FrameIndex DXGG W 0 22
+
+	//Deselect
+	FrameIndex DXGG X 0 23
+	FrameIndex DXGG Y 0 24
+	FrameIndex DXGG Z 0 25
+	FrameIndex DXGH A 0 26
+	FrameIndex DXGH B 0 27
+	FrameIndex DXGH C 0 28
+	FrameIndex DXGH D 0 29
+	FrameIndex DXGH E 0 30
+	FrameIndex DXGH F 0 31
+
+	//Place
+	FrameIndex DXGH G 0 32
+	FrameIndex DXGH H 0 33
+	FrameIndex DXGH I 0 34
+	FrameIndex DXGH J 0 35
+	FrameIndex DXGH K 0 36
+	FrameIndex DXGH L 0 37
+	//PlaceEnd
+	FrameIndex DXGH M 0 38
+	FrameIndex DXGH N 0 39
+	FrameIndex DXGH O 0 40
+	FrameIndex DXGH P 0 41
+	FrameIndex DXGH Q 0 42
+	FrameIndex DXGH R 0 43
+	//PlaceFire
+	Offset 5 -10 -9
+	FrameIndex DXGH S 0 44
+	Offset 5 -9.5 -9.5
+	FrameIndex DXGH T 0 45
+	Offset 5 -9 -10
+	FrameIndex DXGH U 0 46
+	Offset 5 -8.5 -10.5
+	FrameIndex DXGH V 0 47
+	FrameIndex DXGH W 0 48
+	FrameIndex DXGH X 0 49
+	Offset 5 -10.5 -8.5
+
+	//Idle1
+	FrameIndex DXGH Y 0 50
+	FrameIndex DXGH Z 0 51
+	FrameIndex DXGI A 0 52
+	FrameIndex DXGI B 0 53
+	FrameIndex DXGI C 0 54
+	FrameIndex DXGI D 0 55
+	FrameIndex DXGI E 0 56
+	FrameIndex DXGI F 0 57
+	//Idle2
+	FrameIndex DXGI G 0 58
+	FrameIndex DXGI H 0 59
+	FrameIndex DXGI I 0 60
+	FrameIndex DXGI J 0 61
+	FrameIndex DXGI K 0 62
+	FrameIndex DXGI L 0 63
+	FrameIndex DXGI M 0 64
+	FrameIndex DXGI N 0 65
+
+	Model 0 "GasGrenadePickup_d.3d"
+	SurfaceSkin 0 0 "GasGrenade3rdTex1.tga"
+	SurfaceSkin 0 1 "GasGrenade3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	Scale 0.01625 0.025 0.025
+	RollOffset 90
+	Offset 0 0 3
+
+	FrameIndex DXGI O 0 0
+}
+
+Model DDWeapon_EMPGrenade
+{
+	Path "models/"
+	Model 0 "EMPGrenade_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "EMPGrenadeTex1.tga"
+	SurfaceSkin 0 2 "EMPGrenadeTex1.tga"
+	SurfaceSkin 0 3 "WeaponHandsTex.tga"
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	AngleOffset 95
+	Offset 5 -9.5 -8.5
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXEG A 0 42
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEG B 0 42
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEG C 0 42
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEG D 0 42
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEG E 0 42
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEG F 0 42
+	SurfaceSkin 0 4 "prodtip6.png"
+	FrameIndex DXEG G 0 42
+	SurfaceSkin 0 4 "prodtip7.png"
+	FrameIndex DXEG H 0 42
+	SurfaceSkin 0 4 "prodtip8.png"
+	FrameIndex DXEG I 0 42
+	SurfaceSkin 0 4 "prodtip9.png"
+	FrameIndex DXEG J 0 42
+	SurfaceSkin 0 4 "prodtip10.png"
+	FrameIndex DXEG K 0 42
+	SurfaceSkin 0 4 "prodtip11.png"
+	FrameIndex DXEG L 0 42
+	SurfaceSkin 0 4 "prodtip12.png"
+	FrameIndex DXEG M 0 42
+	SurfaceSkin 0 4 "prodtip13.png"
+	FrameIndex DXEG N 0 42
+	SurfaceSkin 0 4 "prodtip14.png"
+	FrameIndex DXEG O 0 42
+	SurfaceSkin 0 4 "prodtip15.png"
+	FrameIndex DXEG P 0 42
+	SurfaceSkin 0 4 "prodtip16.png"
+	FrameIndex DXEG Q 0 42
+	SurfaceSkin 0 4 "prodtip17.png"
+	FrameIndex DXEG R 0 42
+	SurfaceSkin 0 4 "prodtip18.png"
+	FrameIndex DXEG S 0 42
+	SurfaceSkin 0 4 "prodtip19.png"
+	FrameIndex DXEG T 0 42
+	SurfaceSkin 0 4 "prodtip20.png"
+	FrameIndex DXEG U 0 42
+
+	//Ready
+	SurfaceSkin 0 4 "prodtip13.png"
+	FrameIndex DXEG V 0 1
+	SurfaceSkin 0 4 "prodtip14.png"
+	FrameIndex DXEG W 0 2
+	SurfaceSkin 0 4 "prodtip15.png"
+	FrameIndex DXEG X 0 3
+	SurfaceSkin 0 4 "prodtip16.png"
+	FrameIndex DXEG Y 0 4
+	SurfaceSkin 0 4 "prodtip17.png"
+	FrameIndex DXEG Z 0 5
+	SurfaceSkin 0 4 "prodtip18.png"
+	FrameIndex DXEH A 0 6
+	SurfaceSkin 0 4 "prodtip19.png"
+	FrameIndex DXEH B 0 7
+	SurfaceSkin 0 4 "prodtip20.png"
+	FrameIndex DXEH C 0 8
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	//Fire
+	FrameIndex DXEH D 0 9
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEH E 0 10
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEH F 0 11
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEH G 0 12
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEH H 0 13
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEH I 0 14
+	SurfaceSkin 0 4 "prodtip6.png"
+	FrameIndex DXEH J 0 15
+	SurfaceSkin 0 4 "prodtip7.png"
+	FrameIndex DXEH K 0 16
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	//Deselect
+	FrameIndex DXEH L 0 17
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEH M 0 18
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEH N 0 19
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEH O 0 20
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEH P 0 21
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEH Q 0 22
+	SurfaceSkin 0 4 "prodtip6.png"
+	FrameIndex DXEH R 0 23
+	SurfaceSkin 0 4 "prodtip7.png"
+	FrameIndex DXEH S 0 24
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	//Place
+	FrameIndex DXEH T 0 25
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEH U 0 26
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEH V 0 27
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEH W 0 28
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEH X 0 29
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEH Y 0 30
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	//PlaceEnd
+	FrameIndex DXEH Z 0 31
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEI A 0 32
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEI B 0 33
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEI C 0 34
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEI D 0 35
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEI E 0 36
+	SurfaceSkin 0 4 "prodtip0.png"
+
+	//PlaceFire
+	Offset 5 -9 -9
+	FrameIndex DXEI F 0 37
+	SurfaceSkin 0 4 "prodtip1.png"
+	Offset 5 -8.5 -9.5
+	FrameIndex DXEI G 0 38
+	SurfaceSkin 0 4 "prodtip2.png"
+	Offset 5 -8 -10
+	FrameIndex DXEI H 0 39
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEI I 0 40
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEI J 0 41
+	SurfaceSkin 0 4 "prodtip0.png"
+	Offset 5 -9.5 -8.5
+
+	//Idle1
+	FrameIndex DXEI K 0 42
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEI L 0 43
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEI M 0 44
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEI N 0 45
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEI O 0 46
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEI P 0 47
+	SurfaceSkin 0 4 "prodtip6.png"
+	FrameIndex DXEI Q 0 48
+	SurfaceSkin 0 4 "prodtip7.png"
+	FrameIndex DXEI R 0 49
+	SurfaceSkin 0 4 "prodtip0.png"
+	//Idle2
+	FrameIndex DXEI S 0 50
+	SurfaceSkin 0 4 "prodtip1.png"
+	FrameIndex DXEI T 0 51
+	SurfaceSkin 0 4 "prodtip2.png"
+	FrameIndex DXEI U 0 52
+	SurfaceSkin 0 4 "prodtip3.png"
+	FrameIndex DXEI V 0 53
+	SurfaceSkin 0 4 "prodtip4.png"
+	FrameIndex DXEI W 0 54
+	SurfaceSkin 0 4 "prodtip5.png"
+	FrameIndex DXEI X 0 55
+	SurfaceSkin 0 4 "prodtip6.png"
+	FrameIndex DXEI Y 0 56
+	SurfaceSkin 0 4 "prodtip7.png"
+	FrameIndex DXEI Z 0 57
+	SurfaceSkin 0 4 "prodtip0.png"
+	
+
+	Model 0 "EMPGrenadePickup_d.3d"
+	SurfaceSkin 0 0 "EMPGrenade3rdTex1.tga"
+	SurfaceSkin 0 1 "EMPGrenade3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	SurfaceSkin 0 4 ""
+	Scale 0.01625 0.025 0.025
+	RollOffset 90
+	Offset 0 0 3
+
+	//Spawn
+	FrameIndex DXEJ A 0 0
+}
+
+Model DDWeapon_ScrambleGrenade
+{
+	Path "models/"
+	Model 0 "NanoVirusGrenade_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "scrambl0.png"
+	SurfaceSkin 0 2 "NanoVirusGrenadeTex1.png"
+	SurfaceSkin 0 3 "WeaponHandsTex.tga"
+
+	AngleOffset 90
+	Offset 5 -9.5 -8.5
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXSG A 0 37
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSG B 0 37
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSG C 0 37
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSG D 0 37
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSG E 0 37
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSG F 0 37
+	SurfaceSkin 0 1 "scrambl6.png"
+	FrameIndex DXSG G 0 37
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSG H 0 37
+	SurfaceSkin 0 1 "scrambl8.png"
+	FrameIndex DXSG I 0 37
+	SurfaceSkin 0 1 "scrambl9.png"
+	FrameIndex DXSG J 0 37
+	SurfaceSkin 0 1 "scrambl10.png"
+	FrameIndex DXSG K 0 37
+	SurfaceSkin 0 1 "scrambl11.png"
+	FrameIndex DXSG L 0 37
+	SurfaceSkin 0 1 "scrambl12.png"
+	FrameIndex DXSG M 0 37
+	SurfaceSkin 0 1 "scrambl13.png"
+	FrameIndex DXSG N 0 37
+	SurfaceSkin 0 1 "scrambl14.png"
+	FrameIndex DXSG O 0 37
+
+	//Ready
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSG P 0 1
+	SurfaceSkin 0 1 "scrambl8.png"
+	FrameIndex DXSG Q 0 2
+	SurfaceSkin 0 1 "scrambl9.png"
+	FrameIndex DXSG R 0 3
+	SurfaceSkin 0 1 "scrambl10.png"
+	FrameIndex DXSG S 0 4
+	SurfaceSkin 0 1 "scrambl11.png"
+	FrameIndex DXSG T 0 5
+	SurfaceSkin 0 1 "scrambl12.png"
+	FrameIndex DXSG U 0 6
+	SurfaceSkin 0 1 "scrambl13.png"
+	FrameIndex DXSG V 0 7
+	SurfaceSkin 0 1 "scrambl14.png"
+	FrameIndex DXSG W 0 8
+	SurfaceSkin 0 1 "scrambl0.png"
+
+	//Fire
+	FrameIndex DXSG X 0 9
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSG Y 0 10
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSG Z 0 11
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSH A 0 12
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSH B 0 13
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSH C 0 14
+	SurfaceSkin 0 1 "scrambl6.png"
+	FrameIndex DXSH D 0 15
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSH E 0 16
+	SurfaceSkin 0 1 "scrambl0.png"
+
+	//Deselect
+	FrameIndex DXSH F 0 17
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSH G 0 18
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSH H 0 19
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSH I 0 20
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSH J 0 21
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSH K 0 22
+	SurfaceSkin 0 1 "scrambl6.png"
+	FrameIndex DXSH L 0 23
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSH M 0 24
+	SurfaceSkin 0 1 "scrambl0.png"
+
+	//Place
+	FrameIndex DXSH N 0 25
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSH O 0 26
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSH P 0 27
+	SurfaceSkin 0 1 "scrambl3.png"
+	//PlaceEnd
+	FrameIndex DXSH Q 0 28
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSH R 0 29
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSH S 0 30
+	SurfaceSkin 0 1 "scrambl0.png"
+	//PlaceFire
+	FrameIndex DXSH T 0 31
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSH U 0 32
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSH V 0 33
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSH W 0 34
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSH X 0 35
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSH Y 0 36
+	SurfaceSkin 0 1 "scrambl0.png"
+
+	//Idle1
+	FrameIndex DXSH Z 0 37
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSI A 0 38
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSI B 0 39
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSI C 0 40
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSI D 0 41
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSI E 0 42
+	SurfaceSkin 0 1 "scrambl6.png"
+	FrameIndex DXSI F 0 43
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSI G 0 44
+	SurfaceSkin 0 1 "scrambl0.png"
+	//Idle2
+	FrameIndex DXSI H 0 45
+	SurfaceSkin 0 1 "scrambl1.png"
+	FrameIndex DXSI I 0 46
+	SurfaceSkin 0 1 "scrambl2.png"
+	FrameIndex DXSI J 0 47
+	SurfaceSkin 0 1 "scrambl3.png"
+	FrameIndex DXSI K 0 48
+	SurfaceSkin 0 1 "scrambl4.png"
+	FrameIndex DXSI L 0 49
+	SurfaceSkin 0 1 "scrambl5.png"
+	FrameIndex DXSI M 0 50
+	SurfaceSkin 0 1 "scrambl6.png"
+	FrameIndex DXSI N 0 51
+	SurfaceSkin 0 1 "scrambl7.png"
+	FrameIndex DXSI O 0 52
+	SurfaceSkin 0 1 "scrambl0.png"
+	
+
+	Model 0 "NanoVirusGrenadePickup_d.3d"
+	SurfaceSkin 0 0 "NanoVirusGrenade3rdTex1.tga"
+	SurfaceSkin 0 1 "NanoVirusGrenade3rdTex1.tga"
+	SurfaceSkin 0 2 ""
+	SurfaceSkin 0 3 ""
+	Scale 0.01625 0.025 0.025
+	RollOffset 90
+	Offset 0 0 2
+
+	//Spawn
+	FrameIndex DXSI P 0 0
+}
+
+Model DDWeapon_PlasmaRifle
+{
+	Path "models/"
+	Model 0 "PlasmaRifle_d.3d"
+	SurfaceSkin 0 0 "plrfx0.png"
+	SurfaceSkin 0 1 ""
+	SurfaceSkin 0 2 "plrfx0.png"
+	AngleOffset 90
+	Offset 0 -6.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXPR A 0 41
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPR B 0 41
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPR C 0 41
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPR D 0 41
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPR E 0 41
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPR F 0 41
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPR G 0 41
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPR H 0 41
+	SurfaceSkin 0 0 "plrfx8.png"
+	FrameIndex DXPR I 0 41
+	SurfaceSkin 0 0 "plrfx9.png"
+	FrameIndex DXPR J 0 41
+	SurfaceSkin 0 0 "plrfx2.png"
+
+	//Ready
+	FrameIndex DXPR K 0 1
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPR L 0 2
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPR M 0 3
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPR N 0 4
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPR O 0 5
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPR P 0 6
+	SurfaceSkin 0 0 "plrfx8.png"
+	FrameIndex DXPR Q 0 7
+	SurfaceSkin 0 0 "plrfx9.png"
+	FrameIndex DXPR R 0 8
+	SurfaceSkin 0 0 "plrfx0.png"
+
+	//Fire
+	FrameIndex DXPR S 0 9
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPR T 0 10
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPR U 0 11
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPR V 0 12
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPR W 0 13
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPR X 0 14
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPR Y 0 15
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPR Z 0 16
+	SurfaceSkin 0 0 "plrfx0.png"
+
+	//Deselect
+	FrameIndex DXPS A 0 17
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPS B 0 18
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPS C 0 19
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPS D 0 20
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPS E 0 21
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPS F 0 22
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPS G 0 23
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPS H 0 24
+	SurfaceSkin 0 0 "plrfx0.png"
+
+	//Reload
+	FrameIndex DXPS I 0 25
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPS J 0 26
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPS K 0 27
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPS L 0 28
+	SurfaceSkin 0 0 "plrfx0.png"
+	//ReloadLoop
+	FrameIndex DXPS M 0 29
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPS N 0 30
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPS O 0 31
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPS P 0 32
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPS Q 0 33
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPS R 0 34
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPS S 0 35
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPS T 0 36
+	SurfaceSkin 0 0 "plrfx8.png"
+	FrameIndex DXPS U 0 37
+	SurfaceSkin 0 0 "plrfx0.png"
+	//ReloadEnd
+	FrameIndex DXPS V 0 38
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPS W 0 39
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPS X 0 40
+	SurfaceSkin 0 0 "plrfx3.png"
+
+	//Idle1
+	FrameIndex DXPS Y 0 41
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPS Z 0 42
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPT A 0 43
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPT B 0 44
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPT C 0 45
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPT D 0 46
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPT E 0 47
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPT F 0 48
+	SurfaceSkin 0 0 "plrfx0.png"
+	//Idle2
+	FrameIndex DXPT G 0 49
+	SurfaceSkin 0 0 "plrfx1.png"
+	FrameIndex DXPT H 0 50
+	SurfaceSkin 0 0 "plrfx2.png"
+	FrameIndex DXPT I 0 51
+	SurfaceSkin 0 0 "plrfx3.png"
+	FrameIndex DXPT J 0 52
+	SurfaceSkin 0 0 "plrfx4.png"
+	FrameIndex DXPT K 0 53
+	SurfaceSkin 0 0 "plrfx5.png"
+	FrameIndex DXPT L 0 54
+	SurfaceSkin 0 0 "plrfx6.png"
+	FrameIndex DXPT M 0 55
+	SurfaceSkin 0 0 "plrfx7.png"
+	FrameIndex DXPT N 0 56
+	SurfaceSkin 0 0 "plrfx0.png"
+
+
+	Model 0 "PlasmaRiflePickup_d.3d"
+	SurfaceSkin 0 0 "PlasmaRifle3rdTex1.png"
+	SurfaceSkin 0 1 "PlasmaRifle3rdTex1.png"
+	SurfaceSkin 0 2 ""
+	Scale 0.13 0.2 0.3
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXPT O 0 0
+}
+
+Model DDWeapon_LAW
+{
+	Path "models/"
+	Model 0 "LAW_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "LAWTex1.png"
+	AngleOffset 90
+	Offset 6 -3 -2
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXLW A 0 53
+
+	//Ready
+	FrameIndex DXLW B 0 1
+	FrameIndex DXLW C 0 2
+	FrameIndex DXLW D 0 3
+	FrameIndex DXLW E 0 4
+	FrameIndex DXLW F 0 5
+	FrameIndex DXLW G 0 6
+	FrameIndex DXLW H 0 7
+	FrameIndex DXLW I 0 8
+	FrameIndex DXLW J 0 9
+	FrameIndex DXLW K 0 10
+
+	//Fire
+	FrameIndex DXLW L 0 11
+	FrameIndex DXLW M 0 12
+	FrameIndex DXLW N 0 13
+	FrameIndex DXLW O 0 14
+	FrameIndex DXLW P 0 15
+	FrameIndex DXLW Q 0 16
+	FrameIndex DXLW R 0 17
+	FrameIndex DXLW S 0 18
+	FrameIndex DXLW T 0 19
+	FrameIndex DXLW U 0 20
+	FrameIndex DXLW V 0 21
+	FrameIndex DXLW W 0 22
+	FrameIndex DXLW X 0 23
+	FrameIndex DXLW Y 0 24
+	FrameIndex DXLW Z 0 25
+	FrameIndex DXLX A 0 26
+	FrameIndex DXLX B 0 27
+	FrameIndex DXLX C 0 28
+	FrameIndex DXLX D 0 29
+	FrameIndex DXLX E 0 30
+	FrameIndex DXLX F 0 31
+	FrameIndex DXLX G 0 32
+	FrameIndex DXLX H 0 33
+	FrameIndex DXLX I 0 34
+	FrameIndex DXLX J 0 35
+	FrameIndex DXLX K 0 36
+	FrameIndex DXLX L 0 37
+	FrameIndex DXLX M 0 38
+	FrameIndex DXLX N 0 39
+	FrameIndex DXLX O 0 40
+	FrameIndex DXLX P 0 41
+	FrameIndex DXLX Q 0 42
+
+	//Deselect
+	FrameIndex DXLX R 0 43
+	FrameIndex DXLX S 0 44
+	FrameIndex DXLX T 0 45
+	FrameIndex DXLX U 0 46
+	FrameIndex DXLX V 0 47
+	FrameIndex DXLX W 0 48
+	FrameIndex DXLX X 0 49
+	FrameIndex DXLX Y 0 50
+	FrameIndex DXLX Z 0 51
+	FrameIndex DXLY A 0 52
+
+	//Idle1
+	FrameIndex DXLY B 0 53
+	FrameIndex DXLY C 0 54
+	FrameIndex DXLY D 0 55
+	FrameIndex DXLY E 0 56
+	FrameIndex DXLY F 0 57
+	FrameIndex DXLY G 0 58
+	FrameIndex DXLY H 0 59
+	FrameIndex DXLY I 0 60
+	FrameIndex DXLY J 0 61
+	FrameIndex DXLY K 0 62
+	//Idle2
+	FrameIndex DXLY L 0 63
+	FrameIndex DXLY M 0 64
+	FrameIndex DXLY N 0 65
+	FrameIndex DXLY O 0 66
+	FrameIndex DXLY P 0 67
+	FrameIndex DXLY Q 0 68
+	FrameIndex DXLY R 0 69
+	FrameIndex DXLY S 0 70
+	FrameIndex DXLY T 0 71
+	FrameIndex DXLY U 0 72
+
+	Model 0 "LAWPickup_d.3d"
+	SurfaceSkin 0 0 "LAW3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	Scale 0.195 0.3 0.3
+	RollOffset -90
+	Offset 0 0 3
+
+	FrameIndex DXPT W 0 0
+}
+
+Model DDWeapon_Flamethrower
+{
+	Path "models/"
+	Model 0 "Flamethrower_d.3d"
+	SurfaceSkin 0 0 "WeaponHandsTex.tga"
+	SurfaceSkin 0 1 "FlamethrowerTex1.tga"
+	SurfaceSkin 0 2 "fthtip0.png"
+	AngleOffset 95
+	Offset 5.5 -5.5 -4.5
+	Scale -0.1 0.1 0.05
+	RollOffset 15
+
+	//ReadyIdle
+	FrameIndex DXFT A 0 37
+	SurfaceSkin 0 2 "fthtip1.png"
+	FrameIndex DXFT B 0 37
+	SurfaceSkin 0 2 "fthtip2.png"
+	FrameIndex DXFT C 0 37
+	SurfaceSkin 0 2 "fthtip3.png"
+	FrameIndex DXFT D 0 37
+	SurfaceSkin 0 2 "fthtip4.png"
+	FrameIndex DXFT E 0 37
+	SurfaceSkin 0 2 "fthtip5.png"
+	FrameIndex DXFT F 0 37
+	SurfaceSkin 0 2 "fthtip6.png"
+	FrameIndex DXFT G 0 37
+	SurfaceSkin 0 2 "fthtip7.png"
+	FrameIndex DXFT H 0 37
+	SurfaceSkin 0 2 "fthtip8.png"
+	FrameIndex DXFT I 0 37
+	SurfaceSkin 0 2 "fthtip9.png"
+	FrameIndex DXFT J 0 37
+	SurfaceSkin 0 2 "fthtip10.png"
+	FrameIndex DXFT K 0 37
+	SurfaceSkin 0 2 "fthtip11.png"
+	FrameIndex DXFT L 0 37
+	SurfaceSkin 0 2 "fthtip12.png"
+	FrameIndex DXFT M 0 37
+	SurfaceSkin 0 2 "fthtip13.png"
+	FrameIndex DXFT N 0 37
+	SurfaceSkin 0 2 "fthtip14.png"
+	FrameIndex DXFT O 0 37
+	SurfaceSkin 0 2 "fthtip15.png"
+	FrameIndex DXFT P 0 37
+	SurfaceSkin 0 2 "fthtip16.png"
+	FrameIndex DXFT Q 0 37
+	SurfaceSkin 0 2 "fthtip17.png"
+	FrameIndex DXFT R 0 37
+	SurfaceSkin 0 2 "fthtip18.png"
+	FrameIndex DXFT S 0 37
+	SurfaceSkin 0 2 "fthtip19.png"
+	FrameIndex DXFT T 0 37
+	SurfaceSkin 0 2 "fthtip20.png"
+	FrameIndex DXFT U 0 37
+	SurfaceSkin 0 2 "fthtip21.png"
+	FrameIndex DXFT V 0 37
+	SurfaceSkin 0 2 "fthtip22.png"
+	FrameIndex DXFT W 0 37
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	//Ready
+	FrameIndex DXFT X 0 1
+	SurfaceSkin 0 2 "fthtip16.png"
+	FrameIndex DXFT Y 0 2
+	SurfaceSkin 0 2 "fthtip17.png"
+	FrameIndex DXFT Z 0 3
+	SurfaceSkin 0 2 "fthtip18.png"
+	FrameIndex DXFU A 0 4
+	SurfaceSkin 0 2 "fthtip19.png"
+	FrameIndex DXFU B 0 5
+	SurfaceSkin 0 2 "fthtip20.png"
+	FrameIndex DXFU C 0 6
+	SurfaceSkin 0 2 "fthtip21.png"
+	FrameIndex DXFU D 0 7
+	SurfaceSkin 0 2 "fthtip22.png"
+	FrameIndex DXFU E 0 8
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	//Fire
+	FrameIndex DXFU F 0 9
+	SurfaceSkin 0 2 "fthtip1.png"
+	FrameIndex DXFU G 0 10
+	SurfaceSkin 0 2 "fthtip2.png"
+	FrameIndex DXFU H 0 11
+	SurfaceSkin 0 2 "fthtip3.png"
+	FrameIndex DXFU I 0 12
+	SurfaceSkin 0 2 "fthtip4.png"
+	FrameIndex DXFU J 0 13
+	SurfaceSkin 0 2 "fthtip5.png"
+	FrameIndex DXFU K 0 14
+	SurfaceSkin 0 2 "fthtip6.png"
+	FrameIndex DXFU L 0 15
+	SurfaceSkin 0 2 "fthtip7.png"
+	FrameIndex DXFU M 0 16
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	//Reload
+	FrameIndex DXFU N 0 17
+	SurfaceSkin 0 2 "fthtip1.png"
+	FrameIndex DXFU O 0 18
+	SurfaceSkin 0 2 "fthtip2.png"
+	FrameIndex DXFU P 0 19
+	SurfaceSkin 0 2 "fthtip3.png"
+	//ReloadLoop
+	FrameIndex DXFU Q 0 20
+	SurfaceSkin 0 2 "fthtip4.png"
+	FrameIndex DXFU R 0 21
+	SurfaceSkin 0 2 "fthtip5.png"
+	FrameIndex DXFU S 0 22
+	SurfaceSkin 0 2 "fthtip6.png"
+	FrameIndex DXFU T 0 23
+	SurfaceSkin 0 2 "fthtip7.png"
+	FrameIndex DXFU U 0 24
+	SurfaceSkin 0 2 "fthtip8.png"
+	FrameIndex DXFU V 0 25
+	SurfaceSkin 0 2 "fthtip9.png"
+	FrameIndex DXFU W 0 26
+	SurfaceSkin 0 2 "fthtip10.png"
+	//ReloadEnd
+	FrameIndex DXFU X 0 27
+	SurfaceSkin 0 2 "fthtip11.png"
+	FrameIndex DXFU Y 0 28
+	SurfaceSkin 0 2 "fthtip12.png"
+	FrameIndex DXFU Z 0 29
+	SurfaceSkin 0 2 "fthtip13.png"
+	FrameIndex DXFV A 0 30
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	//Deselect
+	FrameIndex DXFV B 0 31
+	SurfaceSkin 0 2 ""
+	FrameIndex DXFV C 0 32
+	FrameIndex DXFV D 0 33
+	FrameIndex DXFV E 0 34
+	FrameIndex DXFV F 0 35
+	FrameIndex DXFV G 0 36
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	//Idle1
+	FrameIndex DXFV H 0 37
+	SurfaceSkin 0 2 "fthtip1.png"
+	FrameIndex DXFV I 0 38
+	SurfaceSkin 0 2 "fthtip2.png"
+	FrameIndex DXFV J 0 39
+	SurfaceSkin 0 2 "fthtip3.png"
+	FrameIndex DXFV K 0 40
+	SurfaceSkin 0 2 "fthtip4.png"
+	FrameIndex DXFV L 0 41
+	SurfaceSkin 0 2 "fthtip5.png"
+	FrameIndex DXFV M 0 42
+	SurfaceSkin 0 2 "fthtip6.png"
+	FrameIndex DXFV N 0 43
+	SurfaceSkin 0 2 "fthtip7.png"
+	FrameIndex DXFV O 0 44
+	SurfaceSkin 0 2 "fthtip0.png"
+	//Idle2
+	FrameIndex DXFV P 0 45
+	SurfaceSkin 0 2 "fthtip1.png"
+	FrameIndex DXFV Q 0 46
+	SurfaceSkin 0 2 "fthtip2.png"
+	FrameIndex DXFV R 0 47
+	SurfaceSkin 0 2 "fthtip3.png"
+	FrameIndex DXFV S 0 48
+	SurfaceSkin 0 2 "fthtip4.png"
+	FrameIndex DXFV T 0 49
+	SurfaceSkin 0 2 "fthtip5.png"
+	FrameIndex DXFV U 0 50
+	SurfaceSkin 0 2 "fthtip6.png"
+	FrameIndex DXFV V 0 51
+	SurfaceSkin 0 2 "fthtip7.png"
+	FrameIndex DXFV W 0 52
+	SurfaceSkin 0 2 "fthtip0.png"
+
+	Model 0 "FlamethrowerPickup_d.3d"
+	SurfaceSkin 0 0 "Flamethrower3rdTex1.tga"
+	SurfaceSkin 0 1 ""
+	SurfaceSkin 0 2 ""
+	Scale 0.13 0.2 0.3
+	RollOffset -90
+	Offset 0 0 8
+
+	FrameIndex DXFV X 0 0
+}
+
+Model DDWeapon_GEPGun
+{
+	Path "models/"
+	Model 0 "GEPGun_d.3d"
+	SurfaceSkin 0 0 "GEPGunTex1.tga"
+	AngleOffset 90
+	Offset 4 -5.8 -2.8
+	Scale -0.1 0.1 0.05
+
+	//ReadyIdle
+	FrameIndex DXGG A 0 41
+	//Select
+	FrameIndex DXGG B 0 1
+	FrameIndex DXGG C 0 2
+	FrameIndex DXGG D 0 3
+	FrameIndex DXGG E 0 4
+	FrameIndex DXGG F 0 5
+	FrameIndex DXGG G 0 6
+	FrameIndex DXGG H 0 7
+	FrameIndex DXGG I 0 8
+	FrameIndex DXGG J 0 9
+	FrameIndex DXGG K 0 10
+
+	//Fire
+	FrameIndex DXGG L 0 11
+	FrameIndex DXGG M 0 12
+	FrameIndex DXGG N 0 13
+	FrameIndex DXGG O 0 14
+	FrameIndex DXGG P 0 15
+
+	//Deselect
+	FrameIndex DXGG Q 0 16
+	FrameIndex DXGG R 0 17
+	FrameIndex DXGG S 0 18
+	FrameIndex DXGG T 0 19
+	FrameIndex DXGG U 0 20
+	FrameIndex DXGG V 0 21
+	FrameIndex DXGG W 0 22
+	FrameIndex DXGG X 0 23
+	FrameIndex DXGG Y 0 24
+	FrameIndex DXGG Z 0 25
+
+	//Reload
+	FrameIndex DXGH A 0 26
+	FrameIndex DXGH B 0 27
+	FrameIndex DXGH C 0 28
+	FrameIndex DXGH D 0 29
+	FrameIndex DXGH E 0 30
+	//ReloadLoop
+	FrameIndex DXGH F 0 31
+	FrameIndex DXGH G 0 32
+	FrameIndex DXGH H 0 33
+	FrameIndex DXGH I 0 34
+	FrameIndex DXGH J 0 35
+	FrameIndex DXGH K 0 36
+	//ReloadEnd
+	FrameIndex DXGH L 0 37
+	FrameIndex DXGH M 0 38
+	FrameIndex DXGH N 0 39
+	FrameIndex DXGH O 0 40
+
+	//Idle1
+	FrameIndex DXGH P 0 41
+	FrameIndex DXGH Q 0 42
+	FrameIndex DXGH R 0 43
+	FrameIndex DXGH S 0 44
+	FrameIndex DXGH T 0 45
+	FrameIndex DXGH U 0 46
+	FrameIndex DXGH V 0 47
+	FrameIndex DXGH W 0 48
+	//Idle2
+	FrameIndex DXGH X 0 49
+	FrameIndex DXGH Y 0 50
+	FrameIndex DXGH Z 0 51
+	FrameIndex DXGI A 0 52
+	FrameIndex DXGI B 0 53
+	FrameIndex DXGI C 0 54
+	FrameIndex DXGI D 0 55
+	FrameIndex DXGI E 0 56
+
+	Model 0 "GEPGunPickup_d.3d"
+	SurfaceSkin 0 0 "GEPGun3rdTex1.tga"
+	Scale 0.13 0.2 0.25
+	RollOffset -90
+	Offset 0 0 2
+
+	FrameIndex DXGI F 0 0
+}

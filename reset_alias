@@ -1,0 +1,1 @@
+alias "dd_reset" "take fist; take pistol; take clip 50; remove clip; give dd_inventoryholder; give dd_skillstate; summon ddweapon_combatknife; summon ddweapon_pistol; give ddammo_10mm 12; give dd_skillpoints 4050;"
