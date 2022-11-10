@@ -8,7 +8,7 @@ class DDWeapon_LAW : DDWeapon
 		DDWeapon.DropSound "DDWeapon/weapon_drop_large";
 		DDWeapon.IdleStateAmount 2;
 
-		DDWeapon.MainDamage 1000;
+		DDWeapon.MainDamage 2500;
 
 		DDWeapon.BaseSpread 12;
 
