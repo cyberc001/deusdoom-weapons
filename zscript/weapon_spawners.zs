@@ -52,7 +52,7 @@ class DDSpawner_Shell : DDSpawner
 	override void BeginPlay()
 	{
 		class<Actor> cls = "DDAmmo_12gaBuckshot";
-		actors.push(cls); chances.push(8); flags.push(0);
+		actors.push(cls); chances.push(11); flags.push(0);
 		cls = "DDAmmo_12gaSabot";
 		actors.push(cls); chances.push(2); flags.push(0);
 

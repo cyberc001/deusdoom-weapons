@@ -12,7 +12,7 @@ class DDWeapon_AssaultShotgun : DDWeapon
 		DDWeapon.AmmoType2 "DDAmmo_12gaSabot";
 		DDWeapon.BaseClipSize 12;
 
-		DDWeapon.MainDamage 7;
+		DDWeapon.MainDamage 6;
 
 		DDWeapon.BaseSpread 19;
 		DDWeapon.BaseReloadTime 35*3;
