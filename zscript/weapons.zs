@@ -523,7 +523,7 @@ class DDWeapon : DoomWeapon
 		if(pen_amt == -1) pen_amt = invoker.GetPenetrationAmount();
 
 		if(countInv("PowerStrength") && invoker.bMELEEWEAPON)
-			base_damage *= 10;
+			base_damage *= 1.5;
 
 		for(int i = 0; i < bullet_amt; ++i){
 			let aim_tracer = new("DD_AimTracer");
