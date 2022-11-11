@@ -535,6 +535,8 @@ class DDWeapon : DoomWeapon
 
 			double angle = angle + frandom(-spread_x, spread_x);
 			double pitch = pitch + frandom(-spread_y, spread_y);
+			if(i == 0)
+				A_FireBullets(angle, pitch, 1, 0, "BulletPuff", FBF_EXPLICITANGLE | FBF_NOFLASH | FBF_NORANDOMPUFFZ); // Trigger switches
 			vector3 dir = (Actor.AngleToVector(angle, cos(pitch)), -sin(pitch));
 			for(int i = 0; i < pen_amt; ++i){
 				aim_tracer.trace(pos + (0, 0, player.viewHeight), curSector, dir, invoker.max_range, 0);
