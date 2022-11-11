@@ -383,10 +383,10 @@ class DDWeapons_EventHandler : StaticEventHandler
 				plr.mo.addInventory(ddih);
 			}
 
-			let pistol = DDWeapon(Actor.Spawn("DDWeapon_Pistol"));
+			let pistol = DDWeapon(Actor.Spawn("DDWeapon_Pistol", (999999, 999999, 999999)));
 			pistol.chambered_ammo = pistol.GetClipSize();
 			ddih.addItem(pistol);
-			let knife = Inventory(Actor.Spawn("DDWeapon_CombatKnife"));
+			let knife = Inventory(Actor.Spawn("DDWeapon_CombatKnife", (999999, 999999, 999999)));
 			ddih.addItem(knife);
 
 			plr.mo.GiveInventory("DDAmmo_10mm", 12);
