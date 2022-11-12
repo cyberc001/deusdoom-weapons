@@ -50,8 +50,7 @@ class DDWeapon_PS20 : DDWeapon
 			DXPS A 0 { ProjectileAttack("DDProjectile_PlasmaBolt", GetMainDamage()); DoRecoil(); }
 			DXPS JKLMNOPQRSTUVWXYZ 2;
 			DXPT ABCD 2;
-			DXPT A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXPT A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 
 		Spawn:

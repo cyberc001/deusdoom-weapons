@@ -59,8 +59,7 @@ class DDWeapon_ThrowingKnives : DDWeapon
 			DXTK KLMNOP 3;
 			DXTK Q 3;
 			DXTK R 3 { ProjectileAttack("DDProjectile_ThrowingKnife", GetMainDamage()); return UseSelf("FireEnd"); }
-			TNT0 A 0 A_TakeInventory("DDWeapon_ThrowingKnives", 999999);
-			TNT0 A 0 A_Lower(999);
+			TNT0 A 0 { A_TakeInventory("DDWeapon_ThrowingKnives", 999999); A_Lower(999); }
 			Stop;
 		FireEnd:
 			DXTK A 8;
