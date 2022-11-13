@@ -13,7 +13,7 @@ class DDWeapon_SniperRifle : DDWeapon
 
 		DDWeapon.MainDamage 100;
 
-		DDWeapon.BaseSpread 14;
+		DDWeapon.BaseSpread 9;
 		DDWeapon.BaseReloadTime 35*3;
 
 		DDWeapon.Recoil 12;

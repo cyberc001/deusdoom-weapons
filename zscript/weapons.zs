@@ -423,11 +423,12 @@ class DDWeapon : DoomWeapon
 
 	double angle_change, pitch_change;
 	double angle_sign, pitch_sign;
-	const angle_mul = 0.7; const pitch_mul = 0.55;
+	const angle_mul = 0.6; const pitch_mul = 0.5;
 	const angle_pertick_mul = 0.02 * angle_mul; const pitch_pertick_mul = 0.02 * pitch_mul;
+	const sway_min_spread = 4;
 	void DoScopeSway()
 	{
-		if(owner && has_scope && zoomed_in){
+		if(owner && has_scope && zoomed_in && GetBaseSpread() >= sway_min_spread){
 			double spr = GetBaseSpread();
 			if(angle_change > 0){
 				owner.A_SetAngle(owner.angle + angle_sign * angle_pertick_mul * spr, SPF_INTERPOLATE);
