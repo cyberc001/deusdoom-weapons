@@ -51,14 +51,14 @@ class DDWeapon_Baton : DDWeapon
 			DXBT A 0 PlayFireAnim();
 		Fire1:
 			DXBT PQRST 2;
-			DXBT U 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_Baton/hit_flesh", "DDWeapon_Baton/hit_metal", "DDWeapon_Baton/hit_wall");
+			DXBT U 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_Baton/hit_flesh", "DDWeapon_Baton/hit_metal", "DDWeapon_Baton/hit_wall", FLAG_DONTPUFF);
 			DXBT VWXYZ 2;
 			DXBU A 2;
 			DXBT A 5;
 			Goto ReadyIdle;
 		Fire2:
 			DXBU BCDEF 2;
-			DXBU G 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_Baton/hit_flesh", "DDWeapon_Baton/hit_metal", "DDWeapon_Baton/hit_wall");
+			DXBU G 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_Baton/hit_flesh", "DDWeapon_Baton/hit_metal", "DDWeapon_Baton/hit_wall", FLAG_DONTPUFF);
 			DXBU HIJKLM 2;
 			DXBT A 5;
 			Goto ReadyIdle;

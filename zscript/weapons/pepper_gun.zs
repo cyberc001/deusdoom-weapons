@@ -65,13 +65,13 @@ class DDWeapon_PepperGun : DDWeapon
 		Fire:
 			DXPG A 0 CheckClipAmmo("DryFire");
 			DXPG A 0 A_StartSound("DDWeapon_PepperGun/fire", CHAN_WEAPON, CHANF_DEFAULT, 0.7);
-			DXPG H 2 { DoPepperMist(); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun"); CheckClipAmmo("DryFire"); }
+			DXPG H 2 { DoPepperMist(); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun", "", "", "", FLAG_DONTPUFF); CheckClipAmmo("DryFire"); }
 			DXPG I 2 DoPepperMist(-2); 
-			DXPG J 2 { DoPepperMist(-4); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun"); CheckClipAmmo("DryFire"); }
+			DXPG J 2 { DoPepperMist(-4); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun", "", "", "", FLAG_DONTPUFF); CheckClipAmmo("DryFire"); }
 			DXPG K 2 DoPepperMist(-6); 
-			DXPG L 2 { DoPepperMist(-6); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun"); CheckClipAmmo("DryFire"); }
+			DXPG L 2 { DoPepperMist(-6); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun", "", "", "", FLAG_DONTPUFF); CheckClipAmmo("DryFire"); }
 			DXPG M 2 DoPepperMist(-4); 
-			DXPG N 2 { DoPepperMist(-2); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun"); CheckClipAmmo("DryFire"); }
+			DXPG N 2 { DoPepperMist(-2); HitscanAttack(-1, -1, -1, "DDPowerup_PepperStun", "", "", "", FLAG_DONTPUFF); CheckClipAmmo("DryFire"); }
 			DXPG O 2 DoPepperMist(); 
 			Goto ReadyIdle;
 		DryFire:

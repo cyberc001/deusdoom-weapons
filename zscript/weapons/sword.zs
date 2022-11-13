@@ -51,13 +51,13 @@ class DDWeapon_Sword : DDWeapon
 			DXSW A 0 PlayFireAnim();
 		Fire1:
 			DXSW IIJKLMM 1;
-			DXSW N 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Sword/hit_flesh", "DDWeapon_Sword/hit_metal", "DDWeapon_Sword/hit_wall");
+			DXSW N 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Sword/hit_flesh", "DDWeapon_Sword/hit_metal", "DDWeapon_Sword/hit_wall", FLAG_DONTPUFF);
 			DXSW OPPQRRSTT 1;
 			DXSW A 8;
 			Goto ReadyIdle;
 		Fire2:
 			DXSW UUVWXYY 1;
-			DXSW Z 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Sword/hit_flesh", "DDWeapon_Sword/hit_metal", "DDWeapon_Sword/hit_wall");
+			DXSW Z 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Sword/hit_flesh", "DDWeapon_Sword/hit_metal", "DDWeapon_Sword/hit_wall", FLAG_DONTPUFF);
 			DXSX ABBCDDEFF 1;
 			DXSW A 8;
 			Goto ReadyIdle;

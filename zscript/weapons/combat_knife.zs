@@ -50,20 +50,20 @@ class DDWeapon_CombatKnife : DDWeapon
 			DXCK A 0 PlayFireAnim();
 		Fire1:
 			DXCK EFG 2;
-			DXCK H 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall");
+			DXCK H 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall", FLAG_DONTPUFF);
 			DXCK IJKL 2;
 			DXCK A 8;
 			Goto ReadyIdle;
 		Fire2:
 			DXCK MNOPQ 1;
-			DXCK R 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall");
+			DXCK R 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall", FLAG_DONTPUFF);
 			DXCK STUVWX 1;
 			DXCK A 8;
 			Goto ReadyIdle;
 		Fire3:
 			DXCK YZ 2;
 			DXCL A 2;
-			DXCL B 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall");
+			DXCL B 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_CombatKnife/hit_flesh", "DDWeapon_CombatKnife/hit_metal", "DDWeapon_CombatKnife/hit_wall", FLAG_DONTPUFF);
 			DXCL CDEF 2;
 			DXCK A 8;
 			Goto ReadyIdle;

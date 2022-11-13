@@ -51,13 +51,13 @@ class DDWeapon_Crowbar : DDWeapon
 			DXCB A 0 PlayFireAnim();
 		Fire1:
 			DXCB GGHIJKK 1;
-			DXCB L 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Crowbar/hit_flesh", "DDWeapon_Crowbar/hit_metal", "DDWeapon_Crowbar/hit_wall");
+			DXCB L 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Crowbar/hit_flesh", "DDWeapon_Crowbar/hit_metal", "DDWeapon_Crowbar/hit_wall", FLAG_DONTPUFF);
 			DXCB MNNOPPQRR 1;
 			DXCB A 8;
 			Goto ReadyIdle;
 		Fire2:
 			DXCB SSTUVWW 1;
-			DXCB X 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Crowbar/hit_flesh", "DDWeapon_Crowbar/hit_metal", "DDWeapon_Crowbar/hit_wall");
+			DXCB X 1 HitscanAttack(-1, -1, -1, "", "DDWeapon_Crowbar/hit_flesh", "DDWeapon_Crowbar/hit_metal", "DDWeapon_Crowbar/hit_wall", FLAG_DONTPUFF);
 			DXCB YYZ 1;
 			DXCC ABBCDDEFF 1;
 			DXCB A 8;

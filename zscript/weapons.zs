@@ -516,8 +516,9 @@ class DDWeapon : DoomWeapon
 	virtual int GetPenetrationAmount() { return 1; }
 
 
+	const FLAG_DONTPUFF = 1;
 	action void HitscanAttack(int base_damage = -1, int bullet_amt = -1, int pen_amt = -1, class<Inventory> give_powerup = "",
-								string hit_flesh_sound = "", string hit_metal_sound = "", string hit_wall_sound = "")
+								string hit_flesh_sound = "", string hit_metal_sound = "", string hit_wall_sound = "", int flags = 0)
 	{
 		if(base_damage == -1) base_damage = GetMainDamage();
 		if(bullet_amt == -1) bullet_amt = invoker.GetBulletAmount();
@@ -536,8 +537,7 @@ class DDWeapon : DoomWeapon
 
 			double angle = angle + frandom(-spread_x, spread_x);
 			double pitch = pitch + frandom(-spread_y, spread_y);
-			if(i == 0)
-				A_FireBullets(angle, pitch, 1, 0, "BulletPuff", FBF_EXPLICITANGLE | FBF_NOFLASH | FBF_NORANDOMPUFFZ); // Trigger switches
+			A_FireBullets(angle, pitch, 0, 0, "DD_NoPuff", FBF_EXPLICITANGLE | FBF_NOFLASH | FBF_NORANDOMPUFFZ, invoker.max_range); // Trigger switches
 			vector3 dir = (Actor.AngleToVector(angle, cos(pitch)), -sin(pitch));
 			for(int i = 0; i < pen_amt; ++i){
 				aim_tracer.trace(pos + (0, 0, player.viewHeight), curSector, dir, invoker.max_range, 0);
@@ -580,6 +580,9 @@ class DDWeapon : DoomWeapon
 				}
 				else if(aim_tracer.hit_wall && hit_wall_sound)
 					A_StartSound(hit_wall_sound);
+
+				if((aim_tracer.hit_wall || aim_tracer.hit_obj) && !(flags & FLAG_DONTPUFF))
+					Spawn("BulletPuff", (aim_tracer.results.hitpos.x, aim_tracer.results.hitpos.y, aim_tracer.results.hitpos.z) - dir);
 			}
 		}
 		if(invoker.chambered_ammo > 0)
@@ -662,5 +665,14 @@ class DD_AimTracer : LineTracer
 		else if(results.hitType == TRACE_HitWall || results.hitType == TRACE_HitFloor || results.hitType == TRACE_HitCeiling)
 		{ hit_wall = true; return TRACE_Stop; }
 		return TRACE_Skip;
+	}
+}
+
+class DD_NoPuff : Actor
+{ // Cause it's hard to add a flag to A_FireBullets()! Show request this feature.
+	override void BeginPlay()
+	{
+		destroy();
+		return;
 	}
 }

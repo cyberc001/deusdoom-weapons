@@ -85,13 +85,13 @@ class DDWeapon_DragonsToothSword : DDWeapon
 			Goto ReadyIdle;
 		Fire1:
 			DXDU UVVWYY 1;
-			DXDU Z 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDU Z 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall", FLAG_DONTPUFF);
 			DXDV ABBCDEFGGHI 1;
 			DXDT ABCDEF 1;
 			Goto ReadyIdle;
 		Fire2:
 			DXDV JKKLMM 1;
-			DXDU N 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDU N 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall", FLAG_DONTPUFF);
 			DXDV OPPQRSTUVVWX 1;
 			DXDT ABCDEF 1;
 			Goto ReadyIdle;
