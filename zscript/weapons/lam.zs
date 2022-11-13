@@ -10,7 +10,7 @@ class DDWeapon_LAM : DDWeapon
 
 		DDWeapon.MainDamage 500;
 
-		DDWeapon.BaseSpread 12;
+		DDWeapon.BaseSpread 6;
 
 		DDWeapon.Recoil 0;
 		DDWeapon.DenyUpgrades true;

@@ -10,7 +10,7 @@ class DDWeapon_EMPGrenade : DDWeapon
 
 		DDWeapon.MainDamage 1000;
 
-		DDWeapon.BaseSpread 12;
+		DDWeapon.BaseSpread 6;
 
 		DDWeapon.Recoil 0;
 		DDWeapon.DenyUpgrades true;
