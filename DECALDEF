@@ -1,0 +1,42 @@
+decal DDDecal_BulletChip
+{
+	pic DDECAL01
+	randomflipx
+	randomflipy
+	x-scale 0.2
+	y-scale 0.2
+}
+decal DDDecal_Scorch1
+{
+	pic DDECAL02
+	randomflipx
+	randomflipy
+	x-scale 1
+	y-scale 1
+}
+decal DDDecal_Scorch2
+{
+	pic DDECAL03
+	randomflipx
+	randomflipy
+	x-scale 1
+	y-scale 1
+}
+decal DDDecal_PlasmaScorch1
+{
+	pic DDECAL02
+	randomflipx
+	randomflipy
+	x-scale 1
+	y-scale 1
+	shade 44BB44
+}
+decal DDDecal_PlasmaScorch2
+{
+	pic DDECAL03
+	randomflipx
+	randomflipy
+	x-scale 1
+	y-scale 1
+	shade 44BB44
+}

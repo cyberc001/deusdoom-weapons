@@ -25,5 +25,6 @@ class DDProjectile_WPRocketGEPGun : DDProjectile_RocketGEPGun
 					burn.dur_timer *= 2;
 			}
 		}
+		A_SprayDecal(random(0, 1) ? "DDDecal_Scorch1" : "DDDecal_Scorch2");
 	}
 }

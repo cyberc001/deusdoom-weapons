@@ -58,5 +58,6 @@ class DDProjectile_RocketGEPGun : DDProjectile
 		Spawn("DDAnimatedEffect_EnergySphere", pos);
 		DoExplosion(_damage, 112);
 		A_StartSound("DDExplosion/medium2", CHAN_AUTO, CHANF_DEFAULT, 1, ATTN_NORM, 1);
+		A_SprayDecal(random(0, 1) ? "DDDecal_Scorch1" : "DDDecal_Scorch2");
 	}
 }

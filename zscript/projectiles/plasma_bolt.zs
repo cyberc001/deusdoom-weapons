@@ -24,7 +24,8 @@ class DDProjectile_PlasmaBolt : DDProjectile
 	override void OnDeathStop()
 	{
 		Spawn("DDEffect_PlasmaSmoke", pos);
-		DoExplosion(_damage, 48);
+		DoExplosion(_damage, 52);
 		A_StartSound("DDProjectile_PlasmaBolt/hit");
+		A_SprayDecal(random(0, 1) ? "DDDecal_PlasmaScorch1" : "DDDecal_PlasmaScorch2");
 	}
 }

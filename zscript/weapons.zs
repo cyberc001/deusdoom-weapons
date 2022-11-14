@@ -78,6 +78,7 @@ class DDWeapon : DoomWeapon
 		CheckInvDispDesc();
 		DoScopeSway();
 		CheckLockOn();
+
 	}
 
 	string _skill;
@@ -516,6 +517,17 @@ class DDWeapon : DoomWeapon
 	virtual int GetPenetrationAmount() { return 1; }
 
 
+	void SprayDecal(string type, double angle, double pitch)
+	{
+		if(owner){
+			warp(owner, 0, 0, owner.player.viewHeight - 8);
+			self.angle = 0; self.pitch = 0;
+			vector3 dir = (Actor.AngleToVector(angle, cos(pitch)), -sin(pitch));
+			A_SprayDecal(type, max_range, (0, 0, 0), dir);
+		}
+	}
+
+
 	const FLAG_DONTPUFF = 1;
 	action void HitscanAttack(int base_damage = -1, int bullet_amt = -1, int pen_amt = -1, class<Inventory> give_powerup = "",
 								string hit_flesh_sound = "", string hit_metal_sound = "", string hit_wall_sound = "", int flags = 0)
@@ -581,8 +593,13 @@ class DDWeapon : DoomWeapon
 				else if(aim_tracer.hit_wall && hit_wall_sound)
 					A_StartSound(hit_wall_sound);
 
+				// Spawn bullet puff
 				if((aim_tracer.hit_wall || aim_tracer.hit_obj) && !(flags & FLAG_DONTPUFF))
 					Spawn("BulletPuff", (aim_tracer.results.hitpos.x, aim_tracer.results.hitpos.y, aim_tracer.results.hitpos.z) - dir);
+				// Spawn decal
+				if(aim_tracer.hit_wall && !(flags & FLAG_DONTPUFF))
+					invoker.SprayDecal("DDDecal_BulletChip", angle, pitch);
+
 				aim_tracer.hit_obj = null;
 			}
 		}
