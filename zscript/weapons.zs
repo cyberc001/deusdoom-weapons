@@ -583,6 +583,7 @@ class DDWeapon : DoomWeapon
 
 				if((aim_tracer.hit_wall || aim_tracer.hit_obj) && !(flags & FLAG_DONTPUFF))
 					Spawn("BulletPuff", (aim_tracer.results.hitpos.x, aim_tracer.results.hitpos.y, aim_tracer.results.hitpos.z) - dir);
+				aim_tracer.hit_obj = null;
 			}
 		}
 		if(invoker.chambered_ammo > 0)
