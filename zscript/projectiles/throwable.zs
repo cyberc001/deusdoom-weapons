@@ -72,7 +72,7 @@ class DDThrowableProjectile : DDProjectile
 		BlockThingsIterator itb = BlockThingsIterator.Create(self, _radius);
 		while(itb.next()){
 			Actor victim = itb.thing;
-			if((victim == self || !CheckSight(victim) || !victim.bISMONSTER || !RecognitionUtils.isFooledByRadarTransparency(victim)) && !victim.player)
+			if((victim == self || !victim.bISMONSTER || !CheckSight(victim)) && !victim.player)
 				continue;
 
 			if(victim.player){
@@ -103,7 +103,7 @@ class DDThrowableProjectile : DDProjectile
 		BlockThingsIterator itb = BlockThingsIterator.Create(self, _radius);
 		while(itb.next()){
 			Actor victim = itb.thing;
-			if(victim == self || !CheckSight(victim) || !victim.bISMONSTER || !RecognitionUtils.isFooledByRadarTransparency(victim))
+			if(victim == self || !CheckSight(victim) || !victim.bISMONSTER)
 				continue;
 
 			double dist = (Distance3D(victim) - victim.radius) / _radius;

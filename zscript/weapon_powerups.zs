@@ -102,19 +102,26 @@ class DDPowerup_Stun : DDPowerup
 	bool pain_sound_on_first_tick;
 	property PainSoundOnFirstTick: pain_sound_on_first_tick;
 
+	virtual bool shouldAffectOwner(out double mult) { return RecognitionUtils.isAffectedByStun(owner, mult); }
+
 	virtual int GetDuration()
 	{
-		return owner.bBOSS ? boss_duration : duration - duration_dec_max * (owner.GetSpawnHealth() > duration_dec_hpmax ? 1
+		double mult = 1;
+		shouldAffectOwner(mult);
+		return (owner.bBOSS ? boss_duration : duration - duration_dec_max * (owner.GetSpawnHealth() > duration_dec_hpmax ? 1
 																						: owner.GetSpawnHealth() < duration_dec_hpmin ? 0
-																						: double(owner.GetSpawnHealth() - duration_dec_hpmin) / (duration_dec_hpmax - duration_dec_hpmin));
+																						: double(owner.GetSpawnHealth() - duration_dec_hpmin) / (duration_dec_hpmax - duration_dec_hpmin))) * mult;
 	}
 
 	override void Tick()
 	{
-		if(owner)
-			owner.triggerPainChance("None", true);
-
 		if(owner && !activated){
+			double mult = 1;
+			if(!shouldAffectOwner(mult)){
+				destroy();
+				return;
+			}
+
 			prev_pain_sound = owner.PainSound;
 			owner.PainSound = "";
 
@@ -126,6 +133,9 @@ class DDPowerup_Stun : DDPowerup
 			activated = true;
 			pain_timer = random(pain_delay_min, pain_delay_max);
 		}
+
+		if(owner)
+			owner.triggerPainChance("None", true);
 
 		--pain_timer;
 		if(pain_timer <= 0){
@@ -227,6 +237,7 @@ class DDPowerup_EMPStun : DDPowerup_Stun
 
 	double dur_coff;
 	override int GetDuration() { return super.GetDuration() * dur_coff; }
+	override bool shouldAffectOwner(out double mult) { return RecognitionUtils.isAffectedByEMP(owner, mult); }
 }
 
 class DDPowerup_Scramble : DDPowerup_Stun
@@ -261,6 +272,7 @@ class DDPowerup_Scramble : DDPowerup_Stun
 			Destroy();
 		}
 	}
+	override bool shouldAffectOwner(out double mult) { return RecognitionUtils.isAffectedByEMP(owner, mult); }
 }
 
 class DDPowerup_Burn : DDPowerup
