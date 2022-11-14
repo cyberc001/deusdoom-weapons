@@ -12,7 +12,7 @@ class DDWeapon_SawedOffShotgun : DDWeapon
 		DDWeapon.AmmoType2 "DDAmmo_12gaSabot";
 		DDWeapon.BaseClipSize 4;
 
-		DDWeapon.MainDamage 14;
+		DDWeapon.MainDamage 10;
 
 		DDWeapon.BaseSpread 17;
 		DDWeapon.BaseReloadTime 35*3;
