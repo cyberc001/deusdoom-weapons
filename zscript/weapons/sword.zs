@@ -10,7 +10,7 @@ class DDWeapon_Sword : DDWeapon
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;
 
-		DDWeapon.MainDamage 50;
+		DDWeapon.MainDamage 40;
 
 		DDWeapon.AccurateRange 112;
 		DDWeapon.MaxRange 112;
