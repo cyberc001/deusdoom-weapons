@@ -130,9 +130,14 @@ class DDSpawner_Grenades_RocketAmmo : DDSpawner
 		Class<Actor> cls = "DDWeapon_LAM";
 		actors.push(cls); chances.push(9); flags.push(0);
 		cls = "DDWeapon_GasGrenade";
-		actors.push(cls); chances.push(3); flags.push(0);
-		cls = "DDWeapon_PS20";
 		actors.push(cls); chances.push(2); flags.push(0);
+		cls = "DDWeapon_PS20";
+		actors.push(cls); chances.push(1); flags.push(0);
+		cls = "DDWeapon_EMPGrenade";
+		actors.push(cls); chances.push(2); flags.push(0);
+		cls = "DDWeapon_ScrambleGrenade";
+		actors.push(cls); chances.push(1); flags.push(0);
+
 		super.BeginPlay();
 	}
 }
@@ -159,17 +164,13 @@ class DDSpawner_Cell : DDSpawner
 		cls = "DDAmmo_Napalm";
 		actors.push(cls); chances.push(7); flags.push(0);
 
-		cls = "DDWeapon_EMPGrenade";
-		actors.push(cls); chances.push(4); flags.push(0);
-		cls = "DDWeapon_ScrambleGrenade";
-		actors.push(cls); chances.push(2); flags.push(0);
-		cls = "DDWeapon_PS20";
-		actors.push(cls); chances.push(2); flags.push(0);
-
 		cls = "DDAmmo_PepperCartridge";
 		actors.push(cls); chances.push(1); flags.push(0);
 		cls = "DDAmmo_ProdCharger";
 		actors.push(cls); chances.push(1); flags.push(0);
+
+		class<DDSpawner> sp = "DDSpawner_Grenades_Cell";
+		spawn_along.push(sp);
 		super.BeginPlay();
 	}
 }
@@ -181,6 +182,41 @@ class DDSpawner_CellPack : DDSpawner_Cell
 		DDSpawner.ToReplace "CellPack";
 		DDSpawner.SpawnChance 3;
 		DDSpawner.ChanceMul 0.5;
+	}
+
+	override void BeginPlay()
+	{
+		class<DDSpawner> sp = "DDSpawner_Grenades_CellPack";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_Grenades_Cell : DDSpawner
+{
+	default
+	{
+		DDSpawner.SpawnChance 0.15;
+	}
+	override void BeginPlay()
+	{
+		Class<Actor> cls = "DDWeapon_PS20";
+		actors.push(cls); chances.push(2); flags.push(0);
+		cls = "DDWeapon_EMPGrenade";
+		actors.push(cls); chances.push(4); flags.push(0);
+		cls = "DDWeapon_ScrambleGrenade";
+		actors.push(cls); chances.push(2); flags.push(0);
+
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_Grenades_CellPack : DDSpawner_Grenades_Cell
+{
+	default
+	{
+		DDSpawner.SpawnChance 1.25;
+		DDSpawner.ChanceMul 0.4;
 	}
 }
 
