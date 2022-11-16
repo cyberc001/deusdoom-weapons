@@ -27,7 +27,7 @@ class DDWeapon_AssaultRifle : DDWeapon
 
 	override double GetDamageMult()
 	{
-		return current_ammo_type == "DDAmmo_HE20mm" ? 25 : 1;	
+		return current_ammo_type == "DDAmmo_HE20mm" ? 16.6 : 1;
 	}
 	override int GetBonusClipPerUpgrade() { return 3; }
 
