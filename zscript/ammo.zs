@@ -264,8 +264,8 @@ class DDAmmo_Napalm : Ammo
 	{
 		Inventory.Amount 100;
 		Ammo.BackpackAmount 0;
-		Inventory.MaxAmount 400;
-		Ammo.BackpackMaxAmount 800;
+		Inventory.MaxAmount 800;
+		Ammo.BackpackMaxAmount 1600;
 		+THRUACTORS;
 		Inventory.Icon "DXUIWP02";
 		Inventory.AltHUDIcon "DXUIWP02";

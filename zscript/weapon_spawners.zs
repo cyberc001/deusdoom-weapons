@@ -20,7 +20,7 @@ class DDSpawner_Clip : DDSpawner
 		cls = "DDAmmo_7_62mm";
 		actors.push(cls); chances.push(15); flags.push(0);
 		cls = "DDAmmo_30_06";
-		actors.push(cls); chances.push(3); flags.push(0);
+		actors.push(cls); chances.push(6); flags.push(0);
 
 		cls = "DDWeapon_ThrowingKnives";
 		actors.push(cls); chances.push(4); flags.push(0);
@@ -29,6 +29,9 @@ class DDSpawner_Clip : DDSpawner
 		actors.push(cls); chances.push(1); flags.push(0);
 		cls = "DDAmmo_ProdCharger";
 		actors.push(cls); chances.push(1); flags.push(0);
+
+		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Small";
+		spawn_along.push(sp);
 		super.BeginPlay();
 	}
 }
@@ -39,6 +42,13 @@ class DDSpawner_ClipBox : DDSpawner_Clip
 		DDSpawner.ToReplace "ClipBox";
 		DDSpawner.SpawnChance 1.75;
 		DDSpawner.ChanceMul 0.5;
+	}
+
+	override void BeginPlay()
+	{
+		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Large";
+		spawn_along.push(sp);
+		super.BeginPlay();
 	}
 }
 
@@ -59,11 +69,13 @@ class DDSpawner_Shell : DDSpawner
 		cls = "DDWeapon_ThrowingKnives";
 		actors.push(cls); chances.push(1); flags.push(0);
 
-
 		cls = "DDAmmo_PepperCartridge";
 		actors.push(cls); chances.push(1); flags.push(0);
 		cls = "DDAmmo_ProdCharger";
 		actors.push(cls); chances.push(1); flags.push(0);
+
+		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Small";
+		spawn_along.push(sp);
 		super.BeginPlay();
 	}
 }
@@ -74,6 +86,12 @@ class DDSpawner_ShellBox : DDSpawner_Shell
 		DDSpawner.ToReplace "ShellBox";
 		DDSpawner.SpawnChance 3;
 		DDSpawner.ChanceMul 0.6;
+	}
+	override void BeginPlay()
+	{
+		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Large";
+		spawn_along.push(sp);
+		super.BeginPlay();
 	}
 }
 
@@ -100,6 +118,8 @@ class DDSpawner_RocketAmmo : DDSpawner
 		
 		class<DDSpawner> sp = "DDSpawner_Grenades_RocketAmmo";
 		spawn_along.push(sp);
+		sp = "DDSpawner_BonusPistolAmmo_Small";
+		spawn_along.push(sp);
 		super.BeginPlay();
 	}
 }
@@ -115,7 +135,41 @@ class DDSpawner_RocketBox : DDSpawner_RocketAmmo
 	{
 		class<DDSpawner> sp = "DDSpawner_Grenades_RocketBox";
 		spawn_along.push(sp);
+		sp = "DDSpawner_BonusPistolAmmo_Large";
+		spawn_along.push(sp);
 		super.BeginPlay();
+	}
+}
+
+// extra spawners for 10mm and darts
+class DDSpawner_BonusPistolAmmo_Small : DDSpawner
+{
+	default
+	{
+		DDSpawner.SpawnChance 0.35;
+		DDSpawner.ChanceMul 0.35;
+	}
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDAmmo_10mm";
+		actors.push(cls); chances.push(10); flags.push(0);
+		cls = "DDAmmo_Darts";
+		actors.push(cls); chances.push(7); flags.push(0);
+		cls = "DDAmmo_TranquilizerDarts";
+		actors.push(cls); chances.push(2); flags.push(0);
+		cls = "DDAmmo_FlareDarts";
+		actors.push(cls); chances.push(1); flags.push(0);
+
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_BonusPistolAmmo_Large : DDSpawner_BonusPistolAmmo_Small
+{
+	default
+	{
+		DDSpawner.SpawnChance 1;
+		DDSpawner.ChanceMul 0.4;
 	}
 }
 
