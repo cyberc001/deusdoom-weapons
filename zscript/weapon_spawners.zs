@@ -146,7 +146,7 @@ class DDSpawner_BonusPistolAmmo_Small : DDSpawner
 {
 	default
 	{
-		DDSpawner.SpawnChance 0.35;
+		DDSpawner.SpawnChance 0.27;
 		DDSpawner.ChanceMul 0.35;
 	}
 	override void BeginPlay()
@@ -169,7 +169,7 @@ class DDSpawner_BonusPistolAmmo_Large : DDSpawner_BonusPistolAmmo_Small
 	default
 	{
 		DDSpawner.SpawnChance 1;
-		DDSpawner.ChanceMul 0.4;
+		DDSpawner.ChanceMul 0.35;
 	}
 }
 
@@ -457,15 +457,27 @@ class DDSpawner_BFG9000 : DDSpawner
 	}
 	override void BeginPlay()
 	{
-		class<Actor> cls = "DDWeapon_DragonsToothSword";
-		actors.push(cls); chances.push(4); flags.push(FLAG_DONTDUP | FLAG_REMOVEAFTER);
+		class<Actor> cls = "DDWeapon_Flamethrower";
+		actors.push(cls); chances.push(1); flags.push(0);
 		cls = "DDWeapon_LAW";
-		actors.push(cls); chances.push(2); flags.push(0);
+		actors.push(cls); chances.push(4); flags.push(0);
 		cls = "DDWeapon_PlasmaRifle";
 		actors.push(cls); chances.push(1); flags.push(0);
 
 		class<DDSpawner> sp = "DDSpawner_WeaponUpgrade_BFG9000";
 		spawn_along.push(sp);
+		sp = "DDSpawner_DragonsToothSword";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_DragonsToothSword : DDSpawner
+{
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDWeapon_DragonsToothSword";
+		actors.push(cls); chances.push(1); flags.push(0);
 		super.BeginPlay();
 	}
 }
