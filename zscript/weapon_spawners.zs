@@ -146,7 +146,7 @@ class DDSpawner_BonusPistolAmmo_Small : DDSpawner
 {
 	default
 	{
-		DDSpawner.SpawnChance 0.27;
+		DDSpawner.SpawnChance 0.15;
 		DDSpawner.ChanceMul 0.35;
 	}
 	override void BeginPlay()
@@ -169,7 +169,7 @@ class DDSpawner_BonusPistolAmmo_Large : DDSpawner_BonusPistolAmmo_Small
 	default
 	{
 		DDSpawner.SpawnChance 1;
-		DDSpawner.ChanceMul 0.35;
+		DDSpawner.ChanceMul 0.2;
 	}
 }
 
