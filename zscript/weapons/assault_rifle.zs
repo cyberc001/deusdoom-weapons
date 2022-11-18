@@ -14,9 +14,9 @@ class DDWeapon_AssaultRifle : DDWeapon
 		DDWeapon.BaseClipSize 30;
 		DDweapon.BaseClipSize2 1;
 
-		DDWeapon.MainDamage 12;
+		DDWeapon.MainDamage 14;
 
-		DDWeapon.BaseSpread 16;
+		DDWeapon.BaseSpread 15;
 		DDWeapon.BaseReloadTime 35*3;
 
 		DDWeapon.Recoil 8;
@@ -68,7 +68,6 @@ class DDWeapon_AssaultRifle : DDWeapon
 			DXAG O 2 Bright;
 			DXAG P 2 Bright { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
 			DXAG Q 2 Bright;
-			DXAG A 2;
 			Goto ReadyIdle;
 		FireGrenade:
 			DXAG A 0 A_StartSound("DDWeapon_AssaultRifle/fire_grenade");
