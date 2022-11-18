@@ -8,7 +8,7 @@ class DDWeapon_PS20 : DDWeapon
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
 
-		DDWeapon.MainDamage 300;	
+		DDWeapon.MainDamage 400;
 
 		DDWeapon.BaseSpread 12;
 		DDWeapon.BaseReloadTime 35*3;

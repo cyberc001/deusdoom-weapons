@@ -199,8 +199,8 @@ class DDSpawner_Grenades_RocketBox : DDSpawner_Grenades_RocketAmmo
 {
 	default
 	{
-		DDSpawner.SpawnChance 2.1;
-		DDSpawner.ChanceMul 0.45;
+		DDSpawner.SpawnChance 2;
+		DDSpawner.ChanceMul 0.3;
 	}
 }
 
@@ -270,7 +270,7 @@ class DDSpawner_Grenades_CellPack : DDSpawner_Grenades_Cell
 	default
 	{
 		DDSpawner.SpawnChance 1.25;
-		DDSpawner.ChanceMul 0.4;
+		DDSpawner.ChanceMul 0.35;
 	}
 }
 
