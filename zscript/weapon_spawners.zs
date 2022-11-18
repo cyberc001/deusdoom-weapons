@@ -275,6 +275,25 @@ class DDSpawner_Grenades_CellPack : DDSpawner_Grenades_Cell
 }
 
 /* Weapons */
+class DDSpawner_Pistol : DDSpawner
+{
+	default
+	{
+		DDSpawner.ToReplace "Pistol";
+	}
+	override void BeginPlay()
+	{
+		Class<Actor> cls = "DDWeapon_Pistol";
+		actors.push(cls); chances.push(10); flags.push(FLAG_DONTDUP);
+		cls = "DDWeapon_StealthPistol";
+		actors.push(cls); chances.push(4); flags.push(FLAG_DONTDUP);
+		cls = "DDWeapon_MiniCrossbow";
+		actors.push(cls); chances.push(6); flags.push(FLAG_DONTDUP);
+
+		super.BeginPlay();
+	}
+}
+
 class DDSpawner_Chainsaw : DDSpawner
 {
 	default

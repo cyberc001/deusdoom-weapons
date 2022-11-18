@@ -340,6 +340,8 @@ class DDWeapons_EventHandler : StaticEventHandler
 		else if(e.replacee == "CellPack")
 			e.replacement = "DDSpawner_CellPack";
 
+		else if(e.replacee == "Pistol")
+			e.replacement = "DDSpawner_Pistol";
 		else if(e.replacee == "Chainsaw")
 			e.replacement = "DDSpawner_Chainsaw";
 		else if(e.replacee == "Shotgun")
