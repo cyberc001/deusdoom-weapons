@@ -32,6 +32,7 @@ DDWeapon_PS20/fire Sounds/HideAGunFire.wav
 DDWeapon_PS20/select Sounds/HideAGunSelect.wav
 
 DDWeapon_AssaultRifle/fire Sounds/AssaultGunFire.wav
+DDWeapon_AssaultRifle/fire_silent Sounds/AssaultGunFireSilent.wav
 DDWeapon_AssaultRifle/fire_grenade Sounds/AssaultGunFire20mm.wav
 DDWeapon_AssaultRifle/reload Sounds/AssaultGunReload.wav
 DDWeapon_AssaultRifle/reload_end Sounds/AssaultGunReloadEnd.wav
@@ -48,6 +49,7 @@ DDWeapon_SawedOffShotgun/reload_end Sounds/SawedOffShotgunReloadEnd.wav
 DDWeapon_SawedOffShotgun/select Sounds/SawedOffShotgunSelect.wav
 
 DDWeapon_SniperRifle/fire Sounds/RifleFire.wav
+DDWeapon_SniperRifle/fire_silent Sounds/StealthPistolFire.wav
 DDWeapon_SniperRifle/reload Sounds/RifleReload.wav
 DDWeapon_SniperRifle/reload_end Sounds/RifleReloadEnd.wav
 DDWeapon_SniperRifle/select Sounds/RifleSelect.wav

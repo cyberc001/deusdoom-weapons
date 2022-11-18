@@ -60,7 +60,7 @@ class DDWeapon_AssaultRifle : DDWeapon
 		Fire:
 			DXAG A 0 CheckClipAmmo("DryFire");
 			DXAG A 0 { if(invoker.AmmoType1 == "DDAmmo_HE20mm") return ResolveState("FireGrenade"); return ResolveState(null); }
-			DXAG A 0 A_StartSound("DDWeapon_AssaultRifle/fire");
+			DXAG A 0 A_StartSound(invoker.has_silencer ? "DDWeapon_AssaultRifle/fire_silent" : "DDWeapon_AssaultRifle/fire");
 			DXAG JK 2 Bright;
 			DXAG L 2 Bright { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
 			DXAG M 2 Bright; 

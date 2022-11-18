@@ -58,7 +58,7 @@ class DDWeapon_SniperRifle : DDWeapon
 
 		Fire:
 			DXSR A 0 CheckClipAmmo("DryFire");
-			DXSR A 0 A_StartSound("DDWeapon_SniperRifle/fire", CHAN_WEAPON, CHANF_DEFAULT, invoker.has_silencer ? 0.3 : 1);
+			DXSR A 0 A_StartSound(invoker.has_silencer ? "DDWeapon_SniperRifle/fire_silent" : "DDWeapon_SniperRifle/fire");
 			DXSR L 2;
 			DXSR M 2 { HitscanAttack(); DoRecoil(); }
 			DXSR NOPQ 2;
