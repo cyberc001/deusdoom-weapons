@@ -24,6 +24,7 @@ class DDWeaponUpgrade_Accuracy : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO03";
 		Tag "Weapon Modification (Accuracy)";
+		Inventory.PickupMessage "You found an accuracy mod";
 	}
 
 	states
@@ -52,6 +53,7 @@ class DDWeaponUpgrade_Clip : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO04";
 		Tag "Weapon Modification (Clip)";
+		Inventory.PickupMessage "You found a clip mod";
 	}
 
 	states
@@ -80,6 +82,7 @@ class DDWeaponUpgrade_Recoil : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO07";
 		Tag "Weapon Modification (Recoil)";
+		Inventory.PickupMessage "You found a recoil mod";
 	}
 
 	states
@@ -108,6 +111,7 @@ class DDWeaponUpgrade_Reload : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO08";
 		Tag "Weapon Modification (Reload)";
+		Inventory.PickupMessage "You found a reload mod";
 	}
 
 	states
@@ -135,6 +139,7 @@ class DDWeaponUpgrade_Silencer : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO10";
 		Tag "Weapon Modification (Silencer)";
+		Inventory.PickupMessage "You found an silencer mod";
 	}
 
 	states
@@ -162,6 +167,7 @@ class DDWeaponUpgrade_Laser : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO05";
 		Tag "Weapon Modification (Laser)";
+		Inventory.PickupMessage "You found an laser mod";
 	}
 
 	states
