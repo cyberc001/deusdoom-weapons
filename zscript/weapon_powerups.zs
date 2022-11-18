@@ -50,6 +50,12 @@ class DDPowerup_PlayerGasPoison : DDPowerup
 	}
 	override void Tick()
 	{
+		if(!owner || owner.health <= 0){
+			DetachFromOwner();
+			Destroy();
+			return;
+		}
+
 		if(dur_timer == duration){
 			owner.triggerPainChance("None", true);
 			owner.damageMobj(self, self, dmg, "None");
