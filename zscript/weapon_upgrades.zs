@@ -128,7 +128,7 @@ class DDWeaponUpgrade_Reload : DDWeaponUpgrade
 
 	override void applyTo(Inventory another)
 	{
-		DDWeapon(another).reload_time_decrease += DDWeapon(another).base_reload_time * 0.25;
+		DDWeapon(another).reload_time_decrease += DDWeapon(another).base_reload_time * 0.2;
 		owner.A_StartSound("DDWeaponUpgrade/apply", CHAN_AUTO, CHANF_LOCAL);
 	}
 }
@@ -139,7 +139,7 @@ class DDWeaponUpgrade_Silencer : DDWeaponUpgrade
 	{
 		Inventory.Icon "DXICO10";
 		Tag "Weapon Modification (Silencer)";
-		Inventory.PickupMessage "You found an silencer mod";
+		Inventory.PickupMessage "You found a silencer mod";
 	}
 
 	states
