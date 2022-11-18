@@ -5,13 +5,13 @@ class DDProjectile_PlasmaBolt : DDProjectile
 		Radius 6;
 		Height 6;
 
-		Speed 20;
+		Speed 45;
 
 		RenderStyle "Translucent";
 		Alpha 0.75;
 		+BRIGHT;
 
-		DDProjectile.GravityZAccel 0.1;
+		DDProjectile.GravityZAccel 0.06;
 	}
 
 	states

@@ -242,8 +242,8 @@ class DDAmmo_PlasmaClip : Ammo
 	{
 		Inventory.Amount 18;
 		Ammo.BackpackAmount 0;
-		Inventory.MaxAmount 84;
-		Ammo.BackpackMaxAmount 168;
+		Inventory.MaxAmount 126;
+		Ammo.BackpackMaxAmount 252;
 		+THRUACTORS;
 		Inventory.Icon "DXUIWP02";
 		Inventory.AltHUDIcon "DXUIWP02";
