@@ -60,13 +60,13 @@ class DDWeapon_AssaultRifle : DDWeapon
 			DXAG A 0 CheckClipAmmo("DryFire");
 			DXAG A 0 { if(invoker.AmmoType1 == "DDAmmo_HE20mm") return ResolveState("FireGrenade"); return ResolveState(null); }
 			DXAG A 0 A_StartSound("DDWeapon_AssaultRifle/fire");
-			DXAG JK 2;
-			DXAG L 2 { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
-			DXAG M 2; 
-			DXAG N 2 { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
-			DXAG O 2; 
-			DXAG P 2 { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
-			DXAG Q 2;
+			DXAG JK 2 Bright;
+			DXAG L 2 Bright { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
+			DXAG M 2 Bright; 
+			DXAG N 2 Bright { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
+			DXAG O 2 Bright;
+			DXAG P 2 Bright { HitscanAttack(GetMainDamage()); DoRecoil(0.33); }
+			DXAG Q 2 Bright;
 			DXAG A 2;
 			Goto ReadyIdle;
 		FireGrenade:

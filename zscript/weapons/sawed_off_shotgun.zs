@@ -57,8 +57,9 @@ class DDWeapon_SawedOffShotgun : DDWeapon
 			DXSS A 0 CheckClipAmmo("DryFire");
 			DXSS A 0 A_StartSound("DDWeapon_SawedOffShotgun/fire");
 			DXSS NO 2;
-			DXSS P 2 { HitscanAttack(); DoRecoil(); }
-			DXSS QRSTUVWXYZ 2;
+			DXSS P 2 Bright { HitscanAttack(); DoRecoil(); }
+			DXSS Q 2 Bright;
+			DXSS RSTUVWXYZ 2;
 			DXST AB 2;
 			Goto ReadyIdle;
 		DryFire:

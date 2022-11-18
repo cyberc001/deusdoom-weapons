@@ -49,9 +49,11 @@ class DDWeapon_Pistol : DDWeapon
 		Fire:
 			DXGK A 0 CheckClipAmmo("DryFire");
 			DXGK A 0 A_StartSound("DDWeapon_Pistol/fire");
-			DXGK TU 2;
+			DXGK T 2;
+			DXGK U 2 Bright;
 			DXGK A 0 { HitscanAttack(); DoRecoil(); }
-			DXGK VWXYZ 2;
+			DXGK V 2 Bright;
+			DXGK WXYZ 2;
 			DXGL A 2;
 			Goto ReadyIdle;
 		DryFire:

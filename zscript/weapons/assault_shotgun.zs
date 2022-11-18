@@ -56,8 +56,9 @@ class DDWeapon_AssaultShotgun : DDWeapon
 			DXAS A 0 CheckClipAmmo("DryFire");
 			DXAS A 0 A_StartSound("DDWeapon_AssaultShotgun/fire");
 			DXAS J 2;
-			DXAS K 2 { HitscanAttack(); DoRecoil(); }
-			DXAS LM 4;
+			DXAS K 2 Bright { HitscanAttack(); DoRecoil(); }
+			DXAS L 4 Bright;
+			DXAS M 4;
 			Goto ReadyIdle;
 		DryFire:
 			DXAS A 0 A_StartSound("DDWeapon/dry_fire");
