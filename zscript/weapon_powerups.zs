@@ -10,8 +10,8 @@ class DDPowerup : Powerup
 class DDPowerup_TranqPoison : DDPowerup
 {
 	int dur_timer;
-	const duration = 35*16;
-	const dmg_freq = 35*2;
+	const duration = 35*8;
+	const dmg_freq = 35;
 	const maxhp_dmgbonus = 0.04;
 	const maxhp_maxdmgbonus = 70;
 	int dmg;

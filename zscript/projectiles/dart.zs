@@ -5,7 +5,7 @@ class DDProjectile_Dart : DDProjectile
 		Radius 3;
 		Height 2;
 
-		Speed 30;
+		Speed 45;
 
 		Tag "Dart";
 		DDProjectile.StayOnWallHit true;
