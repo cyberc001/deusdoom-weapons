@@ -5,7 +5,7 @@ class DDProjectile_ThrowingKnife : DDProjectile
 		Radius 2;
 		Height 7;
 
-		Speed 30;
+		Speed 45;
 
 		Tag "Throwing knife";
 		DDProjectile.StayOnWallHit true;

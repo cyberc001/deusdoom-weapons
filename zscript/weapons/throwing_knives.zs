@@ -56,12 +56,12 @@ class DDWeapon_ThrowingKnives : DDWeapon
 
 		Fire:
 			DXTK A 0 A_StartSound("DDWeapon_ThrowingKnives/fire");
-			DXTK KLMNOP 3;
-			DXTK Q 3;
-			DXTK R 3 { ProjectileAttack("DDProjectile_ThrowingKnife", GetMainDamage()); return UseSelf("FireEnd"); }
+			DXTK KLMN 3;
+			DXTK O 3 { ProjectileAttack("DDProjectile_ThrowingKnife", GetMainDamage()); return UseSelf("FireEnd"); }
 			TNT0 A 0 { A_TakeInventory("DDWeapon_ThrowingKnives", 999999); A_Lower(999); }
 			Stop;
 		FireEnd:
+			DXTK PQR 3;
 			DXTK A 8;
 			Goto ReadyIdle;
 
