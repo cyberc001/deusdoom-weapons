@@ -424,7 +424,7 @@ class DDWeapon : DoomWeapon
 
 	double angle_change, pitch_change;
 	double angle_sign, pitch_sign;
-	const angle_mul = 0.6; const pitch_mul = 0.5;
+	const angle_mul = 0.65; const pitch_mul = 0.55;
 	const angle_pertick_mul = 0.02 * angle_mul; const pitch_pertick_mul = 0.02 * pitch_mul;
 	const sway_min_spread = 4;
 	void DoScopeSway()

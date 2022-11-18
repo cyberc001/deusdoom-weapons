@@ -12,9 +12,9 @@ class DDWeapon_SniperRifle : DDWeapon
 		DDWeapon.AmmoType1 "DDAmmo_30_06";
 		DDWeapon.BaseClipSize 6;
 
-		DDWeapon.MainDamage 100;
+		DDWeapon.MainDamage 150;
 
-		DDWeapon.BaseSpread 9;
+		DDWeapon.BaseSpread 10;
 		DDWeapon.BaseReloadTime 35*3;
 
 		DDWeapon.Recoil 12;
