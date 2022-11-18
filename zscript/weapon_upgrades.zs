@@ -94,7 +94,7 @@ class DDWeaponUpgrade_Recoil : DDWeaponUpgrade
 
 	override bool isApplicable(Inventory another)
 	{
-		return super.isApplicable(another) && DDWeapon(another).recoil > 0;
+		return super.isApplicable(another) && DDWeapon(another).GetRecoil() > 0;
 	}
 
 	override void applyTo(Inventory another)
