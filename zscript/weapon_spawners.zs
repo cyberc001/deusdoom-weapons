@@ -1,4 +1,4 @@
-/* Ammo */
+//* Ammo */
 
 class DDSpawner_Clip : DDSpawner
 {
@@ -527,8 +527,8 @@ class DDSpawner_WeaponUpgrade_RocketLauncher : DDSpawner_WeaponUpgrade
 {
 	default
 	{
-		DDSpawner.SpawnChance 0.35;
-		DDSpawner.ChanceMul 0.35;
+		DDSpawner.SpawnChance 0.3;
+		DDSpawner.ChanceMul 0.3;
 	}
 }
 class DDSpawner_WeaponUpgrade_PlasmaRifle : DDSpawner_WeaponUpgrade
@@ -536,15 +536,15 @@ class DDSpawner_WeaponUpgrade_PlasmaRifle : DDSpawner_WeaponUpgrade
 	default
 	{
 		DDSpawner.SpawnChance 1;
-		DDSpawner.ChanceMul 0.3;
+		DDSpawner.ChanceMul 0.2;
 	}
 }
 class DDSpawner_WeaponUpgrade_BFG9000 : DDSpawner_WeaponUpgrade
 {
 	default
 	{
-		DDSpawner.SpawnChance 1.55;
-		DDSpawner.ChanceMul 0.65;
+		DDSpawner.SpawnChance 1.5;
+		DDSpawner.ChanceMul 0.6;
 	}
 }
 
@@ -554,7 +554,7 @@ class DDSpawner_Soulsphere : DDSpawner_WeaponUpgrade
 	{
 		DDSpawner.ToReplace "Soulsphere";
 		DDSpawner.SpawnChance 1;
-		DDSpawner.ChanceMul 0.3;
+		DDSpawner.ChanceMul 0.2;
 		DDSpawner.PreserveItem true;
 	}
 }
@@ -563,8 +563,8 @@ class DDSpawner_Megasphere : DDSpawner_WeaponUpgrade
 	default
 	{
 		DDSpawner.ToReplace "Megasphere";
-		DDSpawner.SpawnChance 2;
-		DDSpawner.ChanceMul 0.55;
+		DDSpawner.SpawnChance 5;
+		DDSpawner.ChanceMul 0.2;
 		DDSpawner.PreserveItem true;
 	}
 }
@@ -573,8 +573,8 @@ class DDSpawner_BlurSphere: DDSpawner_WeaponUpgrade
 	default
 	{
 		DDSpawner.ToReplace "BlurSphere";
-		DDSpawner.SpawnChance 1.75;
-		DDSpawner.ChanceMul 0.45;
+		DDSpawner.SpawnChance 1;
+		DDSpawner.ChanceMul 0.5;
 		DDSpawner.PreserveItem true;
 	}
 }
