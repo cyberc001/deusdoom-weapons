@@ -7,6 +7,7 @@ class DDWeapon_GEPGun : DDWeapon
 		Inventory.AltHUDIcon "DXICWP48";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_large";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a GEP gun";
 
 		DDWeapon.AmmoType1 "DDAmmo_Rockets";
 		DDWeapon.AmmoType2 "DDAmmo_WPRockets";

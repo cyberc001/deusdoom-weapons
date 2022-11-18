@@ -6,6 +6,7 @@ class DDWeapon_Sword : DDWeapon
 		Inventory.Icon "DXICWP27";
 		Inventory.AltHUDIcon "DXICWP28";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
+		Inventory.PickupMessage "You found a sword";
 		
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;

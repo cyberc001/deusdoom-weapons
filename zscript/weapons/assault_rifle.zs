@@ -6,6 +6,7 @@ class DDWeapon_AssaultRifle : DDWeapon
 		Inventory.Icon "DXICWP09";
 		Inventory.AltHUDIcon "DXICWP10";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
+		Inventory.PickupMessage "You found an assault rifle";
 		DDWeapon.IdleStateAmount 2;
 
 		DDWeapon.AmmoType1 "DDAmmo_7_62mm";

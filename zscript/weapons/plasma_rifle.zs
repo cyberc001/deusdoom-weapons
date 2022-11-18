@@ -7,6 +7,7 @@ class DDWeapon_PlasmaRifle : DDWeapon
 		Inventory.AltHUDIcon "DXICWP42";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_large";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a plasma rifle";
 
 		DDWeapon.AmmoType1 "DDAmmo_PlasmaClip";
 		DDWeapon.BaseClipSize 12;

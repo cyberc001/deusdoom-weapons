@@ -7,6 +7,7 @@ class DDWeapon_GasGrenade : DDWeapon
 		Inventory.AltHUDIcon "DXICWP36";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a gas grenade";
 
 		DDWeapon.MainDamage 1000;
 

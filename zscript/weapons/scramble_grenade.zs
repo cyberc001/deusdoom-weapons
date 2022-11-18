@@ -7,6 +7,7 @@ class DDWeapon_ScrambleGrenade : DDWeapon
 		Inventory.AltHUDIcon "DXICWP40";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a scramble grenade";
 
 		DDWeapon.MainDamage 1000;
 

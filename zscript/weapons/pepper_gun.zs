@@ -6,6 +6,7 @@ class DDWeapon_PepperGun : DDWeapon
 		Inventory.Icon "DXICWP31";
 		Inventory.AltHUDIcon "DXICWP32";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
+		Inventory.PickupMessage "You found a pepper gun";
 
 		DDWeapon.AmmoType1 "DDAmmo_PepperCartridge";
 		DDWeapon.BaseClipSize 100;

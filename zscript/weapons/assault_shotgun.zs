@@ -6,6 +6,7 @@ class DDWeapon_AssaultShotgun : DDWeapon
 		Inventory.Icon "DXICWP11";
 		Inventory.AltHUDIcon "DXICWP12";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
+		Inventory.PickupMessage "You found an assault shotgun";
 		DDWeapon.IdleStateAmount 2;
 
 		DDWeapon.AmmoType1 "DDAmmo_12gaBuckshot";

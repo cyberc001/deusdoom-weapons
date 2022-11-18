@@ -6,6 +6,7 @@ class DDWeapon_DragonsToothSword : DDWeapon
 		Inventory.Icon "DXICWP19";
 		Inventory.AltHUDIcon "DXICWP20";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
+		Inventory.PickupMessage "You found the Dragon's Tooth Sword";
 
 		DDWeapon.IdleStateAmount 1;
 		DDWeapon.FireStateAmount 2;

@@ -11,6 +11,7 @@ class DDAmmo_10mm : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "10mm Ammo";
+		Inventory.PickupMessage "You found 10mm ammo";
 	}
 	states
 	{
@@ -33,6 +34,7 @@ class DDAmmo_Darts : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Darts";
+		Inventory.PickupMessage "You found darts";
 	}
 	states
 	{
@@ -54,6 +56,7 @@ class DDAmmo_TranquilizerDarts : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Tranq. darts";
+		Inventory.PickupMessage "You found tranquilizer darts";
 	}
 	states
 	{
@@ -75,6 +78,7 @@ class DDAmmo_FlareDarts : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Flare darts";
+		Inventory.PickupMessage "You found flare darts";
 	}
 	states
 	{
@@ -95,6 +99,7 @@ class DDAmmo_7_62mm : Ammo
 		+THRUACTORS;
 		Inventory.Icon "DXUIWP02";
 		Inventory.AltHUDIcon "DXUIWP02";
+		Inventory.PickupMessage "You found 7.62mm ammo";
 
 		Tag "7.62x51mm";
 	}
@@ -118,6 +123,7 @@ class DDAmmo_HE20mm : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "20mm HE";
+		Inventory.PickupMessage "You found 20mm HE grenades";
 	}
 	states
 	{
@@ -141,6 +147,7 @@ class DDAmmo_12gaBuckshot : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Buckshot shells";
+		Inventory.PickupMessage "You found 12ga buckshot shells";
 	}
 	states
 	{
@@ -162,6 +169,7 @@ class DDAmmo_12gaSabot : Ammo
 		+THRUACTORS;
 
 		Tag "Sabot shells";
+		Inventory.PickupMessage "You found 12ga sabot shells";
 	}
 	states
 	{
@@ -184,6 +192,7 @@ class DDAmmo_30_06 : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "30.06 Ammo";
+		Inventory.PickupMessage "You found 30.06 ammo";
 	}
 	states
 	{
@@ -204,6 +213,7 @@ class DDAmmo_ProdCharger : Ammo
 		+THRUACTORS;
 		Inventory.Icon "DXUIWP02";
 		Inventory.AltHUDIcon "DXUIWP02";
+		Inventory.PickupMessage "You found a prod charger";
 
 		Tag "Charger";
 	}
@@ -225,6 +235,7 @@ class DDAmmo_PepperCartridge : Ammo
 		+THRUACTORS;
 		Inventory.Icon "DXUIWP02";
 		Inventory.AltHUDIcon "DXUIWP02";
+		Inventory.PickupMessage "You found a pepper cartridge";
 
 		Tag "Pepper cart.";
 	}
@@ -249,6 +260,7 @@ class DDAmmo_PlasmaClip : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Plasma clip";
+		Inventory.PickupMessage "You found a plasma clip";
 	}
 	states
 	{
@@ -271,6 +283,7 @@ class DDAmmo_Napalm : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Napalm";
+		Inventory.PickupMessage "You found a napalm canister";
 	}
 	states
 	{
@@ -293,6 +306,7 @@ class DDAmmo_Rockets : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "Rockets";
+		Inventory.PickupMessage "You found rockets";
 	}
 	states
 	{
@@ -314,6 +328,7 @@ class DDAmmo_WPRockets : Ammo
 		Inventory.AltHUDIcon "DXUIWP02";
 
 		Tag "WP Rockets";
+		Inventory.PickupMessage "You found white phosphorus rockets";
 	}
 	states
 	{

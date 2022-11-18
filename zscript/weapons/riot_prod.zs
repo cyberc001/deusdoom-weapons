@@ -7,6 +7,7 @@ class DDWeapon_RiotProd : DDWeapon
 		Inventory.AltHUDIcon "DXICWP18";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a riot prod";
 
 		DDWeapon.AmmoType1 "DDAmmo_ProdCharger";
 		DDWeapon.BaseClipSize 4;

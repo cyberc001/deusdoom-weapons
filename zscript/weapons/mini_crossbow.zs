@@ -7,6 +7,7 @@ class DDWeapon_MiniCrossbow : DDWeapon
 		Inventory.AltHUDIcon "DXICWP06";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a mini-crossbow";
 
 		DDWeapon.AmmoType1 "DDAmmo_Darts";
 		DDWeapon.AmmoType2 "DDAmmo_TranquilizerDarts";

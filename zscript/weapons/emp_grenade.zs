@@ -7,6 +7,7 @@ class DDWeapon_EMPGrenade : DDWeapon
 		Inventory.AltHUDIcon "DXICWP38";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found an EMP grenade";
 
 		DDWeapon.MainDamage 1000;
 

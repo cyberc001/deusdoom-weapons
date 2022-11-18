@@ -7,6 +7,7 @@ class DDWeapon_SawedOffShotgun : DDWeapon
 		Inventory.AltHUDIcon "DXICWP14";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a sawed-off shotgun";
 
 		DDWeapon.AmmoType1 "DDAmmo_12gaBuckshot";
 		DDWeapon.AmmoType2 "DDAmmo_12gaSabot";

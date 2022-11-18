@@ -7,6 +7,7 @@ class DDWeapon_Pistol : DDWeapon
 		Inventory.AltHUDIcon "DXICWP02";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a pistol";
 
 		DDWeapon.AmmoType1 "DDAmmo_10mm";
 		DDWeapon.BaseClipSize 6;

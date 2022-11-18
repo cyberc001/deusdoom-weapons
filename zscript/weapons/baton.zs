@@ -6,6 +6,7 @@ class DDWeapon_Baton : DDWeapon
 		Inventory.Icon "DXICWP21";
 		Inventory.AltHUDIcon "DXICWP22";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
+		Inventory.PickupMessage "You found a police baton";
 		
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;

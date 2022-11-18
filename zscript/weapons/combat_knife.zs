@@ -6,6 +6,7 @@ class DDWeapon_CombatKnife : DDWeapon
 		Inventory.Icon "DXICWP23";
 		Inventory.AltHUDIcon "DXICWP24";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
+		Inventory.PickupMessage "You found a combat knife";
 		
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 3;

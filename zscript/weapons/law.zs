@@ -7,6 +7,7 @@ class DDWeapon_LAW : DDWeapon
 		Inventory.AltHUDIcon "DXICWP44";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_large";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a LAW";
 
 		DDWeapon.MainDamage 2500;
 

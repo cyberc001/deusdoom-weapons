@@ -6,6 +6,7 @@ class DDWeapon_Crowbar : DDWeapon
 		Inventory.Icon "DXICWP25";
 		Inventory.AltHUDIcon "DXICWP26";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
+		Inventory.PickupMessage "You found a crowbar";
 		
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;

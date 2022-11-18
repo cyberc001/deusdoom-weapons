@@ -6,6 +6,7 @@ class DDWeapon_ThrowingKnives : DDWeapon
 		Inventory.Icon "DXICWP29";
 		Inventory.AltHUDIcon "DXICWP30";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
+		Inventory.PickupMessage "You found throwing knives";
 		
 		DDWeapon.IdleStateAmount 2;
 

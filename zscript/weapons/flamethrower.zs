@@ -7,6 +7,7 @@ class DDWeapon_Flamethrower : DDWeapon
 		Inventory.AltHUDIcon "DXICWP46";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_large";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a flamethrower";
 
 		DDWeapon.AmmoType1 "DDAmmo_Napalm";
 		DDWeapon.BaseClipSize 100;

@@ -7,6 +7,7 @@ class DDWeapon_SniperRifle : DDWeapon
 		Inventory.AltHUDIcon "DXICWP16";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a sniper rifle";
 
 		DDWeapon.AmmoType1 "DDAmmo_30_06";
 		DDWeapon.BaseClipSize 6;

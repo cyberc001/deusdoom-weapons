@@ -7,6 +7,7 @@ class DDWeapon_PS20 : DDWeapon
 		Inventory.AltHUDIcon "DXICWP08";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a PS20";
 
 		DDWeapon.MainDamage 400;
 

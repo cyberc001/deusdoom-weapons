@@ -7,6 +7,7 @@ class DDWeapon_LAM : DDWeapon
 		Inventory.AltHUDIcon "DXICWP34";
 		DDWeapon.DropSound "DDWeapon/weapon_drop_small";
 		DDWeapon.IdleStateAmount 2;
+		Inventory.PickupMessage "You found a LAM";
 
 		DDWeapon.MainDamage 300;
 
