@@ -284,11 +284,11 @@ class DDSpawner_Pistol : DDSpawner
 	override void BeginPlay()
 	{
 		Class<Actor> cls = "DDWeapon_Pistol";
-		actors.push(cls); chances.push(10); flags.push(FLAG_DONTDUP);
+		actors.push(cls); chances.push(10); flags.push(0);
 		cls = "DDWeapon_StealthPistol";
-		actors.push(cls); chances.push(4); flags.push(FLAG_DONTDUP);
+		actors.push(cls); chances.push(4); flags.push(0);
 		cls = "DDWeapon_MiniCrossbow";
-		actors.push(cls); chances.push(6); flags.push(FLAG_DONTDUP);
+		actors.push(cls); chances.push(6); flags.push(0);
 
 		super.BeginPlay();
 	}
