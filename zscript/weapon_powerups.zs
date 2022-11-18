@@ -15,16 +15,22 @@ class DDPowerup_TranqPoison : DDPowerup
 	const maxhp_dmgbonus = 0.04;
 	const maxhp_maxdmgbonus = 70;
 	int dmg;
+	bool force_pain;
 
 	override void BeginPlay()
 	{
 		super.BeginPlay();
 		dur_timer = duration;
+		force_pain = true;
 	}
 	override void Tick()
 	{
 		if(dur_timer % dmg_freq == 0 && owner){
-			if(owner.bISMONSTER) owner.triggerPainChance("None", true);
+			if(owner.bISMONSTER){
+				if(force_pain && owner.bBOSS)
+					owner.triggerPainChance("None", true);
+				force_pain = !force_pain;
+			}
 			double maxhp_dmg = owner.SpawnHealth() * maxhp_dmgbonus;
 			if(maxhp_dmg > maxhp_maxdmgbonus) maxhp_dmg = maxhp_maxdmgbonus;
 			owner.damageMobj(self, target, dmg + maxhp_dmg, "None");
