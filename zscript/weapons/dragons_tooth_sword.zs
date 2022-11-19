@@ -13,8 +13,8 @@ class DDWeapon_DragonsToothSword : DDWeapon
 
 		DDWeapon.MainDamage 180;
 
-		DDWeapon.AccurateRange 134;
-		DDWeapon.MaxRange 134;
+		DDWeapon.AccurateRange 110;
+		DDWeapon.MaxRange 110;
 
 		DDWeapon.HasSilencer true;
 		DDWeapon.DenyUpgrades true;

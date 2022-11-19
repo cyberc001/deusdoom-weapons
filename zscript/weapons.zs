@@ -657,7 +657,7 @@ class DDWeapon : DoomWeapon
 		Actor a;
 		while(a = Actor(ti.next())){
 			double dist = Distance3D(a);
-			if(dist > invoker.max_range * 2)
+			if(dist - a.radius > invoker.max_range * 2)
 				continue;
 			if((!a.bSHOOTABLE && !a.bMISSILE) || invoker.swipe_hit.find(a) != invoker.swipe_hit.size() || a == self)
 				continue;
@@ -668,7 +668,7 @@ class DDWeapon : DoomWeapon
 					continue;
 				}
 
-				if(dist > invoker.max_range)
+				if(dist - a.radius > invoker.max_range)
 					continue;
 				vector3 dir = Vec3To(a);
 				if(dir.length() != 0) dir /= dir.length();
