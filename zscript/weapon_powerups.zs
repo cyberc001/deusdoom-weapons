@@ -46,16 +46,20 @@ class DDPowerup_TranqPoison : DDPowerup
 class DDPowerup_PlayerGasPoison : DDPowerup
 {
 	int dur_timer;
-	const duration = 35*2;
+	int duration;
 	const dmg = 2;
 
-	override void BeginPlay()
-	{
-		super.BeginPlay();
-		dur_timer = duration;
-	}
 	override void Tick()
 	{
+		if(duration == 0 && owner){
+			duration = 35*2;
+			let sk = DD_EventHandler(StaticEventHandler.Find("DD_EventHandler")).skill_utils;
+			for(uint i = 0; i < sk.skills.size(); ++i)
+				if("Weapons: Demolition" == sk.skills[i]._name)
+				{ duration *= (sk.getPlayerSkillLevel(PlayerPawn(owner), i) + 1); break; }
+			dur_timer = duration;
+		}
+
 		if(!owner || owner.health <= 0){
 			DetachFromOwner();
 			Destroy();
