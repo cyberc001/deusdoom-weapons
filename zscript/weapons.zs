@@ -270,7 +270,7 @@ class DDWeapon : DoomWeapon
 	double pitch_shift_left;
 	const pitch_shift_rate = 3;
 
-	double GetRecoil() { return recoil - GetSkillLeveL() * 4; }
+	clearscope double GetRecoil() { return recoil - GetSkillLeveL() * 4; }
 
 	action void DoRecoil(double mult = 1.0)
 	{
