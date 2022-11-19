@@ -1475,6 +1475,7 @@ Model DDWeapon_DragonsToothSword
 	FrameIndex DXDW M 0 57
 
 	//Idle2
+	Offset 4.5 -4.5 -6.5
 	SurfaceSkin 0 5 "dtsbody0.png"
 	SurfaceSkin 0 6 "dtsblade0.png"
 	FrameIndex DXDW N 0 58
@@ -1499,6 +1500,7 @@ Model DDWeapon_DragonsToothSword
 	SurfaceSkin 0 5 "dtsbody7.png"
 	SurfaceSkin 0 6 "dtsblade7.png"
 	FrameIndex DXDW U 0 65
+	Offset 4.5 -4.5 -6.5
 
 	Model 0 "NanoSwordPickup_d.3d"
 	SurfaceSkin 0 0 "NanoSword3rdTex1.tga"

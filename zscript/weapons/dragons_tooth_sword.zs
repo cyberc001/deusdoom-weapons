@@ -8,13 +8,13 @@ class DDWeapon_DragonsToothSword : DDWeapon
 		DDWeapon.DropSound "DDWeapon/weapon_drop_medium";
 		Inventory.PickupMessage "You found the Dragon's Tooth Sword";
 
-		DDWeapon.IdleStateAmount 1;
+		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;
 
 		DDWeapon.MainDamage 180;
 
-		DDWeapon.AccurateRange 120;
-		DDWeapon.MaxRange 120;
+		DDWeapon.AccurateRange 134;
+		DDWeapon.MaxRange 134;
 
 		DDWeapon.HasSilencer true;
 		DDWeapon.DenyUpgrades true;
@@ -60,9 +60,10 @@ class DDWeapon_DragonsToothSword : DDWeapon
 			DXDU IJKLMNOPQRST 3;
 		ReadyIdle:
 			DXDT A 0 { invoker.enable_light = true; }
-			DXDT ABCDEFGHIJKLMNOPQRSTUVWXYZ 1 { A_WeaponReady(); return TryPlayIdleAnim(); }
-			DXDU ABCDEFGH 1 { A_WeaponReady(); return TryPlayIdleAnim(); }
+			DXDT ABCDEFGHIJKLMNOPQRSTUVWXYZ 1 A_WeaponReady();
+			DXDU ABCDEFGH 1 A_WeaponReady();
 			Loop;
+		// Idle animations are unused due to clipping issues
 		Idle1:
 			DXDW FGHIJKLM 3 A_WeaponReady();
 			Goto ReadyIdle;
@@ -85,15 +86,29 @@ class DDWeapon_DragonsToothSword : DDWeapon
 			DXDT A 0 PlayFireAnim();
 			Goto ReadyIdle;
 		Fire1:
-			DXDU UVVWYY 1;
-			DXDU Z 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall", FLAG_DONTPUFF);
-			DXDV ABBCDEFGGHI 1;
+			DXDU U 0 ClearSwipeAttack();
+			DXDU UVVW 1;
+			DXDU Y 1 SwipeAttack(25, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDU Y 1;
+			DXDU Z 1 SwipeAttack(0, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV A 1;
+			DXDV B 1 SwipeAttack(-25, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV C 1;
+			DXDV D 1 SwipeAttack(-50, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV EFGGHI 1;
 			DXDT ABCDEF 1;
 			Goto ReadyIdle;
 		Fire2:
-			DXDV JKKLMM 1;
-			DXDU N 2 HitscanAttack(-1, -1, -1, "", "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall", FLAG_DONTPUFF);
-			DXDV OPPQRSTUVVWX 1;
+			DXDV J 0 ClearSwipeAttack();
+			DXDV JKKL 1;
+			DXDV N 1 SwipeAttack(-50, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV O 1;
+			DXDV P 1 SwipeAttack(-25, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV P 1;
+			DXDV Q 1 SwipeAttack(0, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV R 1;
+			DXDV S 1 SwipeAttack(25, 25, "DDWeapon_DragonsToothSword/hit_flesh", "DDWeapon_DragonsToothSword/hit_metal", "DDWeapon_DragonsToothSword/hit_wall");
+			DXDV TUVVWX 1;
 			DXDT ABCDEF 1;
 			Goto ReadyIdle;
 

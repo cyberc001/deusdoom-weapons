@@ -642,6 +642,71 @@ class DDWeapon : DoomWeapon
 			--invoker.chambered_ammo;
 	}
 
+	// Tracked parameters for SwipeAttack(), if multiple instances are used (like for DTS)
+	array<Actor> swipe_hit;
+	bool swipe_hit_wall;
+	action void ClearSwipeAttack() { invoker.swipe_hit.clear(); invoker.swipe_hit_wall = false;}
+
+	action void SwipeAttack(double angle_off, double arc_angle,
+							string hit_flesh_sound = "", string hit_metal_sound = "", string hit_wall_sound = "")
+	{
+		int base_damage = invoker.GetMainDamage();
+		int reach = invoker.max_range;
+		ThinkerIterator ti = ThinkerIterator.Create();
+		int hit_flags = 0;
+		Actor a;
+		while(a = Actor(ti.next())){
+			double dist = Distance3D(a);
+			if(dist > invoker.max_range * 2)
+				continue;
+			if((!a.bSHOOTABLE && !a.bMISSILE) || invoker.swipe_hit.find(a) != invoker.swipe_hit.size() || a == self)
+				continue;
+			double ang_to = Normalize180(angle - AngleTo(a));
+			if(ang_to >= angle_off && ang_to <= angle_off + arc_angle){
+				if(a.bMISSILE){
+					a.die(self, self);
+					continue;
+				}
+
+				if(dist > invoker.max_range)
+					continue;
+				vector3 dir = Vec3To(a);
+				if(dir.length() != 0) dir /= dir.length();
+				double look_pitch = asin(dir dot (0, 0, 1));
+				if(abs(look_pitch + pitch) >= 60 || !CheckSight(a))
+					continue;
+			
+				a.DamageMobj(self, self, base_damage, "None");
+				bool noblood = a.bNOBLOOD;
+				bool isboss = a.bBOSS;
+				if((noblood || isboss) && hit_metal_sound){
+					hit_flags |= 2; // hit metal
+					invoker.swipe_hit_wall = true;
+				}
+				else if(!noblood && hit_flesh_sound){
+					hit_flags |= 1; // hit flesh
+					invoker.swipe_hit_wall = true;
+				}
+				invoker.swipe_hit.push(a);
+			}
+		}
+		// Check if also hit a wall
+		if(!invoker.swipe_hit_wall){
+			let aim_tracer = new("DD_AimTracer");
+			aim_tracer.source = self;
+			vector3 dir = (Actor.AngleToVector(angle, cos(pitch)), -sin(pitch));
+			aim_tracer.trace(pos + (0, 0, player.viewHeight), curSector, dir, invoker.max_range, 0);
+			if(aim_tracer.hit_wall){
+				invoker.swipe_hit_wall = true;
+				if(hit_wall_sound) hit_flags |= 4;
+			}
+		}
+		// Play appropriate hit sounds
+		if(hit_flags & 1) A_StartSound(hit_flesh_sound);
+		if(hit_flags & 2) A_StartSound(hit_metal_sound);
+		if(hit_flags & 4) A_StartSound(hit_wall_sound);
+	}
+
 	/* Miscellaneous */
 	bool uses_self;
 	property UsesSelf : uses_self;
@@ -687,7 +752,7 @@ class DD_AimTracer : LineTracer
 }
 
 class DD_NoPuff : Actor
-{ // Cause it's hard to add a flag to A_FireBullets()! Show request this feature.
+{ 
 	override void BeginPlay()
 	{
 		destroy();
