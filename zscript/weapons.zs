@@ -72,13 +72,14 @@ class DDWeapon : DoomWeapon
 		super.Tick();
 		CheckDropSound();
 		CheckDropRotation();
-		CheckAimSpread();
-		CheckRecoil();
-		SpawnLaser();
-		CheckInvDispDesc();
-		DoScopeSway();
-		CheckLockOn();
-
+		if(owner){
+			CheckAimSpread();
+			CheckRecoil();
+			SpawnLaser();
+			CheckInvDispDesc();
+			DoScopeSway();
+			CheckLockOn();
+		}
 	}
 
 	string _skill;
