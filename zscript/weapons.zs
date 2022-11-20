@@ -102,6 +102,8 @@ class DDWeapon : DoomWeapon
 		ret.has_silencer = has_silencer;
 		ret.has_laser = has_laser;
 		ret.chambered_ammo = chambered_ammo;
+		ret.base_reload_time = base_reload_time;
+		ret.reload_time_decrease = reload_time_decrease;
 		if(!toss_one)
 			ret.amount = amount;
 		else
