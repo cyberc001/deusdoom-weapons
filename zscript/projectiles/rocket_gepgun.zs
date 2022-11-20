@@ -5,7 +5,7 @@ class DDProjectile_RocketGEPGun : DDProjectile
 		Radius 3;
 		Height 3;
 
-		Speed 25;
+		Speed 35;
 		DDProjectile.GravityZAccel 0.01;
 	}
 

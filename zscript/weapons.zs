@@ -287,7 +287,7 @@ class DDWeapon : DoomWeapon
 	/* GEP Gun lock-on */
 	bool has_lockon;
 	property HasLockOn: has_lockon;
-	clearscope int GetLockOnTime() { return 100 - GetSkillLevel() * 20; }
+	clearscope int GetLockOnTime() { return 90 - GetSkillLevel() * 24; }
 	int lockon_timer;
 
 	clearscope bool IsLockedOn() { return lockon_timer >= GetLockOnTime(); }

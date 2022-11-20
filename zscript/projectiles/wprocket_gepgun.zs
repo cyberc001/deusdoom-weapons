@@ -1,6 +1,6 @@
 class DDProjectile_WPRocketGEPGun : DDProjectile_RocketGEPGun
 {
-	const burn_radius = 169;
+	const burn_radius = 300;
 
 	override void OnDeathStop()
 	{
