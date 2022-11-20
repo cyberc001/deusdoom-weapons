@@ -54,7 +54,7 @@ class DDAnimatedEffect_GasCloud : DDAnimatedEffect
 		BlockThingsIterator itb = BlockThingsIterator.Create(self, stun_radius);
 		while(itb.next()){
 			Actor victim = itb.thing;
-			if(victim == self || !CheckSight(victim) || (!victim.bISMONSTER && !victim.player))
+			if(victim == self || (!victim.bISMONSTER && !victim.player) || !CheckSight(victim))
 				continue;
 
 			if(victim.player){
