@@ -12,7 +12,7 @@ class DDWeapon_PlasmaRifle : DDWeapon
 		DDWeapon.AmmoType1 "DDAmmo_PlasmaClip";
 		DDWeapon.BaseClipSize 12;
 
-		DDWeapon.MainDamage 50;
+		DDWeapon.MainDamage 35;
 
 		DDWeapon.BaseSpread 13;
 		DDWeapon.BaseReloadTime 35*3;
