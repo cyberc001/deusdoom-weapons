@@ -70,8 +70,6 @@ class DDWeapon : DoomWeapon
 	override void Tick()
 	{
 		super.Tick();
-		CheckDropSound();
-		CheckDropRotation();
 		if(owner){
 			CheckAimSpread();
 			CheckRecoil();
@@ -79,6 +77,10 @@ class DDWeapon : DoomWeapon
 			CheckInvDispDesc();
 			DoScopeSway();
 			CheckLockOn();
+		}
+		else{
+			CheckDropSound();
+			CheckDropRotation();
 		}
 	}
 
