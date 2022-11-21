@@ -5,7 +5,7 @@ class DDSpawner_Clip : DDSpawner
 	default
 	{
 		DDSpawner.ToReplace "Clip";
-		DDSpawner.SpawnChance 0.6;
+		DDSpawner.SpawnChance 0.4;
 	}
 	override void BeginPlay()
 	{
@@ -20,7 +20,7 @@ class DDSpawner_Clip : DDSpawner
 		cls = "DDAmmo_7_62mm";
 		actors.push(cls); chances.push(15); flags.push(0);
 		cls = "DDAmmo_30_06";
-		actors.push(cls); chances.push(6); flags.push(0);
+		actors.push(cls); chances.push(4); flags.push(0);
 
 		cls = "DDWeapon_ThrowingKnives";
 		actors.push(cls); chances.push(4); flags.push(0);
@@ -29,9 +29,6 @@ class DDSpawner_Clip : DDSpawner
 		actors.push(cls); chances.push(1); flags.push(0);
 		cls = "DDAmmo_ProdCharger";
 		actors.push(cls); chances.push(1); flags.push(0);
-
-		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Small";
-		spawn_along.push(sp);
 		super.BeginPlay();
 	}
 }
@@ -40,15 +37,8 @@ class DDSpawner_ClipBox : DDSpawner_Clip
 	default
 	{
 		DDSpawner.ToReplace "ClipBox";
-		DDSpawner.SpawnChance 1.75;
-		DDSpawner.ChanceMul 0.5;
-	}
-
-	override void BeginPlay()
-	{
-		class<DDSpawner> sp = "DDSpawner_BonusPistolAmmo_Large";
-		spawn_along.push(sp);
-		super.BeginPlay();
+		DDSpawner.SpawnChance 1.6;
+		DDSpawner.ChanceMul 0.45;
 	}
 }
 
@@ -57,7 +47,7 @@ class DDSpawner_Shell : DDSpawner
 	default
 	{
 		DDSpawner.ToReplace "Shell";
-		DDSpawner.SpawnChance 1;
+		DDSpawner.SpawnChance 0.75;
 	}
 	override void BeginPlay()
 	{
@@ -84,8 +74,8 @@ class DDSpawner_ShellBox : DDSpawner_Shell
 	default
 	{
 		DDSpawner.ToReplace "ShellBox";
-		DDSpawner.SpawnChance 3;
-		DDSpawner.ChanceMul 0.6;
+		DDSpawner.SpawnChance 2.5;
+		DDSpawner.ChanceMul 0.4;
 	}
 	override void BeginPlay()
 	{
@@ -168,8 +158,8 @@ class DDSpawner_BonusPistolAmmo_Large : DDSpawner_BonusPistolAmmo_Small
 {
 	default
 	{
-		DDSpawner.SpawnChance 0.4;
-		DDSpawner.ChanceMul 0.5;
+		DDSpawner.SpawnChance 0.35;
+		DDSpawner.ChanceMul 0.35;
 	}
 }
 

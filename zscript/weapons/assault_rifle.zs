@@ -16,7 +16,7 @@ class DDWeapon_AssaultRifle : DDWeapon
 
 		DDWeapon.MainDamage 14;
 
-		DDWeapon.BaseSpread 15;
+		DDWeapon.BaseSpread 17;
 		DDWeapon.BaseReloadTime 35*3;
 
 		DDWeapon.Recoil 8;

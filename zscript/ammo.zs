@@ -2,7 +2,7 @@ class DDAmmo_10mm : Ammo
 {
 	default
 	{
-		Inventory.Amount 10;
+		Inventory.Amount 8;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 150;
 		Ammo.BackpackMaxAmount 300;
@@ -25,7 +25,7 @@ class DDAmmo_Darts : Ammo
 {
 	default
 	{
-		Inventory.Amount 6;
+		Inventory.Amount 4;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 60;
 		Ammo.BackpackMaxAmount 120;
@@ -138,7 +138,7 @@ class DDAmmo_12gaBuckshot : Ammo
 {
 	default
 	{
-		Inventory.Amount 8;
+		Inventory.Amount 6;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 96;
 		Ammo.BackpackMaxAmount 192;
@@ -160,7 +160,7 @@ class DDAmmo_12gaSabot : Ammo
 {
 	default
 	{
-		Inventory.Amount 8;
+		Inventory.Amount 6;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 96;
 		Ammo.BackpackMaxAmount 192;
@@ -183,7 +183,7 @@ class DDAmmo_30_06 : Ammo
 {
 	default
 	{
-		Inventory.Amount 10;
+		Inventory.Amount 8;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 96;
 		Ammo.BackpackMaxAmount 192;
@@ -251,7 +251,7 @@ class DDAmmo_PlasmaClip : Ammo
 {
 	default
 	{
-		Inventory.Amount 18;
+		Inventory.Amount 16;
 		Ammo.BackpackAmount 0;
 		Inventory.MaxAmount 126;
 		Ammo.BackpackMaxAmount 252;
