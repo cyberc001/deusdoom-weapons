@@ -370,10 +370,16 @@ class DDWeapons_EventHandler : StaticEventHandler
 			e.replacement = "DDSpawner_Backpack";
 	}
 
-	override void PlayerSpawned(PlayerEvent e)
+	override void WorldTick()
 	{
-		PlayerInfo plr = players[e.PlayerNumber];
-		if(plr.mo && level.MapName != "TITLEMAP"){
+		if(level.MapName == "TITLEMAP")
+			return;
+
+		for(uint i = 0; i < MAXPLAYERS; ++i){
+			if(!playeringame[i] || !players[i].mo || players[i].mo.CountInv("DD_PistolStartedToken") > 0)
+				continue;
+
+			PlayerInfo plr = players[i];
 			// Pistol start
 			plr.mo.TakeInventory("Fist", 1);
 			plr.mo.TakeInventory("Pistol", 1);
@@ -394,6 +400,9 @@ class DDWeapons_EventHandler : StaticEventHandler
 			plr.mo.GiveInventory("DDAmmo_10mm", 12);
 
 			plr.mo.PickNewWeapon(null);
+			plr.mo.GiveInventory("DD_PistolStartedToken", 1);
 		}
 	}
 }
+
+class DD_PistolStartedToken : Inventory {} // Just marks whether the player had their pistol start items given already or not
