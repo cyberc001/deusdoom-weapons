@@ -12,7 +12,7 @@ class DDWeapon_RiotProd : DDWeapon
 		DDWeapon.AmmoType1 "DDAmmo_ProdCharger";
 		DDWeapon.BaseClipSize 4;
 
-		DDWeapon.MainDamage 30;
+		DDWeapon.MainDamage 75;
 
 		DDWeapon.BaseReloadTime 35*3;
 
@@ -56,11 +56,11 @@ class DDWeapon_RiotProd : DDWeapon
 		Hold:
 			DXRR N 0 CheckClipAmmo("DryFire");
 			DXRR N 0 A_StartSound("DDWeapon_RiotProd/fire");
-			DXRR N 5;
+			DXRR NNN 1;
 			DXRR N 0 HitscanAttack(-1, -1, -1, "DDPowerup_Stun");
-			DXRR NNNNNN 5; // makes gzdoom engine not interpolate this frame over 45 ticks
+			DXRR NNNN 5; // makes gzdoom engine not interpolate this frame over 45 ticks
 			DXRR N 5 A_ReFire();
-			DXRP OP 4;
+			DXRP OP 3;
 			Goto ReadyIdle;
 		DryFire:
 			DXRP A 0 A_StartSound("DDWeapon/dry_fire");
