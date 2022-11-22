@@ -11,10 +11,10 @@ class DDWeapon_Baton : DDWeapon
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;
 
-		DDWeapon.MainDamage 28;
+		DDWeapon.MainDamage 25;
 
-		DDWeapon.AccurateRange 112;
-		DDWeapon.MaxRange 112;
+		DDWeapon.AccurateRange 104;
+		DDWeapon.MaxRange 104;
 
 		DDWeapon.HasSilencer true;
 		DDWeapon.DenyUpgrades true;
