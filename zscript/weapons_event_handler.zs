@@ -411,7 +411,7 @@ class DDWeapons_EventHandler : StaticEventHandler
 			e.replacement = "DDSpawner_BFG9000";
 
 		else if(e.replacee == "ClipOfBullets")
-			e.replacement = "DDAmmo_7_62mm";
+			e.replacement = "DDSpawner_ClipOfBullets";
 		else if(e.replacee == "BoxOfBullets")
 			e.replacement = "DDSpawner_BoxOfBullets";
 		else if(e.replacee == "MiniMissiles")

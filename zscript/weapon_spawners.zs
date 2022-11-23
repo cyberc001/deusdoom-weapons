@@ -598,13 +598,27 @@ class DDSpawner_Backpack : DDSpawner_WeaponUpgrade
 }
 
 /* STRIFE */
+class DDSpawner_ClipOfBullets : DDSpawner
+{
+	default
+	{
+		DDSpawner.ToReplace "ClipOfBullets";
+		DDSpawner.SpawnChance 0.2;
+	}
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDAmmo_7_62mm";
+		actors.push(cls); chances.push(1); flags.push(0);
+		super.BeginPlay();
+	}
+}
 class DDSpawner_BoxOfBullets : DDSpawner
 {
 	default
 	{
 		DDSpawner.ToReplace "BoxOfBullets";
-		DDSpawner.SpawnChance 3;
-		DDSpawner.ChanceMul 0.5;
+		DDSpawner.SpawnChance 2;
+		DDSpawner.ChanceMul 0.35;
 	}
 	override void BeginPlay()
 	{
