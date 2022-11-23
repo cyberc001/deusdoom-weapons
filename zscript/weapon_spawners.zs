@@ -1,5 +1,4 @@
-//* Ammo */
-
+/* DOOM */
 class DDSpawner_Clip : DDSpawner
 {
 	default
@@ -598,3 +597,93 @@ class DDSpawner_Backpack : DDSpawner_WeaponUpgrade
 	}
 }
 
+/* STRIFE */
+class DDSpawner_BoxOfBullets : DDSpawner
+{
+	default
+	{
+		DDSpawner.ToReplace "BoxOfBullets";
+		DDSpawner.SpawnChance 3;
+		DDSpawner.ChanceMul 0.5;
+	}
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDAmmo_7_62mm";
+		actors.push(cls); chances.push(1); flags.push(0);
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_MiniMissiles : DDSpawner
+{
+	default
+	{
+		DDSpawner.ToReplace "MiniMissiles";
+		DDSpawner.SpawnChance 0.25;
+	}
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDAmmo_Rockets";
+		actors.push(cls); chances.push(13); flags.push(0);
+		cls = "DDAmmo_WPRockets";
+		actors.push(cls); chances.push(1); flags.push(0);
+		cls = "DDAmmo_HE20mm";
+		actors.push(cls); chances.push(5); flags.push(0);
+		
+		class<DDSpawner> sp = "DDSpawner_Grenades_RocketAmmo";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}
+class DDSpawner_CrateOfMissiles : DDSpawner_MiniMissiles
+{
+	default
+	{
+		DDSpawner.ToReplace "CrateOfMissiles";
+		DDSpawner.SpawnChance 1.1;
+		DDSpawner.ChanceMul 0.35;
+	}
+	override void BeginPlay()
+	{
+		class<DDSpawner> sp = "DDSpawner_Grenades_RocketBox";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_EnergyPod : DDSpawner
+{
+	default
+	{
+		DDSpawner.ToReplace "EnergyPod";
+		DDSpawner.SpawnChance 0.65;
+	}
+	override void BeginPlay()
+	{
+		class<Actor> cls = "DDAmmo_PlasmaClip";
+		actors.push(cls); chances.push(13); flags.push(0);
+		cls = "DDAmmo_Napalm";
+		actors.push(cls); chances.push(5); flags.push(0);
+
+		class<DDSpawner> sp = "DDSpawner_Grenades_Cell";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}
+
+class DDSpawner_EnergyPack : DDSpawner_EnergyPod
+{
+	default
+	{
+		DDSpawner.ToReplace "EnergyPack";
+		DDSpawner.SpawnChance 2;
+		DDSpawner.ChanceMul 0.5;
+	}
+
+	override void BeginPlay()
+	{
+		class<DDSpawner> sp = "DDSpawner_Grenades_CellPack";
+		spawn_along.push(sp);
+		super.BeginPlay();
+	}
+}

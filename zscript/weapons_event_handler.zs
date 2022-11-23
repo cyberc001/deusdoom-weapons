@@ -216,6 +216,12 @@ class DDWeapons_EventHandler : StaticEventHandler
 			spawn_utils.addInventoryReplacement("ClipOfBullets", "DDAmmo_7_62mm");
 			spawn_utils.addInventoryReplacement("ElectricBolts", "DDAmmo_Darts");
 			spawn_utils.addInventoryReplacement("PoisonBolts", "DDAmmo_TranquilizerDarts");
+			spawn_utils.addInventoryReplacement("MiniMissiles", "DDSpawner_MiniMissiles");
+			spawn_utils.addInventoryReplacement("CrateOfMissiles", "DDSpawner_CrateOfMissiles");
+			spawn_utils.addInventoryReplacement("EnergyPod", "DDSpawner_EnergyPod");
+			spawn_utils.addInventoryReplacement("EnergyPack", "DDSpawner_EnergyPack");
+			spawn_utils.addInventoryReplacement("HEGrenadeRounds", "DDAmmo_Rockets");
+			spawn_utils.addInventoryReplacement("PhosphorusGrenadeRounds", "DDAmmo_WPRockets");
 		}
 
 		crosshair_tex[0] = TexMan.CheckForTexture("DXCRSH01");
@@ -405,17 +411,17 @@ class DDWeapons_EventHandler : StaticEventHandler
 			e.replacement = "DDSpawner_BFG9000";
 
 		else if(e.replacee == "ClipOfBullets")
-			e.replacement = "DDSpawner_Clip";
+			e.replacement = "DDAmmo_7_62mm";
 		else if(e.replacee == "BoxOfBullets")
-			e.replacement = "DDSpawner_ClipBox";
+			e.replacement = "DDSpawner_BoxOfBullets";
 		else if(e.replacee == "MiniMissiles")
-			e.replacement = "DDSpawner_RocketAmmo";
+			e.replacement = "DDSpawner_MiniMissiles";
 		else if(e.replacee == "CrateOfMissiles")
-			e.replacement = "DDSpawner_RocketBox";
+			e.replacement = "DDSpawner_CrateOfMissiles";
 		else if(e.replacee == "EnergyPod")
-			e.replacement = "DDSpawner_Cell";
+			e.replacement = "DDSpawner_EnergyPod";
 		else if(e.replacee == "EnergyPack")
-			e.replacement = "DDSpawner_CellPack";
+			e.replacement = "DDSpawner_EnergyPack";
 		else if(e.replacee == "PoisonBolts")
 			e.replacement = "DDAmmo_TranquilizerDarts";
 		else if(e.replacee == "ElectricBolts")
