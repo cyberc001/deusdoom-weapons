@@ -235,12 +235,13 @@ class DDWeapons_EventHandler : StaticEventHandler
 				double fov = CVar.getCVar("fov", players[consoleplayer]).getFloat();
 				double spread_angle = wep.GetCurrentSpread();
 				double spread_x = (spread_angle / fov) * 220, spread_y = (spread_angle / fov) * 220;
-				//spread_x = spread_y = 0;
 				// FOV is basically an angle between leftmost/rightmost (topmost/bottom) sides of the screen
-				w = 5; h = 3.5; UI_Draw.texture(crosshair_tex[1], 160 - w/2, 100 - h/2 - spread_y - 5, w, h); // top
-				UI_Draw.texture(crosshair_tex[2], 160 - w/2, 100 - h/2 + spread_y + 5, w, h); // bottom
-				w = 3.7; h = 5; UI_Draw.texture(crosshair_tex[3], 160 - w/2 + spread_x + 5, 100 - h/2, w, h); // right
-				w = 3; h = 5; UI_Draw.texture(crosshair_tex[4], 160 - w/2 - spread_x - 5, 100 - h/2, w, h); // left
+				if(wep.base_spread > 0){
+					w = 5; h = 3.5; UI_Draw.texture(crosshair_tex[1], 160 - w/2, 100 - h/2 - spread_y - 5, w, h); // top
+					UI_Draw.texture(crosshair_tex[2], 160 - w/2, 100 - h/2 + spread_y + 5, w, h); // bottom
+					w = 3.7; h = 5; UI_Draw.texture(crosshair_tex[3], 160 - w/2 + spread_x + 5, 100 - h/2, w, h); // right
+					w = 3; h = 5; UI_Draw.texture(crosshair_tex[4], 160 - w/2 - spread_x - 5, 100 - h/2, w, h); // left
+				}
 			}
 			else{
 				// Render scope crosshair
