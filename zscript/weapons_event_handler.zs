@@ -207,6 +207,17 @@ class DDWeapons_EventHandler : StaticEventHandler
 		"resulting from the inability to visually gauge a\n"
 		"projectile's point of impact.");
 
+		Name strifecls = "Acolyte";
+		if(strifecls){	
+			let spawn_utils = DD_EventHandler(StaticEventHandler.Find("DD_EventHandler")).spawn_utils;
+			spawn_utils.addInventoryReplacement("StrifeCrossbow", "DDWeapon_MiniCrossbow");
+			spawn_utils.addInventoryReplacement("AssaultGun", "DDWeapon_AssaultRifle");
+			spawn_utils.addInventoryReplacement("FlameThrower", "DDWeapon_Flamethrower");
+			spawn_utils.addInventoryReplacement("ClipOfBullets", "DDAmmo_7_62mm");
+			spawn_utils.addInventoryReplacement("ElectricBolts", "DDAmmo_Darts");
+			spawn_utils.addInventoryReplacement("PoisonBolts", "DDAmmo_TranquilizerDarts");
+		}
+
 		crosshair_tex[0] = TexMan.CheckForTexture("DXCRSH01");
 		crosshair_tex[1] = TexMan.CheckForTexture("DXCRSH02");
 		crosshair_tex[2] = TexMan.CheckForTexture("DXCRSH03");
@@ -330,6 +341,7 @@ class DDWeapons_EventHandler : StaticEventHandler
 		if(e.replacement && e.replacee) // it's crucial to repeat this line in every submod to save replacements recieved from other mods
 			spawn_utils.addModReplacee(e.replacee, e.replacement);
 
+		/* Doom / Doom II */
 		if(e.replacee == "Clip")
 			e.replacement = "DDSpawner_Clip";
 		else if(e.replacee == "ClipBox")
@@ -375,6 +387,45 @@ class DDWeapons_EventHandler : StaticEventHandler
 
 		else if(e.replacee == "Backpack")
 			e.replacement = "DDSpawner_Backpack";
+
+		/* STRIFE */
+		else if(e.replacee == "PunchDagger")
+			e.replacement = "DDWeapon_CombatKnife";
+		else if(e.replacee == "StrifeCrossbow" || e.replacee == "StrifeCrossbow2")
+			e.replacement = "DDWeapon_MiniCrossbow";
+		else if(e.replacee == "AssaultGun" || e.replacee == "AssaultGunStanding")
+			e.replacement = "DDWeapon_AssaultRifle";
+		else if(e.replacee == "MiniMissileLauncher")
+			e.replacement = "DDWeapon_GEPGun";
+		else if(e.replacee == "FlameThrower")
+			e.replacement = "DDWeapon_Flamethrower";
+		else if(e.replacee == "Mauler" || e.replacee == "Mauler2")
+			e.replacement = "DDWeapon_PlasmaRifle";
+		else if(e.replacee == "StrifeGrenadeLauncher" || e.replacee == "StrifeGrenadeLauncher2")
+			e.replacement = "DDSpawner_BFG9000";
+
+		else if(e.replacee == "ClipOfBullets")
+			e.replacement = "DDSpawner_Clip";
+		else if(e.replacee == "BoxOfBullets")
+			e.replacement = "DDSpawner_ClipBox";
+		else if(e.replacee == "MiniMissiles")
+			e.replacement = "DDSpawner_RocketAmmo";
+		else if(e.replacee == "CrateOfMissiles")
+			e.replacement = "DDSpawner_RocketBox";
+		else if(e.replacee == "EnergyPod")
+			e.replacement = "DDSpawner_Cell";
+		else if(e.replacee == "EnergyPack")
+			e.replacement = "DDSpawner_CellPack";
+		else if(e.replacee == "PoisonBolts")
+			e.replacement = "DDAmmo_TranquilizerDarts";
+		else if(e.replacee == "ElectricBolts")
+			e.replacement = "DDAmmo_Darts";
+		else if(e.replacee == "AmmoSatchel")
+			e.replacement = "DDAmmoBox";
+		else if(e.replacee == "HEGrenadeRounds")
+			e.replacement = "DDAmmo_Rockets";
+		else if(e.replacee == "PhosphorusGrenadeRounds")
+			e.replacement = "DDAmmo_WPRockets";
 	}
 
 	override void WorldTick()
@@ -391,6 +442,7 @@ class DDWeapons_EventHandler : StaticEventHandler
 			plr.mo.TakeInventory("Fist", 1);
 			plr.mo.TakeInventory("Pistol", 1);
 			plr.mo.TakeInventory("Clip", 50);
+			plr.mo.TakeInventory("PunchDagger", 1);
 		
 			DD_InventoryHolder ddih = DD_InventoryHolder(plr.mo.FindInventory("DD_InventoryHolder"));
 			if(!ddih){
@@ -398,13 +450,15 @@ class DDWeapons_EventHandler : StaticEventHandler
 				plr.mo.addInventory(ddih);
 			}
 
-			let pistol = DDWeapon(Actor.Spawn("DDWeapon_Pistol", (999999, 999999, 999999)));
-			pistol.chambered_ammo = pistol.GetClipSize();
-			ddih.addItem(pistol);
+			Name strifecls = "Acolyte";
+			if(!strifecls){	
+				let pistol = DDWeapon(Actor.Spawn("DDWeapon_Pistol", (999999, 999999, 999999)));
+				pistol.chambered_ammo = pistol.GetClipSize();
+				ddih.addItem(pistol);
+				plr.mo.GiveInventory("DDAmmo_10mm", 12);
+			}
 			let knife = Inventory(Actor.Spawn("DDWeapon_CombatKnife", (999999, 999999, 999999)));
 			ddih.addItem(knife);
-
-			plr.mo.GiveInventory("DDAmmo_10mm", 12);
 
 			plr.mo.PickNewWeapon(null);
 			plr.mo.GiveInventory("DD_PistolStartedToken", 1);
