@@ -316,6 +316,12 @@ class DDWeapons_EventHandler : StaticEventHandler
 					wep.CycleAmmoType();
 				}
 		}
+		else if(e.name == "dd_curwep_change_ammo"){
+			if(plr.ReadyWeapon && plr.ReadyWeapon is "DDWeapon"){
+				DDWeapon wep = DDWeapon(plr.ReadyWeapon);
+				wep.CycleAmmoType();
+			}
+		}
 	}
 
 	override void CheckReplacement(ReplaceEvent e)

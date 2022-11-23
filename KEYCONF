@@ -1,0 +1,5 @@
+addkeysection "DeusDoom: Weapons controls" DD_WepControlsKF
+
+	addmenukey "Change ammo type of the current weapon" dd_curwep_change_ammo
+		alias dd_curwep_change_ammo "netevent dd_curwep_change_ammo"
+		defaultbind X dd_curwep_change_ammo

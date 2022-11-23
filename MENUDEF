@@ -1,0 +1,5 @@
+AddOptionMenu "DD_Controls"
+{
+	Control "Change current weapon's ammo type", dd_curwep_change_ammo
+	StaticText ""
+}
