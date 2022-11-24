@@ -656,7 +656,11 @@ class DDWeapon : DoomWeapon
 							string hit_flesh_sound = "", string hit_metal_sound = "", string hit_wall_sound = "")
 	{
 		int base_damage = invoker.GetMainDamage();
+		if(countInv("PowerStrength") && invoker.bMELEEWEAPON)
+			base_damage *= 1.5;
+
 		int reach = invoker.max_range;
+		
 		ThinkerIterator ti = ThinkerIterator.Create();
 		int hit_flags = 0;
 		Actor a;
