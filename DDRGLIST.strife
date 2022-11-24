@@ -1,0 +1,24 @@
+# Robots
+Sentinel isAffectedByEMP;
+Sentinel !isAffectedByStun;
+Crusader isAffectedByEMP;
+Crusader !isAffectedByStun;
+Inquisitor isAffectedByEMP $0.5;
+Inquisitor !isAffectedByStun;
+Stalker isAffectedByEMP;
+Stalker !isAffectedByStun;
+CeilingTurret isAffectedByEMP $2.0;
+CeilingTurret !isAffectedByStun;
+Templar isAffectedByEMP;
+Templar !isAffectedByStun;
+Reaver isAffectedByEMP;
+Reaver !isAffectedByStun;
+
+# Bosses
+Loremaster isAffectedByEMP $0.5;
+Loremaster !isAffectedByStun;
+Programmer isAffectedByEMP $0.5;
+Programmer !isAffectedByStun;
+StrifeBishop isAffectedByEMP $0.4;
+StrifeBishop !isAffectedByStun;
+SpectralMonster !isAffectedByStun; # Immune to every stun effect
