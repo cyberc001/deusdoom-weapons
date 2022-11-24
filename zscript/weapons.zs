@@ -330,6 +330,8 @@ class DDWeapon : DoomWeapon
 		double vel_spread = 1 + owner.vel.length() ** 0.5 / 7;
 		if(vel_spread > max_vel_spread) vel_spread = max_vel_spread;
 		double ret = GetBaseSpread() * vel_spread - aim_spread_off;
+		if(owner is "StrifePlayer")
+			ret -= owner.accuracy / 15.;
 		return ret > 0 ? ret : 0;
 	}
 
@@ -509,8 +511,11 @@ class DDWeapon : DoomWeapon
 	virtual double GetDamageMult() { return 1; }
 	action double GetMainDamage()
 	{
+		double stam_mult = 1;
+		if(invoker.owner is "StrifePlayer" && invoker.bMELEEWEAPON)
+			stam_mult += invoker.owner.stamina / 30.;
 		double dmult = 1 + invoker.GetSkillLevel() / 3.;
-		return invoker.main_damage * dmult * invoker.GetDamageMult();
+		return invoker.main_damage * dmult * stam_mult * invoker.GetDamageMult();
 	}
 	virtual int GetBulletAmount() { return 1; }
 
