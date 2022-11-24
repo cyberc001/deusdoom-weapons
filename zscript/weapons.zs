@@ -513,7 +513,7 @@ class DDWeapon : DoomWeapon
 	{
 		double stam_mult = 1;
 		if(invoker.owner is "StrifePlayer" && invoker.bMELEEWEAPON)
-			stam_mult += invoker.owner.stamina / 30.;
+			stam_mult += invoker.owner.stamina / 100.;
 		double dmult = 1 + invoker.GetSkillLevel() / 3.;
 		return invoker.main_damage * dmult * stam_mult * invoker.GetDamageMult();
 	}
