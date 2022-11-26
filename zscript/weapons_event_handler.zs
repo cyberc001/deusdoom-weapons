@@ -456,8 +456,7 @@ class DDWeapons_EventHandler : StaticEventHandler
 				plr.mo.addInventory(ddih);
 			}
 
-			Name strifecls = "Acolyte";
-			if(!strifecls){	
+			if(!(players[i].mo is "StrifePlayer")){	
 				let pistol = DDWeapon(Actor.Spawn("DDWeapon_Pistol", (999999, 999999, 999999)));
 				pistol.chambered_ammo = pistol.GetClipSize();
 				ddih.addItem(pistol);
