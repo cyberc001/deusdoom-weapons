@@ -53,8 +53,7 @@ class DDWeapon_LAM : DDWeapon
 			DXLM NOPQR 3;
 			DXLM S 3 ProjectileAttack("DDProjectile_LAM", GetMainDamage());
 			DXLM TUV 3;
-			DXPS A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXPS A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 		Place:
@@ -69,8 +68,7 @@ class DDWeapon_LAM : DDWeapon
 			DXLN LM 5;
 			DXLN N 5 { PlaceProjectile("DDProjectile_PlacedLAM", GetMainDamage()); A_StartSound("DDThrowableProjectile/bounce"); }
 			DXLN OPQ 5;
-			DXPS A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXPS A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 

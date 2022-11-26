@@ -50,8 +50,7 @@ class DDWeapon_ScrambleGrenade : DDWeapon
 			DXSG XYZ 3;
 			DXSH A 3 ProjectileAttack("DDProjectile_ScrambleGrenade", GetMainDamage());
 			DXSH BCDE 3;
-			DXSG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXSG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 		Place:
@@ -66,8 +65,7 @@ class DDWeapon_ScrambleGrenade : DDWeapon
 			DXSH TU 5;
 			DXSH V 5 { PlaceProjectile("DDProjectile_PlacedScrambleGrenade", GetMainDamage()); A_StartSound("DDThrowableProjectile/bounce"); }
 			DXSH WXY 5;
-			DXSG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXSG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 

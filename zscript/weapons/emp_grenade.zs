@@ -50,8 +50,7 @@ class DDWeapon_EMPGrenade : DDWeapon
 			DXEH DEF 3;
 			DXEH G 3 ProjectileAttack("DDProjectile_EMPGrenade", GetMainDamage());
 			DXEH HIJK 3;
-			DXEG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXEG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 		Place:
@@ -67,8 +66,7 @@ class DDWeapon_EMPGrenade : DDWeapon
 			DXEI FG 5;
 			DXEI H 5 { PlaceProjectile("DDProjectile_PlacedEMPGrenade", GetMainDamage()); A_StartSound("DDThrowableProjectile/bounce"); }
 			DXEI IJ 5;
-			DXEG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXEG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 

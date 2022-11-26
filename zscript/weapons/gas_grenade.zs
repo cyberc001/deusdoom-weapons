@@ -53,8 +53,7 @@ class DDWeapon_GasGrenade : DDWeapon
 			DXGG NOPQR 3;
 			DXGG S 3 ProjectileAttack("DDProjectile_GasGrenade", GetMainDamage());
 			DXGG TUVW 3;
-			DXGG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXGG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 		Place:
@@ -69,8 +68,7 @@ class DDWeapon_GasGrenade : DDWeapon
 			DXGH ST 5;
 			DXGH U 5 { PlaceProjectile("DDProjectile_PlacedGasGrenade", GetMainDamage()); A_StartSound("DDThrowableProjectile/bounce"); }
 			DXGH VWX 5;
-			DXGG A 0 UseSelf();
-			TNT0 A 0 A_Lower(999);
+			DXGG A 0 { UseSelf(); A_Lower(999); }
 			Stop;
 			Goto ReadyIdle;
 
