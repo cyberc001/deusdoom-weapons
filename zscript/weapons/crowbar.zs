@@ -11,7 +11,7 @@ class DDWeapon_Crowbar : DDWeapon
 		DDWeapon.IdleStateAmount 2;
 		DDWeapon.FireStateAmount 2;
 
-		DDWeapon.MainDamage 30;
+		DDWeapon.MainDamage 40;
 
 		DDWeapon.AccurateRange 112;
 		DDWeapon.MaxRange 112;
